@@ -1,11 +1,14 @@
+@font-face 
+
+@font-face {
+    font-family: Avenir_Bold;
+    src: url('../fonts/AvenirNext-Bold.ttf');
+        }
 
 
 
 
-
-
-
-.footer {
+.mainfooter {
     display: flex;
     flex-direction: row;
     background-color: #f3f4f2;
