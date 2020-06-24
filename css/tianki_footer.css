@@ -6,7 +6,8 @@
 
 
 .footer {
-    background-color: gray;
-    height: 200px;
-    
+    display: flex;
+    flex-direction: row;
+    background-color: #f3f4f2;
+    height: 150px;
 }
