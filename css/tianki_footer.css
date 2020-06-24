@@ -1,16 +1,88 @@
-@font-face 
-
 @font-face {
     font-family: Avenir_Bold;
-    src: url('../fonts/AvenirNext-Bold.ttf');
+    src: url('../fonts/AvenirNext_Bold.ttf');
+        }
+@font-face {
+    font-family: Avenir_Medium;
+    src: url('../fonts/AvenirNext_Medium.ttf');
+        }
+@font-face {
+    font-family: Avenir_Regular;
+    src: url('../fonts/AvenirNext_Regular.ttf');
+    }
+@font-face {
+    font-family: Avenir_UltraLight;
+    src: url('../fonts/AvenirNext_UltraLight.ttf');
         }
 
+.mainfooter ul > li {
+    font-family: "Avenir_UltraLight", sans-serif;
+    list-style: none;
+    line-height: 25px;
+    text-align: left;
+}
 
-
+.mainfooter p {
+    font-family: "Avenir_UltraLight", sans-serif;
+    list-style: none;
+    line-height: 2em;
+    text-align: center;
+}
 
 .mainfooter {
     display: flex;
     flex-direction: row;
     background-color: #f3f4f2;
     height: 150px;
+    padding: 10px 0px;    
 }
+
+.leftfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middlefooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.middlefooter img {
+    width: 100px;
+}
+
+.rightfooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightfooter h5, h6 {
+    text-align: left;
+    font-family: "Avenir_Medium", sans-serif;
+
+}
+
+.v-line {
+    height: 70%;
+    border: 1px inset;
+    border-radius: 10px;
+    }
+
+
+
+
+
+
+
+    @media (max-width: 991px) {
+
+        .mainfooter {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    }
