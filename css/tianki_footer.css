@@ -20,6 +20,12 @@
     list-style: none;
     line-height: 25px;
     text-align: left;
+    
+}
+
+.mainfooter ul {
+    padding: 0;
+    margin: 0;
 }
 
 .mainfooter p {
@@ -34,41 +40,63 @@
     flex-direction: row;
     background-color: #f3f4f2;
     height: 150px;
-    padding: 10px 0px;    
+    width: 100%;
+
 }
 
 .leftfooter {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .middlefooter {
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+    align-content: center;
     }
 
 .middlefooter img {
-    width: 100px;
+    width: 90px;
+}
+
+.icons_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.icons_footer img {
+    width: 40px;
+    margin: 0px 20px 0px 20px;
 }
 
 .rightfooter {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
 }
 
 .rightfooter h5, h6 {
     text-align: left;
     font-family: "Avenir_Medium", sans-serif;
+    margin: 0;
 
 }
 
 .v-line {
-    height: 70%;
-    border: 1px inset;
+    height: 100px;
+    border: 1px solid #ebebeb;
     border-radius: 10px;
+    display: inline-block;
+    box-shadow: 1px 2px 1px #ebebeb;
+    margin-left: 30%;
     }
 
 
@@ -77,12 +105,60 @@
 
 
 
-    @media (max-width: 991px) {
+@media (max-width: 991px) {
 
-        .mainfooter {
-            display: flex;
-            flex-direction: column;
+
+
+    .mainfooter {
+        display: flex;
+        flex-direction: row;
+        background-color: #f3f4f2;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .leftfooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .middlefooter {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        align-content: center;
         }
 
-
+    .middlefooter img {
+        width: 90px;
     }
+
+    .icons_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px 0px;
+    }
+
+    .icons_footer img {
+        width: 40px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .rightfooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .v-line {
+        display: none;
+        }
+
+}
