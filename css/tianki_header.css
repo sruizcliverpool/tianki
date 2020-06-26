@@ -14,75 +14,76 @@
     font-family: Avenir_UltraLight;
     src: url('../fonts/AvenirNext_UltraLight.ttf');
         }
-
-.mainfooter ul > li {
-    font-family: "Avenir_UltraLight", sans-serif;
-    list-style: none;
-    line-height: 25px;
-    text-align: left;
+.header{
+	display: flex;
+	background-color: #ffa501;
+	height: 70px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+#header_logo {
+	height:100%;
+}
+#header_logo img {
+	height:90%;
+	
+}
+#header_search {
+	height: 100%;
+}
+#header_icons {
+	height:100%;
+	
+}
+#header_profile {
+	width: 50%;
+	height:100%;
+}
+#header_profile img {
+	height: 75%;
+	padding-top:20px;
+}
+#header_profile p{
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+	color: #ffffff;
+	margin-top: 20%;
+}
+#header_cart {
+	width: 50%;
+	height: 100%;
+}
+.cart_left img{
+	height: 85%;
+    padding-top: 12px;
+    width: 44px;
+}
+#header_cart p{
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+	color: #ffffff;
+	margin-top: 20%;
+	padding:5px;
+}
+#search-form{
+	width:90%
 }
 
-.mainfooter p {
-    font-family: "Avenir_UltraLight", sans-serif;
-    list-style: none;
-    line-height: 2em;
-    text-align: center;
+.searchbox {
+	padding: 8px 16px;
+	background-color: #ffffff;
+	margin-top: 10px;
+	border-radius: 30px;
 }
 
-.mainfooter {
-    display: flex;
-    flex-direction: row;
-    background-color: #f3f4f2;
-    height: 150px;
-    padding: 10px 0px;    
-}
-
-.leftfooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.middlefooter {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    }
-
-.middlefooter img {
-    width: 100px;
-}
-
-.rightfooter {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.rightfooter h5, h6 {
-    text-align: left;
-    font-family: "Avenir_Medium", sans-serif;
-
-}
-
-.v-line {
-    height: 70%;
-    border: 1px inset;
-    border-radius: 10px;
-    }
-
-
-
-
-
+.searchbox #search{
+	width:100%;
+	border: 1px solid #ffffff;
+} 
 
 
     @media (max-width: 991px) {
 
-        .mainfooter {
-            display: flex;
-            flex-direction: column;
-        }
-
-
+       
     }
