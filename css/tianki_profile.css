@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Avenir_Bold;
+    src: url('../fonts/AvenirNext_Bold.ttf');
+        }
+@font-face {
+    font-family: Avenir_Medium;
+    src: url('../fonts/AvenirNext_Medium.ttf');
+        }
+@font-face {
+    font-family: Avenir_Regular;
+    src: url('../fonts/AvenirNext_Regular.ttf');
+    }
+@font-face {
+    font-family: Avenir_UltraLight;
+    src: url('../fonts/AvenirNext_UltraLight.ttf');
+        }
+
+
+
+.content_buttons {
+    width: 100%;
+}
+
+.main_content {
+    width: 100%;
+}
+
+.title_input {
+    display: inline-block;
+    font-size: 1.3em;
+    margin-bottom: .5rem;
+    margin-top: 1em;
+    font-family: "Avenir_Medium", sans-serif;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-family: "Avenir_Medium", sans-serif;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #009b00;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.nav-buttons .nav-link.active, .nav-buttons .show > .nav-link {
+    color: #fff;
+    background-color: #009b00;
+    font-family: "Avenir_Medium", sans-serif;
+
+}
+
+.nav-buttons .nav-link {
+    border-radius: .25rem;
+    color: black;
+    font-family: "Avenir_Medium", sans-serif;
+
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#content_about {
+    background-color: blueviolet;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+    @media (max-width: 991px) {
+
+        .mainfooter {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    }

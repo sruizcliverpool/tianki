@@ -27,6 +27,7 @@
 
 }
 
+
 .nav-buttons .nav-link.active, .nav-buttons .show > .nav-link {
     color: #fff;
     background-color: #009b00;
@@ -37,6 +38,7 @@
 .nav-buttons .nav-link {
     border-radius: .25rem;
     color: black;
+    font-family: "Avenir_Medium", sans-serif;
 
 }
 .nav-link {
@@ -48,20 +50,57 @@
 #content_about {
     background-color: blueviolet;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
 
 .secondary_about {
     margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text_about {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.text_about h5 {
+    font-family: "Avenir_Bold", sans-serif;
+    color: #ff6119;
+    font-size: 1.3em;
 }
 
 .text_about p {
+    font-family: "Avenir_Regular", sans-serif;
+    color: black;
+    font-size: 1em;
+    line-height: 1.3em;
+    text-align: justify;
+
+}
+
+.stripe_about {
+    width: 90%;
+    text-align: center;
+    background-color: #f3f4f2;
+    height: 90px;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.stripe_about p {
     font-family: "Avenir_Medium", sans-serif;
     color: black;
     font-size: 1em;
     line-height: 1.4em;
     padding: 10px;
+    margin: 0;
 }
 
 .card {

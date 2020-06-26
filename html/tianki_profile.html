@@ -2,12 +2,15 @@
 <head>
 <title>Tianki - Preguntas Frecuentes</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../css/tianki_FAQs.css">
+<link rel="stylesheet" href="../css/tianki_profile.css">
 <link rel="stylesheet" href="../css/reset.css">
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <link rel="shortcut icon" href="../img/icon/tianki_icon.ico" type="image/x-icon">
 <link rel="icon" href="../img/icon/tianki_icon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -20,116 +23,197 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 faq_buttons">
+            <div class="col-lg-3 content_buttons">
     
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                <div class="nav flex-column nav-buttons" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-datos-tab" data-toggle="pill" href="#v-pills-datos" role="tab" aria-controls="v-pills-datos" aria-selected="true">Mis datos</a>
+
+                    <a class="nav-link" id="v-pills-direcciones-tab" data-toggle="pill" href="#v-pills-direcciones" role="tab" aria-controls="v-pills-direcciones" aria-selected="false">Mis direcciones</a>
+
+                    <a class="nav-link" id="v-pills-pagos-tab" data-toggle="pill" href="#v-pills-pagos" role="tab" aria-controls="v-pills-pagos" aria-selected="false">Mis formas de pago</a>
+
+                    <a class="nav-link" id="v-pills-pedidos-tab" data-toggle="pill" href="#v-pills-pedidos" role="tab" aria-controls="v-pills-pedidos" aria-selected="false">Mis pedidos</a>
                   </div>
     
-                  
             </div>
     
-            <div class="col-lg faq_content">
+            <div class="col-lg main_content">
     
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <div id="accordion">
-                            <div class="card">
-            
-                                <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
-                                    <button class="btn question" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <p>¿Cuáles son las formas de pago aceptadas?</p>
-                                    </button>
-                                    </h5>
-                                </div>
-                    
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                </div>
-            
-                            </div>
-            
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        <div id="accordion">
-                            <div class="card">
-            
-                                <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
-                                    <button class="btn question" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <p>¿Cómo hago seguimiento a mi pedido?</p>
-                                    </button>
-                                    </h5>
-                                </div>
-                    
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                </div>
-            
-                            </div>
-            
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <div id="accordion">
-                            <div class="card">
-            
-                                <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
-                                    <button class="btn question" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <p>¿Cuánto tardará mi pedido?</p>
-                                    </button>
-                                    </h5>
-                                </div>
-                    
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                </div>
-            
-                            </div>
-            
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        <div id="accordion">
-                            <div class="card">
-            
-                                <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
-                                    <button class="btn question" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <p>¿Qué pasa si no llega mi pedido en forma?</p>
-                                    </button>
-                                    </h5>
-                                </div>
-                    
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                </div>
-            
-                            </div>
-            
-                        </div>
-                    </div>
-                  </div>
     
+                    <!--MIS DATOS-->
+                    <div class="tab-pane fade show active" id="v-pills-datos" role="tabpanel" aria-labelledby="v-pills-datos-tab">
+                        <div id="content_datos">
+                          
+                            <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputFirstName">Nombre(s)</label>
+                                    <input type="text" class="form-control" id="inputFirstName" placeholder="">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputLastName">Apellido Paterno</label>
+                                    <input type="text" class="form-control" id="inputLastName" placeholder="">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputAddress">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="inputAddress" placeholder="">
+                                  </div>
+                                </div>
+
+                                <div class="title_input">Datos de facturación</div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <label for="inputFirstName">Nombre o Razón Social</label>
+                                      <input type="text" class="form-control" id="inputFirstName" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md">
+                                      <label for="inputLastName">RFC</label>
+                                      <input type="text" class="form-control" id="inputLastName" placeholder="">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputFirstName">Calle y Número</label>
+                                        <input type="text" class="form-control" id="inputFirstName" placeholder="">
+                                      </div>
+                                      <div class="form-group col-md">
+                                        <label for="inputLastName">Núm. Ext.</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="">
+                                      </div>
+                                      <div class="form-group col-md">
+                                        <label for="inputAddress">Núm Int.</label>
+                                        <input type="email" class="form-control" id="inputAddress" placeholder="">
+                                      </div>
+
+                                      <div class="form-group col-md-6">
+                                        <label for="inputFirstName">Colonia</label>
+                                        <input type="text" class="form-control" id="inputFirstName" placeholder="">
+                                      </div>
+                                      <div class="form-group col-md-3">
+                                        <label for="inputLastName">Código Postal</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="">
+                                      </div>
+                                      <div class="form-group col-md-3">
+                                        <label for="inputAddress">Delegación</label>
+                                        <input type="email" class="form-control" id="inputAddress" placeholder="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="inputAddress">Ciudad</label>
+                                        <input type="email" class="form-control" id="inputAddress" placeholder="">
+                                      </div>
+
+                              
+                                </div>
+
+
+                                
+
+                               
+
+                                <button type="submit" class="btn btn-success btn-md">Guardar cambios</button>
+
+                            </form>
+                         
+                        </div>
+                    </div>
+    
+                    <!--MIS DIRECCIONES-->
+                    <div class="tab-pane fade" id="v-pills-direcciones" role="tabpanel" aria-labelledby="v-pills-direcciones-tab">
+                        <div id="accordion">
+
+                            <div class="form-group">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                              </div>
+
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                  <label for="inputState">State</label>
+                                  <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                              </div>
+
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label class="form-check-label" for="gridCheck">
+                                    Escoger como predeterminada
+                                  </label>
+                                </div>
+                            </div>   
+
+                        </div>
+                    </div>
+    
+                    <!--MIS FORMAS DE PAGO-->
+                    <div class="tab-pane fade" id="v-pills-pagos" role="tabpanel" aria-labelledby="v-pills-pagos-tab">
+                        <div id="accordion">
+                            <div class="card">
+            
+                                <div class="card-header" id="headingTermsConditions">
+                                    <h5 class="mb-0">
+                                    <button class="btn question" data-toggle="collapse" data-target="#collapseTermsConditions" aria-expanded="true" aria-controls="collapseTermsConditions">
+                                        <p>TÉRMINOS Y CONDICIONES</p>
+                                    </button>
+                                    </h5>
+                                </div>
+                    
+                                <div id="collapseTermsConditions" class="collapse show" aria-labelledby="headingTermsConditions" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+                    </div>
+    
+                    <!--MIS PEDIDOS-->
+                    <div class="tab-pane fade" id="v-pills-pedidos" role="tabpanel" aria-labelledby="v-pills-pedidos-tab">
+                        <div id="accordion">
+                            <div class="card">
+            
+                                <div class="card-header" id="headingPrivacyPolitics">
+                                    <h5 class="mb-0">
+                                    <button class="btn question" data-toggle="collapse" data-target="#collapsePrivacyPolitics" aria-expanded="true" aria-controls="collapsePrivacyPolitics">
+                                        <p>POLITICAS Y PRIVACIDAD</p>
+                                    </button>
+                                    </h5>
+                                </div>
+                    
+                                <div id="collapsePrivacyPolitics" class="collapse show" aria-labelledby="headingPrivacyPolitics" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
             </div>
     
     
         </div>
     </div>
+    
     
     
 

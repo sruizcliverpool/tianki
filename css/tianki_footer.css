@@ -17,6 +17,7 @@
 
 .mainfooter ul > li {
     font-family: "Avenir_UltraLight", sans-serif;
+    font-size: 1em;
     list-style: none;
     line-height: 25px;
     text-align: left;
@@ -30,7 +31,7 @@
 
 .mainfooter p {
     font-family: "Avenir_UltraLight", sans-serif;
-    list-style: none;
+    font-size: 1em;
     line-height: 2em;
     text-align: center;
 }
@@ -58,6 +59,12 @@
     flex-direction: column;
     height: 100%;
     align-content: center;
+    }
+
+.middlefooter {
+    font-family: "Avenir_UltraLight", sans-serif;
+    font-size: .7em;
+    text-align: center;
     }
 
 .middlefooter img {
@@ -92,7 +99,7 @@
 }
 
 .v-line {
-    height: 60%;
+    height: 50%;
     border: 1px solid #ebebeb;
     border-radius: 10px;
     box-shadow: 1px 1px 1px #f5f5f5;
@@ -101,7 +108,7 @@
     }
 
 .v-line2 {
-    height: 60%;
+    height: 50%;
     border: 1px solid #ebebeb;
     border-radius: 10px;
     box-shadow: 1px 1px 1px #f5f5f5;
@@ -167,7 +174,7 @@
         height: 100%;
     }
 
-    .v-line {
+    .v-line, .v-line2 {
         display: none;
         }
 
