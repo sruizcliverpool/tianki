@@ -48,11 +48,16 @@
 }
 
 #content_about {
-    background-color: blueviolet;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Avenir_Regular", sans-serif;
+}
+
+.main_img_about img {
+    width: 100%;
+    height: 150px;
 }
 
 .secondary_about {
@@ -62,14 +67,18 @@
     flex-direction: row;
 }
 
-.text_about {
+.secondary_about img {
     width: 100%;
-    padding: 20px;
-
+    height: 200px;
 }
 
-.text_about h5 {
-    font-family: "Avenir_Bold", sans-serif;
+.text_about {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+}
+
+.text_about h6 {
+    font-family: "Avenir_Medium", sans-serif;
     color: #ff6119;
     font-size: 1.3em;
 }
@@ -87,20 +96,23 @@
     width: 90%;
     text-align: center;
     background-color: #f3f4f2;
-    height: 90px;
+    height: 60px;
     margin: 20px 0px 20px 0px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
 }
 
-.stripe_about p {
+.stripe_about h6 {
     font-family: "Avenir_Medium", sans-serif;
     color: black;
-    font-size: 1em;
-    line-height: 1.4em;
+    font-size: 1.2em;
+    line-height: 1.3em;
     padding: 10px;
     margin: 0;
+    text-align: center;
 }
 
 .card {
@@ -118,7 +130,7 @@
 }
 
 .card-header {
-    padding: .75rem 1.25rem;
+    padding: 5px 0px 0px 5px !important;
     margin-bottom: 0;
     background-color: rgba(0,0,0,.03);
     border-bottom: 1px solid rgba(0,0,0,.125);
@@ -128,13 +140,20 @@
     -ms-flex: 1 1 auto;
     flex: 3 1 auto;
     padding: 10px;
+    font-family: "Avenir_Regular", sans-serif;
+
 }
 
 .question p {
-    font-family: "Avenir_Light", sans-serif;
+    font-family: "Avenir_Medium", sans-serif;
     color: black;
     text-align: left;
     margin: 0;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
 }
 
 
@@ -147,5 +166,11 @@
             flex-direction: column;
         }
 
+        .main_content {
+            width: 100%;
+            margin: 30px 5px 20px 5px;
+        }
 
-    }
+
+
+    } 
