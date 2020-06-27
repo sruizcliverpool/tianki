@@ -21,6 +21,7 @@
 	position: fixed;
 	z-index: 1;
 	width: 100%;
+	margin:0;
 }
 #header_logo {
 	height:100%;
@@ -84,14 +85,15 @@
 
 .main_section {
 	background-color: aqua;
-	padding: 0px;
-    position: relative;
-	top:70px;
+    padding: 0px!important;
+    position: absolute;
+    top: 70px;
 }
 .main_section_img{
 	margin: 0 auto;
     display: block;
 	padding:0;
+	width: 100%;
 }
 
 .main_section_img img{
@@ -102,8 +104,6 @@
     position: absolute;
     text-align: center;
     right: auto;
-    left: 28%;
-    top: 50%;
 }
 
 .main_section_btn {
@@ -111,9 +111,7 @@
     position: absolute;
     text-align: center;
     right: auto;
-    left: 45%;
-    top: auto;
-    bottom: 20%;
+    bottom: 30%;
 }
 
     @media (max-width: 991px) {
