@@ -33,6 +33,14 @@
     font-family: "Avenir_Medium", sans-serif;
 }
 
+.form-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
 .form-group label {
     display: inline-block;
     margin-bottom: .5rem;
@@ -42,9 +50,8 @@
 .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #009b00;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    box-shadow: 0 0 0 0.2rem #009b0025 !important;
 }
 
 .nav-buttons .nav-link.active, .nav-buttons .show > .nav-link {
@@ -83,5 +90,36 @@
             flex-direction: column;
         }
 
+        .main_content {
+            width: 100%;
+            margin: 0px 15px 0px 15px;
+        }
+
+        .title_input {
+            justify-content: center;
+            display: inline-block;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            text-align: center;
+            margin-top: 1em;
+            font-family: "Avenir_Medium", sans-serif;
+        }
+
+        .content_buttons {
+            width: 100%;
+            margin: 25px 10px 20px 10px;
+        }
+
+        .form-group label {
+            display: inline-block;
+            margin-bottom: .5rem;
+            margin-left: 10px;
+            font-family: "Avenir_Medium", sans-serif;
+        }
 
     }
+
+
+
+    
+    

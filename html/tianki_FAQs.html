@@ -21,16 +21,18 @@
         <div class="col-lg-3 content_buttons">
 
             <div class="nav flex-column nav-buttons" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-about" role="tab" aria-controls="v-pills-about" aria-selected="true">Acerca de Tianki</a>
+                <a class="nav-link active" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-about" >Acerca de Tianki</a>
 
-                <a class="nav-link" id="v-pills-faqs-tab" data-toggle="pill" href="#v-pills-faqs" role="tab" aria-controls="v-pills-faqs" aria-selected="false">Preguntas y Respuestas</a>
+                <a class="nav-link" id="v-pills-faqs-tab" data-toggle="pill" href="#v-pills-faqs">Preguntas y Respuestas</a>
 
-                <a class="nav-link" id="v-pills-terms-tab" data-toggle="pill" href="#v-pills-terms" role="tab" aria-controls="v-pills-messages" aria-selected="false">Terminos y Condiciones</a>
+                <a class="nav-link" id="v-pills-terms-tab" data-toggle="pill" href="#v-pills-terms">Terminos y Condiciones</a>
 
-                <a class="nav-link" id="v-pills-privacy-tab" data-toggle="pill" href="#v-pills-privacy" role="tab" aria-controls="v-pills-privacy" aria-selected="false">Políticas y Privacidad</a>
+                <a class="nav-link" id="v-pills-privacy-tab" data-toggle="pill" href="#v-pills-privacy" >Políticas y Privacidad</a>
               </div>
 
         </div>
+
+        
 
         <div class="col-lg main_content">
 
@@ -40,33 +42,36 @@
                 <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab">
                     <div id="content_about">
                       
-                        <div class="main_img_about" style="background-color:coral; height: 170px; width: 100%;">
+                        <div class="main_img_about" style="background-color:coral;">
                             <img src="../img/">
                         </div>
 
                         <div class="text_about">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et </p>
+                            <p>En <span style="font-family: Avenir_Bold, sans-serif;">Tianki</span> nuestro principal objetivo es conectar a agricultores alrededor de la república mexicana con la industria de alimentos. Es por eso que abastecemos a los negocios de forma rápida e inteligente al mejor precio, trabajando directamente con el campo para hacerte llegar los mejores productos.</p>
                         </div>
+                        
                         <div class="secondary_about">
-                            <div class="col-4 secondary_img_about" style="background-color:coral; height: 170px; width: 100%;">
+                            <div class="col-4 secondary_img_about" style="background-color:coral; height: 100%; width: 100%;">
                                 <img src="../img/">
                             </div>
                             <div class="col-8 text_about">
-                                <h5>Lorem Ipsum</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu fugiat.</p>
+                                <h6>Buscamos mejorar las condiciones de agricultores y consumidores.
+                                </h6>
+                                <p>En México los consumidores finales llegan a pagar un 300% más del valor del producto a causa de los intermediarios, desde que el productor levanta su cosecha hasta que llega al último comprador existen de 3 a 7 intermediarios. Los únicos afectados por estos antiguos e ineficientes métodos de distribución son los productores, a los que se les compra a precios mínimos y el consumidor final, al que se le vende a precios extremadamente altos.</p>
                             </div>
                         </div>
 
                         <div class="stripe_about">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h6>Trabajamos directamente con el campo para ofrecerte el mejor precio.</h6>
                         </div>
 
                         <div class="secondary_about">
                             <div class="col-8 text_about">
-                                <h5>Lorem Ipsum</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                                <h6>Aportación de Tianki al campo mexicano y a la industria de alimentos</h6>
+                                <p>En Tianki construimos un modelo capaz de solucionar los problemas del campo. Aplicamos nuevos mecanismos de tecnología para optimizar precios en la industria alimenticia de México, incluyendo a pequeños productores en  el sistema, reduciendo tiempos y costos para ofrecer los mejores productos.
+                                </p>
                             </div>
-                            <div class="col-4 secondary_img_about" style="background-color:coral; height: 170px; width: 100%;">
+                            <div class="col-4 secondary_img_about" style="background-color:coral;">
                                 <img src="../img/">
                             </div>
                         </div>
@@ -78,17 +83,37 @@
                 <div class="tab-pane fade" id="v-pills-faqs" role="tabpanel" aria-labelledby="v-pills-faqs-tab">
                     <div id="accordion">
                         <div class="card">
-                            <div class="card-header" id="headingTwo">
+                            <div class="card-header" id="headingOne">
                                 <h5 class="mb-0"></h5>
+                                <button class="btn question" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <p>¿Cómo hago un pedido?</p>
+                                </button>
+                                </h5>
+                            </div>
+                
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    -Para realizar tu pedido debes agregar los productos que desees recibir e iniciar sesión o registrarte.<br>
+                                    -También puedes realizar tu pedido vía WhatsApp (55 3076 5944).
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="card">
+        
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
                                 <button class="btn question" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    <p>¿Cómo hago seguimiento a mi pedido?</p>
+                                    <p>¿Cómo me registro?</p>
                                 </button>
                                 </h5>
                             </div>
                 
                             <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet 2
+                                    -Agrega los productos, da click en el carrito de compra y añade tus datos.<br>
+                                    -Selecciona el icono de usuario en la parte superior derecha y elige la opción de registro, después llena los campos con tu información.
+
                                 </div>
                             </div>
         
@@ -97,32 +122,81 @@
         
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
-                                <button class="btn question" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                    <p>¿Cuánto tardará mi pedido a partir de la compra?</p>
+                                <button class="btn question" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapsThree">
+                                    <p>No me llegó lo que pedí</p>
                                 </button>
                                 </h5>
                             </div>
                 
                             <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet 3
+                                    -Ponte en contacto con nosotros vía Whatsapp (55 3076 5944) y revisaremos tu problema directamente. Recuerda que si tu pedido se entrega el dia siguiente, no se podrán realizar cambios ni cancelaciones después de las 8:00 pm.
                                 </div>
                             </div>
         
                         </div>
                         <div class="card">
-        
                             <div class="card-header" id="headingFour">
-                                <h5 class="mb-0">
+                                <h5 class="mb-0"></h5>
                                 <button class="btn question" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    <p>¿Qué hago si mi pedido no llega en forma?</p>
+                                    <p>¿Puedo hacer cambios a un pedido ya realizado?</p>
                                 </button>
                                 </h5>
                             </div>
                 
                             <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet 4
+                                    -Podrás hacer cambios y cancelaciones antes de las 8:00 pm del dia anterior.
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="card">
+        
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                <button class="btn question" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    <p>¿Formas de pago?</p>
+                                </button>
+                                </h5>
+                            </div>
+                
+                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    -Aceptamos todas las tarjetas de débito y crédito, y pagos en efectivo o con tarjeta al momento de recibir tus productos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+        
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                <button class="btn question" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapsSix">
+                                    <p>¿Cómo recupero mi contraseña?</p>
+                                </button>
+                                </h5>
+                            </div>
+                
+                            <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                    -Selecciona el icono de usuario en la parte superior derecha, da click en el inicio de sesión, selecciona la opción “Olvidaste tu contraseña” y recibirás un e-mail para cambiar tu contraseña.
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="card">
+        
+                            <div class="card-header" id="headingSeven">
+                                <h5 class="mb-0">
+                                <button class="btn question" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapsSeven">
+                                    <p>¿Puedo hacer mi compra con pedidos anteriores?</p>
+                                </button>
+                                </h5>
+                            </div>
+                
+                            <div id="collapseSeven" class="collapse show" aria-labelledby="headingSeven" data-parent="#accordion">
+                                <div class="card-body">
+                                    -Si, tus últimas compras serán guardadas en la sección “Repite tu último pedido” para que puedas seleccionar y modificar tus productos.
                                 </div>
                             </div>
         
@@ -133,53 +207,58 @@
 
                 <!--TERMINOS Y CONDICIONES-->
                 <div class="tab-pane fade" id="v-pills-terms" role="tabpanel" aria-labelledby="v-pills-terms-tab">
-                    <div id="accordion">
-                        <div class="card">
-        
-                            <div class="card-header" id="headingTermsConditions">
-                                <h5 class="mb-0">
-                                <button class="btn question" data-toggle="collapse" data-target="#collapseTermsConditions" aria-expanded="true" aria-controls="collapseTermsConditions">
-                                    <p>TÉRMINOS Y CONDICIONES</p>
-                                </button>
-                                </h5>
-                            </div>
-                
-                            <div id="collapseTermsConditions" class="collapse show" aria-labelledby="headingTermsConditions" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </div>
-                            </div>
-        
-                        </div>
-        
+                    <div id="content_about">
+                        <p>Formas de pago:<br><br>
+
+                            A)      Pago contra entrega en domicilio.<br>
+                            
+                            Consiste en el pago que realiza el Usuario al momento de recibir los Productos en el domicilio previamente especificado por éste.<br>
+                            
+                            Restricciones:<br>
+                            
+                            No aplica cuando el monto del pago del Pedido sea mayor a  $5,000.00 (cinco mil pesos 00/100 m.n.)<br>
+                            
+                            No aplica pago con cupones ni con tarjeta de regalo y/o monedero electrónico Chedraui.<br>
+                            
+                            No aplica para promociones.<br><br>
+                            
+                            B)       Pago contra entrega en Sucursal.<br>
+                            
+                            Consiste en el pago que realiza el Usuario en la Sucursal contra entrega de los Productos, para lo cual además el Usuario deberá entregar: i) el número de referencia que previamente le otorgó Chedraui, y ii) identificación oficial vigente en caso de pago con tarjeta de Crédito o Débito.<br><br>
+                            
+                            C)       Pago anticipado<br>
+                            
+                            Esta forma de pago aplica cuando el monto del Pedido es superior a $5,000.00 (cinco mil pesos 00/100 m.n.). En esta forma de pago el Usuario deberá pagar anticipadamente el Pedido en su domicilio al personal previamente identificado.<br><br>
+                            
+                            Restricciones:<br>
+                            
+                            Sólo aplica pago con tarjetas de crédito y débito.<br>
+                            
+                            Sólo aplica para entrega programada.</p>        
                     </div>
                 </div>
 
                 <!--POLITICAS Y PRIVACIDAD-->
                 <div class="tab-pane fade" id="v-pills-privacy" role="tabpanel" aria-labelledby="v-pills-privacy-tab">
-                    <div id="accordion">
-                        <div class="card">
+                    <div id="content_about">
+                        <p>Aviso de Privacidad<br><br>
+                            En Tianki, S.A. de C.V., su privacidad y confianza son muy importantes; por ello, queremos asegurarnos de que conozca como salvaguardamos la integridad, privacidad y protección de sus datos personales.<br>
+                            A. Identidad y Domicilio del Responsable.
+                            Tianki señala como domicilio para los efectos relacionados con el presente aviso, el ubicado en Av. Constituyentes No. 1150, Col. Lomas Altas, Miguel Hidalgo, Ciudad de México, Código Postal 11950, es el responsable del tratamiento y protección de los datos personales proporcionados libremente por el titular.<br>
+                            B. Información Proporcionada por el Titular.
+                            Para poder llevar a cabo las finalidades que se mencionan en el apartado C, el Titular proporcionará a Chedraui los siguientes datos personales:
+                            • De identificación: Nombre(s), apellidos, género, estado civil, firma autógrafa, RFC, IFE, INE, lugar y fecha de nacimiento.<br>
         
-                            <div class="card-header" id="headingPrivacyPolitics">
-                                <h5 class="mb-0">
-                                <button class="btn question" data-toggle="collapse" data-target="#collapsePrivacyPolitics" aria-expanded="true" aria-controls="collapsePrivacyPolitics">
-                                    <p>POLITICAS Y PRIVACIDAD</p>
-                                </button>
-                                </h5>
-                            </div>
-                
-                            <div id="collapsePrivacyPolitics" class="collapse show" aria-labelledby="headingPrivacyPolitics" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </div>
-                            </div>
-        
-                        </div>
-        
+                            • De contacto: Dirección de su domicilio (calle, número, colonia, código postal, ciudad, Estado), correo electrónico, teléfonos (fijo, móvil).<br>
+                            
+                            • Patrimoniales y Financieros: Cuenta bancaria, CLABE Interbancaria, número de tarjeta, bienes muebles e inmuebles propios.<br>
+                            
+                            Chedraui no recabara datos personales sensibles para poder llevar a cabo las finalidades que se mencionan en el presente Aviso de Privacidad.<br>
+                            
+                            Los datos personales que Chedraui reciba de manera indirecta del Titular, se hayan obtenido de fuentes de acceso público o que le sean proporcionados por persona distinta del titular, pudieran ser tratados bajo las finalidades que están descritas en el apartado C; no obstante, dichos datos los recibe bajo la premisa de que son correctos y de que fueron proporcionados con el consentimiento del titular.
+                           Última actualización: 01/01/2017</p>   
                     </div>
                 </div>
-
-
 
             </div>
         </div>
