@@ -74,7 +74,7 @@
 	padding: 8px 16px;
 	background-color: #ffffff;
 	margin-top: 10px;
-	border-radius: 30px;
+	border-radius: 10px;
 }
 
 .searchbox #search{
@@ -82,6 +82,39 @@
 	border: 1px solid #ffffff;
 } 
 
+.main_section {
+	background-color: aqua;
+	padding: 0px;
+    position: relative;
+	top:70px;
+}
+.main_section_img{
+	margin: 0 auto;
+    display: block;
+	padding:0;
+}
+
+.main_section_img img{
+	width:100%;
+}
+.main_section_copy {
+	z-index: 1;
+    position: absolute;
+    text-align: center;
+    right: auto;
+    left: 28%;
+    top: 50%;
+}
+
+.main_section_btn {
+	z-index: 1;
+    position: absolute;
+    text-align: center;
+    right: auto;
+    left: 45%;
+    top: auto;
+    bottom: 20%;
+}
 
     @media (max-width: 991px) {
 
