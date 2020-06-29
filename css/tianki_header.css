@@ -14,6 +14,11 @@
     font-family: Avenir_UltraLight;
     src: url('../fonts/AvenirNext_UltraLight.ttf');
         }
+
+main {
+	background-color: #ffffff;
+	width:100%;
+}
 .header{
 	display: flex;
 	background-color: #ffa501;
@@ -127,9 +132,11 @@
 	color: #ffffff;
 	text-align: left;
 	padding:20px;
+	margin-top: 20px;
 }
 .orders_text h3 {
 	font-family: "Avenir_Medium", sans-serif;
+	line-height: 10px;
 }
 .orders_text p {
 	font-family: "Avenir_Medium", sans-serif;
@@ -149,7 +156,7 @@
 .order_date{
 	
 	padding-top:5px;
-	padding-left:5px;
+	padding-left:10px;
 	padding-bottom: 5px;
 	margin-right: 10px;
 }
@@ -157,6 +164,9 @@
 	font-size: 1.5em;
 	color: #f26432;
 	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 2px;
+	line-height:7px;
 }
 .order_date_month {
 	color: #646363;
