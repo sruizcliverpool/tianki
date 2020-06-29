@@ -25,6 +25,8 @@
     width: 100%;
 }
 
+/*INPUTS*/
+
 .title_input {
     display: inline-block;
     font-size: 1.3em;
@@ -45,6 +47,10 @@
     display: inline-block;
     margin-bottom: .5rem;
     font-family: "Avenir_Medium", sans-serif;
+}
+
+.form-control {
+    font-family: "Avenir_UltraLight", sans-serif;
 }
 
 .form-control:focus {
@@ -81,6 +87,77 @@
     align-items: center;
 }
 
+/*MIS PEDIDOS*/
+
+#content_orderData {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+}
+
+
+.card_date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f2;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 10px 5px 10px 5px;
+}
+
+.card_date h5{
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1em;
+}
+
+.card_date p {
+    font-family: "Avenir_Medium", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    line-height: 0.8em;
+}
+
+
+.card_data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #f3f4f2;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 10px 5px 10px 5px;
+
+}
+
+.card_data p {
+    font-family: "Avenir_Medium", sans-serif;
+    font-size: 1em;
+    margin: 0px 0px 0px 20px;
+    line-height: 1.2em;
+}
+
+.card_status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #009b00;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 10px 5px 10px 5px;
+}
+
+.card_status h5 {
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    line-height: 1em;
+    color: white;
+}
 
 
     @media (max-width: 991px) {
@@ -96,11 +173,9 @@
         }
 
         .title_input {
-            justify-content: center;
             display: inline-block;
             font-size: 1.3em;
             margin-bottom: 15px;
-            text-align: center;
             margin-top: 1em;
             font-family: "Avenir_Medium", sans-serif;
         }
