@@ -114,6 +114,83 @@
     bottom: 30%;
 }
 
+.orders {
+	background-color: #009b00;
+	width: 100%;
+	height:100px;
+	position:absolute;
+	top: 50%;
+}
+.orders_text {
+	width:50%;
+	height: 100%;
+	color: #ffffff;
+	text-align: left;
+	padding:20px;
+}
+.orders_text h3 {
+	font-family: "Avenir_Medium", sans-serif;
+}
+.orders_text p {
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+}
+.order_history{
+	margin: 0 5 0 5;
+	height:100%;
+	font-family: "Avenir_Medium", sans-serif;
+}
+.order_box{
+	background-color: #ffffff;
+	height; 80%;
+	width; 25%;
+	border-radius: 10px;
+}
+.order_date{
+	
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom: 5px;
+	margin-right: 10px;
+}
+.order_date_day{
+	font-size: 1.5em;
+	color: #f26432;
+	text-align: center;
+}
+.order_date_month {
+	color: #646363;
+	font-size: 1.1em;
+	text-align: center;
+}
+.order_info {
+	margin-right: 10px;
+	padding-top: 15px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.order_info_number {
+	font-size:15px;
+	color: #646363;
+	text-align: left;
+}
+.order_info_quantity {
+	font-size:12px;
+	color: #646363;
+	text-align: left;
+}
+.order_btn {
+	height: 100%;
+	padding-top:33px;
+	padding-right:5px;
+}
+.order_btn img {
+	height:auto;
+	margin-right: 10px;
+
+}
+
     @media (max-width: 991px) {
 
        
