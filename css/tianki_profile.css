@@ -141,7 +141,16 @@
     line-height: 1.2em;
 }
 
-.card_status {
+#content_orderData h5:nth-last-child(1) {
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    line-height: 1em;
+    color: white;
+    text-align: center;
+}
+
+#OrderStatusDelivered {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,14 +158,40 @@
     border-radius: 15px;
     border: 1px solid rgba(0,0,0,.125);
     margin: 10px 5px 10px 5px;
+    font-family: "Avenir_Bold", sans-serif;
 }
 
-.card_status h5 {
+#OrderStatusStandBy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #009b00;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 10px 5px 10px 5px;
     font-family: "Avenir_Bold", sans-serif;
-    font-size: 1em;
-    margin: 0;
-    line-height: 1em;
-    color: white;
+}
+
+#OrderStatusCancelled {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #009b00;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 10px 5px 10px 5px;
+    font-family: "Avenir_Bold", sans-serif;
+}
+
+#OrderStatusReturned {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #009b00;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 10px 5px 10px 5px;
+    font-family: "Avenir_Bold", sans-serif;
 }
 
 
