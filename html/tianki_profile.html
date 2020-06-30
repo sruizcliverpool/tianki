@@ -21,6 +21,8 @@
 
     
     <div class="container">
+      <div class="element">elemento</div>
+
         <div class="row">
             <div class="col-lg-3 content_buttons">
     
@@ -33,6 +35,7 @@
 
                     <a class="nav-link" id="v-pills-pedidos-tab" data-toggle="pill" href="#v-pills-pedidos">Mis pedidos</a>
                   </div>
+
     
             </div>
             <div class="col-lg main_content">
@@ -118,7 +121,7 @@
                           
                         <form>
                           <div class="form-row">
-                            <div class="form-group col-6 col-lg-6">
+                            <div class="form-group col-7 col-lg-6">
                               <label for="inputFirstName">Nombre corto</label>
                               <input type="text" class="form-control"  placeholder="ej. Sucursal, Tienda, Almacén">
                             </div>
@@ -210,12 +213,12 @@
                     <!--MIS PEDIDOS-->
                     <div class="tab-pane fade" id="v-pills-pedidos" role="tabpanel" aria-labelledby="v-pills-pedidos-tab">
                       <div id="content_orderData">
-                            <div class="card_date col-3 col-lg-2">
+                            <div class="card_date col-2 col-lg-2">
                               <h5 id="DateOrder">10</h5>
                               <p id="MonthOrder">febrero</p>
                             </div>
                          
-                            <div class="card_data col-3 col-lg-5">
+                            <div class="card_data col col-lg-5">
                               <p>Pedido No. <span id="OrderNumber">54236562</span></p>
                               <p>Entrega a domicilio</p>
                               <p><span style="text-decoration: underline;">Ver pedido</span></p>
@@ -225,12 +228,12 @@
                             </div>
                       </div>
                       <div id="content_orderData">
-                            <div class="card_date col-3 col-lg-2">
+                            <div class="card_date col-2 col-lg-2">
                               <h5 id="DateOrder">20</h5>
                               <p id="MonthOrder">marzo</p>
                             </div>
                          
-                            <div class="card_data col-3 col-lg-5">
+                            <div class="card_data col col-lg-5">
                               <p>Pedido No. <span id="OrderNumber">132425432</span></p>
                               <p>Entrega a domicilio</p>
                               <p><span style="text-decoration: underline;">Ver pedido</span></p>
@@ -240,12 +243,12 @@
                             </div>
                       </div>
                       <div id="content_orderData">
-                          <div class="card_date col-3 col-lg-2">
+                          <div class="card_date col-2 col-lg-2">
                             <h5 id="DateOrder">01</h5>
                             <p id="MonthOrder">agosto</p>
                           </div>
                       
-                          <div class="card_data col-3 col-lg-5">
+                          <div class="card_data col col-lg-5">
                             <p>Pedido No. <span id="OrderNumber">23452345</span></p>
                             <p>Entrega a domicilio</p>
                             <p><span style="text-decoration: underline;">Ver pedido</span></p>
@@ -255,12 +258,12 @@
                           </div>
                       </div>
                       <div id="content_orderData">
-                          <div class="card_date col-3 col-lg-2">
+                          <div class="card_date col-2 col-lg-2">
                             <h5 id="DateOrder">23</h5>
                             <p id="MonthOrder">noviembre</p>
                           </div>
 
-                          <div class="card_data col-3 col-lg-5">
+                          <div class="card_data col col-lg-5">
                             <p>Pedido No. <span id="OrderNumber">65434334</span></p>
                             <p>Entrega a domicilio</p>
                             <p><span style="text-decoration: underline;">Ver pedido</span></p>
@@ -270,9 +273,6 @@
                           </div>
                         </div>
                     </div>
-    
-    
-    
                 </div>
             </div>
         </div>
@@ -280,7 +280,28 @@
     
     
     
+<script>
+  function Scroll () {
+  var element = document.querySelector(".element");
+  var ypos = window.pageYOffset;
 
+      if (ypos > 70) {
+        element.classList.add("show-element");
+        if (ypos > 40) {
+          footer.classList.add("show-element");
+        }
+        else {
+          footer.classList.remove("show-element");
+        }
+      }
+      else {
+        element.classList.remove("show-element");
+      }
+  }
+
+window.addEventListener("scroll", Scroll);
+
+</script>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

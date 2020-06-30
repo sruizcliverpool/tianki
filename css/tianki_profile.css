@@ -156,7 +156,7 @@
     justify-content: center;
     background-color: #009b00;
     border-radius: 15px;
-    border: 1px solid rgba(0,0,0,.125);
+    padding: 0;
     margin: 10px 5px 10px 5px;
     font-family: "Avenir_Bold", sans-serif;
 }
@@ -165,9 +165,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #009b00;
+    background-color: #ffa500;
     border-radius: 15px;
-    border: 1px solid rgba(0,0,0,.125);
+    padding: 0;
     margin: 10px 5px 10px 5px;
     font-family: "Avenir_Bold", sans-serif;
 }
@@ -176,9 +176,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #009b00;
+    background-color: #e43f0d;
     border-radius: 15px;
-    border: 1px solid rgba(0,0,0,.125);
+    padding: 0;
     margin: 10px 5px 10px 5px;
     font-family: "Avenir_Bold", sans-serif;
 }
@@ -187,12 +187,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #009b00;
+    background-color: #29160d;
     border-radius: 15px;
-    border: 1px solid rgba(0,0,0,.125);
+    padding: 0;
     margin: 10px 5px 10px 5px;
     font-family: "Avenir_Bold", sans-serif;
 }
+
+
+.element {
+    top: 0px;
+    background-color: red;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    transition: 100ms ease-in;
+  }
+
+
+  .show-element {
+
+    top: 0px;
+    background-color: coral;
+    position: fixed;
+    width: 100%;
+  }
+
+ 
 
 
     @media (max-width: 991px) {
