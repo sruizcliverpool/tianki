@@ -14,8 +14,11 @@
     font-family: Avenir_UltraLight;
     src: url('../fonts/AvenirNext_UltraLight.ttf');
         }
-
 main {
+	position:relative;
+	width:100%
+}
+.main {
 	background-color: #ffffff;
 	width:100%;
 }
@@ -27,6 +30,12 @@ main {
 	z-index: 1;
 	width: 100%;
 	margin:0;
+}
+header-scrolled{
+	background-color: #939191;
+	transition-delay: 100ms;
+	transition-property: all;
+	transition: ease;
 }
 #header_logo {
 	height:100%;
@@ -91,8 +100,7 @@ main {
 .main_section {
 	background-color: aqua;
     padding: 0px!important;
-    position: absolute;
-    top: 70px;
+    position: relative;
 }
 .main_section_img{
 	margin: 0 auto;
@@ -105,14 +113,14 @@ main {
 	width:100%;
 }
 .main_section_copy {
-	z-index: 1;
+	z-index: 0;
     position: absolute;
     text-align: center;
     right: auto;
 }
 
 .main_section_btn {
-	z-index: 1;
+	z-index: 0;
     position: absolute;
     text-align: center;
     right: auto;
@@ -123,15 +131,15 @@ main {
 	background-color: #009b00;
 	width: 100%;
 	height:100px;
-	position:absolute;
-	top: 50%;
+	position:relative;
 }
 .orders_text {
 	width:50%;
 	height: 100%;
 	color: #ffffff;
 	text-align: left;
-	padding:20px;
+	padding-top: 20px;
+    padding-bottom: 20px;
 	margin-top: 20px;
 }
 .orders_text h3 {
@@ -199,6 +207,45 @@ main {
 	height:auto;
 	margin-right: 10px;
 
+}
+.steps_title, .category_title {
+	font-family: "Avenir_Medium", sans-serif;
+	width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    font-size: 1.6em;
+	letter-spacing: 1px;
+}
+.steps {
+	margin-top: 20px;
+	position:relative;
+	height: 250px;
+}
+
+.steps_info{
+	width: 360px;
+	margin:10px;
+	font-family: "Avenir_Medium", sans-serif;
+	margin: 0 20px;
+	text-align: center;
+}
+.steps_info img {
+	align-content: center;
+	padding: 10px;
+	height: 48%;
+}
+.steps_info h3 {
+	font-size: 1.5em;
+	color: #e86439;
+}
+.steps_info p {
+	font-size: 1.2em;
+	color: #363636;
+}
+
+.category {
+	
 }
 
     @media (max-width: 991px) {
