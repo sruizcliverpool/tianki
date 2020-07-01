@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Avenir_Bold;
+    src: url('../fonts/AvenirNext_Bold.ttf');
+        }
+@font-face {
+    font-family: Avenir_Medium;
+    src: url('../fonts/AvenirNext_Medium.ttf');
+        }
+@font-face {
+    font-family: Avenir_Regular;
+    src: url('../fonts/AvenirNext_Regular.ttf');
+    }
+@font-face {
+    font-family: Avenir_UltraLight;
+    src: url('../fonts/AvenirNext_UltraLight.ttf');
+        }
+main {
+	position:relative;
+	width:100%
+}
+.main {
+	background-color: #ffffff;
+	width:100%;
+}
+.header{
+	display: flex;
+	background-color: #ffa501;
+	height: 70px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	color: #ffffff;
+	margin:0;
+	transition: 100ms ease-in-out;
+}
+.header-scrolled {
+	display: flex;
+	background-color: white;
+	position: fixed;
+	height: 70px;
+	top: 0;
+	z-index: 1;
+	box-shadow: 0px 2px 3px #33333337;
+}
+.p-scrolled {
+	color: #333333;
+}
+.p-scrolled2 {
+	color: #333333;
+}
+.searchbox-scrolled {
+	box-shadow: 0px 2px 3px #33333337;
+}
+[type=search] {
+	width: 100%;
+    outline-offset: -2px;
+    -webkit-appearance: none;
+}
+
+.header_logo {
+	height:100%;
+}
+.header_logo img {
+	height:90%;
+}
+.header_search {
+	height: 100%;
+}
+.header_icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.header_profile {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.header_profile img {
+	height: 75%;
+	padding-top:20px;
+}
+.header_profile p{
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+	margin-top: 20%;
+}
+.header_cart {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.cart_left img{
+	height: 85%;
+    padding-top: 12px;
+    width: 44px;
+}
+.header_cart p{
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+	margin-top: 20%;
+	padding:5px;
+}
+
+.searchbox {
+	padding: 8px 16px;
+	background-color: #ffffff;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.searchbox-scroll {
+	background-color: orange;
+}
+
+[type=search] {
+	border: 0;
+	background-color: white;
+}
+
+
+.main_section {
+	background-color: aqua;
+    padding: 0px!important;
+    position: relative;
+}
+.main_section_img{
+	margin-top: 70px;
+    display: block;
+	padding:0;
+	width: 100%;
+	
+}
+
+.main_section_img img{
+	width:100%;
+}
+.main_section_copy {
+	z-index: 0;
+    position: absolute;
+    text-align: center;
+    right: auto;
+}
+
+.main_section_btn {
+	z-index: 0;
+    position: absolute;
+    text-align: center;
+    right: auto;
+    bottom: 30%;
+}
+
+.orders {
+	background-color: #009b00;
+	width: 100%;
+	height:100px;
+	position:relative;
+}
+.orders_text {
+	width:50%;
+	height: 100%;
+	color: #ffffff;
+	text-align: left;
+	padding-top: 20px;
+    padding-bottom: 20px;
+	margin-top: 20px;
+}
+.orders_text h3 {
+	font-family: "Avenir_Medium", sans-serif;
+	line-height: 10px;
+}
+.orders_text p {
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+}
+.order_history{
+	margin: 0 5 0 5;
+	height:100%;
+	font-family: "Avenir_Medium", sans-serif;
+}
+.order_box{
+	background-color: #ffffff;
+	height: 80%;
+	width: 25%;
+	border-radius: 10px;
+}
+.order_date{
+	
+	padding-top:5px;
+	padding-left:10px;
+	padding-bottom: 5px;
+	margin-right: 10px;
+}
+.order_date_day{
+	font-size: 1.5em;
+	color: #f26432;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 2px;
+	line-height:7px;
+}
+.order_date_month {
+	color: #646363;
+	font-size: 1.1em;
+	text-align: center;
+}
+.order_info {
+	margin-right: 10px;
+	padding-top: 15px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.order_info_number {
+	font-size:15px;
+	color: #646363;
+	text-align: left;
+}
+.order_info_quantity {
+	font-size:12px;
+	color: #646363;
+	text-align: left;
+}
+.order_btn {
+	height: 100%;
+	padding-top:33px;
+	padding-right:5px;
+}
+.order_btn img {
+	height:auto;
+	margin-right: 10px;
+
+}
+.steps_title, .category_title {
+	font-family: "Avenir_Medium", sans-serif;
+	width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    font-size: 1.6em;
+	letter-spacing: 1px;
+}
+.steps {
+	margin-top: 20px;
+	position:relative;
+	height: 250px;
+}
+
+.steps_info{
+	width: 360px;
+	margin:10px;
+	font-family: "Avenir_Medium", sans-serif;
+	margin: 0 20px;
+	text-align: center;
+}
+.steps_info img {
+	align-content: center;
+	padding: 10px;
+	height: 48%;
+}
+.steps_info h3 {
+	font-size: 1.5em;
+	color: #e86439;
+}
+.steps_info p {
+	font-size: 1.2em;
+	color: #363636;
+}
+
+.category {
+	
+}
+
+    @media (max-width: 991px) {
+
+       
+    }

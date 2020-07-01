@@ -21,8 +21,6 @@
 
     
     <div class="container">
-      <div class="element">elemento</div>
-
         <div class="row">
             <div class="col-lg-3 content_buttons">
     
@@ -35,7 +33,6 @@
 
                     <a class="nav-link" id="v-pills-pedidos-tab" data-toggle="pill" href="#v-pills-pedidos">Mis pedidos</a>
                   </div>
-
     
             </div>
             <div class="col-lg main_content">
@@ -215,7 +212,7 @@
                       <div id="content_orderData">
                             <div class="card_date col-2 col-lg-2">
                               <h5 id="DateOrder">10</h5>
-                              <p id="MonthOrder">febrero</p>
+                              <p id="MonthOrder">FEB</p>
                             </div>
                          
                             <div class="card_data col col-lg-5">
@@ -230,7 +227,7 @@
                       <div id="content_orderData">
                             <div class="card_date col-2 col-lg-2">
                               <h5 id="DateOrder">20</h5>
-                              <p id="MonthOrder">marzo</p>
+                              <p id="MonthOrder">MAR</p>
                             </div>
                          
                             <div class="card_data col col-lg-5">
@@ -245,7 +242,7 @@
                       <div id="content_orderData">
                           <div class="card_date col-2 col-lg-2">
                             <h5 id="DateOrder">01</h5>
-                            <p id="MonthOrder">agosto</p>
+                            <p id="MonthOrder">AGO</p>
                           </div>
                       
                           <div class="card_data col col-lg-5">
@@ -254,13 +251,13 @@
                             <p><span style="text-decoration: underline;">Ver pedido</span></p>
                           </div>
                           <div id="OrderStatusCancelled" class="col-3 col-lg-2">
-                            <h5>CANCELADO</h5>
+                            <h5>DEVUELTO</h5>
                           </div>
                       </div>
                       <div id="content_orderData">
                           <div class="card_date col-2 col-lg-2">
                             <h5 id="DateOrder">23</h5>
-                            <p id="MonthOrder">noviembre</p>
+                            <p id="MonthOrder">NOV</p>
                           </div>
 
                           <div class="card_data col col-lg-5">
@@ -269,10 +266,13 @@
                             <p><span style="text-decoration: underline;">Ver pedido</span></p>
                           </div>
                           <div id="OrderStatusReturned" class="col-3 col-lg-2">
-                            <h5>DEVUELTO</h5>
+                            <h5>CANCELADO</h5>
                           </div>
                         </div>
                     </div>
+    
+    
+    
                 </div>
             </div>
         </div>
@@ -280,28 +280,7 @@
     
     
     
-<script>
-  function Scroll () {
-  var element = document.querySelector(".element");
-  var ypos = window.pageYOffset;
 
-      if (ypos > 70) {
-        element.classList.add("show-element");
-        if (ypos > 40) {
-          footer.classList.add("show-element");
-        }
-        else {
-          footer.classList.remove("show-element");
-        }
-      }
-      else {
-        element.classList.remove("show-element");
-      }
-  }
-
-window.addEventListener("scroll", Scroll);
-
-</script>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
