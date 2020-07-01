@@ -16,12 +16,9 @@
         }
 main {
 	position:relative;
-	width:100%
-}
-.main {
-	background-color: #ffffff;
 	width:100%;
 }
+
 .header{
 	display: flex;
 	background-color: #ffa501;
@@ -42,8 +39,7 @@ header-scrolled{
 	justify-content: center;
 }
 .header_logo img {
-	width: 150px;
-	height:110px;
+	width: 100px;
 	
 }
 .header_search {
@@ -134,13 +130,10 @@ header-scrolled{
 
 .orders {
 	background-color: #009b00;
-	width: 100%;
-	height:100px;
-	position:relative;
+	display:flex;
+	justify-content: center;
 }
 .orders_text {
-	width:50%;
-	height: 100%;
 	color: #ffffff;
 	text-align: left;
 	padding-top: 20px;
@@ -155,21 +148,27 @@ header-scrolled{
 	font-family: "Avenir_Medium", sans-serif;
 	font-size: 1.1em;
 }
-.order_history{
-	margin: 0 5 0 5;
-	height:100%;
+.order_history_box {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.order_history, .order_history2, .order_history3 {
 	font-family: "Avenir_Medium", sans-serif;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+    margin-right: 10px;
 }
 .order_box{
 	background-color: #ffffff;
-	height: 80%;
-	width: 100%;
 	border-radius: 10px;
-}
+	display:flex;
+} 
 .order_date{
 	
 	padding-top:5px;
-	padding-left:10px;
+	padding-left:5px;
 	padding-bottom: 5px;
 	margin-right: 10px;
 }
@@ -187,14 +186,15 @@ header-scrolled{
 	text-align: center;
 }
 .order_info {
-	margin-right: 10px;
+	    width: 105px;
+	margin-right: 5px;
 	padding-top: 15px;
 	padding-bottom:5px;
 	padding-left:5px;
 	padding-right:5px;
 }
 .order_info_number {
-	font-size:15px;
+	font-size:.8em;
 	color: #646363;
 	text-align: left;
 }
@@ -230,7 +230,6 @@ header-scrolled{
 
 .steps_info{
 	width: 360px;
-	margin:10px;
 	font-family: "Avenir_Medium", sans-serif;
 	margin: 0 20px;
 	text-align: center;
@@ -287,7 +286,65 @@ header-scrolled{
 
 
 @media (max-width: 991px) {
-.header {
-	padding_bottom:10px;
+	.header_search {
+		background-color:#ffa500;
 	}
-    }
+	
+	.main {
+		position: relative;
+    	top: 140px;
+	}
+	.main_section_copy {
+		text-align: center;
+    padding: 20px;
+    right: auto;
+    top: 185px;
+		color:#ffffff;
+	}
+	.main_section_btn {
+		bottom: 50%;
+	}
+	.steps_info h3 {
+    font-size: 16px;
+	}
+	.steps_info p {
+    font-size: 12px;
+	}
+	.steps_info img {
+    margin-bottom: 10px;
+	height: 40%;
+	}
+	.steps_info {
+	    margin: 0 13px;
+	}
+	.steps_title, .category_title {
+    margin: 20px 0px;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 1.2em;
+	}	
+	.orders{
+		flex-wrap: wrap;
+	}
+	.orders_text {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+	}
+	
+	.orders_text h3 {
+		font-size:20px;
+	}
+	
+	.orders_text p {
+		font-size:12px;
+	}
+	.order_history3 {
+		display:none;
+	}
+	.order_history, .order_history2 {
+		margin-right: 12px;
+    	margin-bottom: 20px;
+	}
+	

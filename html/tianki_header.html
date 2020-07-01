@@ -46,7 +46,7 @@
 		</div>
 	</div> 
 </div>
-	<section class="main">
+	
 	<!--main banner-->
 <section class="main_section d-flex container-fluid align-items-center justify-content-center">
 	
@@ -57,21 +57,26 @@
 			<button type="submit" class="btn btn-success btn-md">Conócenos</button>
 		</div>
 		<div class="main_section_img">
-			<img src="../img/img_principal.jpg" alt="Tu super en línea">
+			<picture>
+				<source class="main_section_img" media="(max-width: 991px)" data-srcset="../img/img_principal_m.jpg" srcset="../img/img_principal_m.jpg">
+				<img src="../img/img_principal.jpg" alt="Tu super en línea">
+			</picture>
+			
 		</div>
 	
 </section>
 	<!--orders-->
-<section class="orders d-flex container-fluid align-items-center justify-content-center">
-	<div class="orders_text">
+<section class="orders container-fluid">
+	<div class="col-lg-6 col orders_text ">
 		<h3>Repite tu último pedido</h3>
 		<p>Agrega los productos de tu pedido anterior y modifícalo con un solo click.</p>
 	</div>
-	<div class="order_history order_history d-flex align-items-center justify-content">
-			<div class="order_box d-flex">
+	<div class="col-lg-6 col order_history_box">
+	<div class="order_history">
+			<div class="order_box">
 				<div class="order_date">
 					<div class="order_date_day"><strong>00</strong></div>
-					<div class="order_date_month"><strong>MAY</strong></div>
+					<div class="order_date_month"><strong>MAR</strong></div>
 				</div>
 				<div class="order_info d-flex align-items-start flex-column">
 					<div class="order_info_number">Pedido 123456</div>
@@ -82,11 +87,11 @@
 				</div>
 			</div>
 	</div>
-	<div class="order_history order_history d-flex align-items-center justify-content">
-			<div class="order_box d-flex">
+	<div class="order_history2">
+			<div class="order_box">
 				<div class="order_date">
 					<div class="order_date_day"><strong>00</strong></div>
-					<div class="order_date_month"><strong>MAY</strong></div>
+					<div class="order_date_month"><strong>MAR</strong></div>
 				</div>
 				<div class="order_info d-flex align-items-start flex-column">
 					<div class="order_info_number">Pedido 123456</div>
@@ -97,11 +102,11 @@
 				</div>
 			</div>
 	</div>
-	<div class="order_history order_history d-flex align-items-center justify-content">
-			<div class="order_box d-flex">
+	<div class="order_history3">
+			<div class="order_box">
 				<div class="order_date">
 					<div class="order_date_day"><strong>00</strong></div>
-					<div class="order_date_month"><strong>MAY</strong></div>
+					<div class="order_date_month"><strong>MAR</strong></div>
 				</div>
 				<div class="order_info d-flex align-items-start flex-column">
 					<div class="order_info_number">Pedido 123456</div>
@@ -112,6 +117,9 @@
 				</div>
 			</div>
 	</div>
+	</div>
+	
+	
 </section>
 	<!--steps-->
 <section class="steps_title">
@@ -158,7 +166,6 @@
 </div>
 
 	
-  </section>
 <!--termina main-->
 	</main>
 </body>
