@@ -38,12 +38,12 @@ header-scrolled{
 	transition: ease;
 }
 .header_logo {
-	height:100%;
 	display: flex;
 	justify-content: center;
 }
 .header_logo img {
-	height:90%;
+	width: 150px;
+	height:110px;
 	
 }
 .header_search {
@@ -62,7 +62,7 @@ header-scrolled{
 	justify-content: center;
 }
 .header_profile img {
-	height: 75%;
+	width: 35px;
 	padding-top:20px;
 }
 .header_profile p{
@@ -78,9 +78,8 @@ header-scrolled{
 	justify-content: center;
 }
 .cart_left img{
-	height: 85%;
     padding-top: 12px;
-    width: 44px;
+    width: 48px;
 }
 .header_cart p{
 	font-family: "Avenir_Medium", sans-serif;
@@ -287,7 +286,8 @@ header-scrolled{
     
 
 
-    @media (max-width: 991px) {
-
-       
+@media (max-width: 991px) {
+.header {
+	padding_bottom:10px;
+	}
     }
