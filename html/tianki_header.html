@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="../css/tianki_footer.css">
 	<link rel="stylesheet" href="../css/tianki_header.css">
 	<link rel="stylesheet" href="../css/reset.css">
-<!--<script type="text/javascript" src="css/milan.js"></script>-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="shortcut icon" href="xxx" type="image/x-icon">
 <link rel="icon" href="xxx" type="image/x-icon">
@@ -147,26 +146,57 @@
 		Trabajamos directamente con el campo para ofrecerte el mejor precio.
 </section>
 
-<div class="category d-flex">
-	  <div class="item d-flex flex-column">
-		  <img src="../img/cat/cat_fru.jpg"><p>FRUTAS</p>
-	  </div>
-	  <div class="item d-flex flex-column">
-		  <img src="../img/cat/cat_veg.jpg"><p>VERDURAS</p>
-	  </div>
-	  <div class="item d-flex flex-column">
-		  <img src="../img/cat/cat_lac.jpg"><p>LÁCTEOS</p>
-	  </div>
-	  <div class="item d-flex flex-column">
-		  <img src="../img/cat/cat_gra.jpg"><p>GRANEL</p>
-	  </div>
-		<div class="item d-flex flex-column">
-		  <img src="../img/cat/cat_gra.jpg"><p>ABARROTES</p>
-	  </div>
-</div>
 
+<!--ejercicio slider
+-->	
+<div id="sliderBX-contenedor">
+    <div id="btnSliderNext">
+		<svg style="margin-top: 3px;" width="24" height="24" viewBox="0 0 24 24">
+  		<path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+		</svg>
+	</div>
+    <div id="btnSliderPrev">
+	<svg style="margin-top: 3px;" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+	</svg>
+	</div>
+    <div id="sliderBX">
+        <div class="sliderBXcell">
+            <p>FRUTAS</p>
+			<picture>
+    		<img src="../img/cat/cat_fru.jpg"> 
+       		</picture>
+        </div>
+        <div class="sliderBXcell">
+            <p>VERDURAS</p>
+			<picture>
+    		<img src="../img/cat/cat_veg.jpg"> 
+       		</picture>
+        </div>
+        <div class="sliderBXcell">
+            <p>LÁCTEOS</p>
+			<picture>
+    		<img src="../img/cat/cat_lac.jpg"> 
+       		</picture>
+        </div>
+        <div class="sliderBXcell">
+            <p>GRANEL</p>
+			<picture>
+    		<img src="../img/cat/cat_gra.jpg"> 
+       		</picture>
+        </div>
+        <div class="sliderBXcell">
+            <p>ABARROTES</p>
+			<picture>
+    		<img src="../img/cat/cat_aba.jpg"> 
+       		</picture>
+        </div>
+    </div>
+</div>
 	
 <!--termina main-->
 	</main>
+	
+<script src="../javascript/home_javascript.js"></script>
 </body>
 </html>
