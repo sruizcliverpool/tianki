@@ -48,13 +48,35 @@ main {
 .p-scrolled2 {
 	color: #333333;
 }
+
+
+.searchbox {
+	padding: 8px 16px;
+	background-color: #ffffff;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+
 .searchbox-scrolled {
 	box-shadow: 0px 2px 3px #33333337;
+	background-color: orange;
 }
+
 [type=search] {
 	width: 100%;
+	background: none;
     outline-offset: -2px;
-    -webkit-appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+}
+
+input[type=search]:focus {
+	border-bottom: 1px solid white;
+	outline: none;
 }
 
 .header_logo {
@@ -102,25 +124,6 @@ main {
 	font-size: 1.1em;
 	margin-top: 20%;
 	padding:5px;
-}
-
-.searchbox {
-	padding: 8px 16px;
-	background-color: #ffffff;
-	margin-top: 10px;
-	border-radius: 10px;
-	border: 0;
-	display: flex;
-	justify-content: space-between;
-}
-
-.searchbox-scroll {
-	background-color: orange;
-}
-
-[type=search] {
-	border: 0;
-	background-color: white;
 }
 
 

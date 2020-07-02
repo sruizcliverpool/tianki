@@ -44,6 +44,10 @@
     color: #ff6119;
 }
 
+.product_img, .product_img img {
+    width: 100%;
+}
+
 
 
 @media (max-width: 991px) {
