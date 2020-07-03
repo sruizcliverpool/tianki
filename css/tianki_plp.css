@@ -19,23 +19,36 @@
 
 .plp_box {
     width: 250px;
-    height: 350px;
+    height: 400px;
     box-shadow: 0px 3px 5px #3333331b;
     border-radius: 8px;
     border-top: 6px solid red;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px 10px;
 }
 
 #product_title {
-    font-family: "Avenir_Medium", sans-serif;
+    font-family: "Avenir_Bold", sans-serif;
     font-size: 1.4em;
     text-align: center;
 }
 
-#type_title {
+.plp_data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 0px 0px 5px 0px;
+}
+
+#type_title p {
     font-family: "Avenir_UltraLight", sans-serif;
-	font-size: 1em;
+    font-size: 0.9em;
+    margin-bottom: 0.3em;
+    text-align: left;
 }
 
 #price_title {
@@ -48,6 +61,93 @@
     width: 100%;
 }
 
+.control_plp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.plp_counter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 65%;
+    margin: 10px 0px 5px 0px;
+}
+
+.plp_counter_input {
+    width: 110px;
+    height: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #cbcbcb;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+
+    left: 35px;
+    margin-top: 7px;
+}
+
+.plp_counter p {
+    font-family: "Avenir_UltraLight", sans-serif;
+    font-size: .8em;
+    margin: 0;
+}
+
+.plp_counter_input h6 {
+    font-family: "Avenir_Medium", sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 0em;
+}
+
+.plp_counter_icons_minus {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+
+}
+
+.plp_counter_icons_plus {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.plp_counter_icons img {
+    width: 40px;
+}
+
+.plp_add_btn {
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 5px #3333331b;
+    display: flex;
+    left: 10px;
+    top: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.plp_add_btn img {
+    width: 45px;
+}
+
+.plp_notes {
+    margin: 20px 0px 10px 0px;
+}
+
+.plp_notes input {
+    border-style: 1px solid #b7b7b7;
+    font-family: "Avenir_UltraLight", sans-serif;
+    font-size: .8em;
+    width: 100%;
+    height: 70px;
+}
 
 
 @media (max-width: 991px) {

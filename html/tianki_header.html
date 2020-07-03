@@ -6,32 +6,33 @@
 	<link rel="stylesheet" href="../css/tianki_header.css">
 	<link rel="stylesheet" href="../css/reset.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="shortcut icon" href="xxx" type="image/x-icon">
-<link rel="icon" href="xxx" type="image/x-icon">
+
+<link rel="shortcut icon" href="../img/icon/tianki_icon.ico" type="image/x-icon">
+<link rel="icon" href="../img/icon/tianki_icon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 	<main>
 	<!--header-nav-->
-<div class="container-fluid">
+<section class="container-fluid">
 	<div class="row header">
 		<div class="col-lg-2 order-lg-1 col-4 order-1 header_logo">
-			<img src="../img/logo/logotipo_tianki.png" a href="#">
+			<div><img src="../img/logo/logotipo_tianki.png" a href="#"></div>
 		</div>
-		<div class="col-lg-6 order-lg-2 col order-3 header_search">
-			<div class="searchbox d-flex justify-content-between">
-				<input type="search" name="q" id="search">
-				<img src="../img/icon/search_green.svg" alt="" style="height: 30px;width: 30px;">
+		<div class="col-lg-5 order-lg-2 col order-3 header_search">
+			<div class="searchbox">
+				<input type="search" name="q" class="placeholder" placeholder="¿Qué estás buscando?">
+				<img src="../img/icon/search_green.svg" alt="">
 			</div>
 		</div>
-		<div class="col-lg-4 order-lg-3 col-8 order-2 header_icons">
+		<div class="col-lg-5 order-lg-3 col-8 order-2 header_icons">
 			<div class="header_profile">
 				<div class="profile_left">
 					<img src="../img/icon/profile_green.png">
 				</div>
 				<div class="profile_right">
-					<p>Iniciar sesión</p>
+					<p class="p-scroll">Iniciar sesión</p>
 				</div>
 			</div>
 			<div class="header_cart">
@@ -39,34 +40,37 @@
 					<img src="../img/icon/cart_green.png">
 				</div>
 				<div class="cart_right">
-					<p>Mi carrito</p>
+					<p class="p-scroll2">Mi carrito</p>
 				</div>
 			</div>
 		</div>
 	</div> 
-</div>
+</section>
 	
 	<!--main banner-->
 <section class="main_section d-flex container-fluid align-items-center justify-content-center">
 	
 		<div class="main_section_copy">
-			<h2>Frescura desde el campo hasta tu negocio.</h2>
+			<h3>Frescura desde el campo hasta tu negocio.</h3>
+			<div class="main_section_btn">
+				<button type="submit" class="btn btn-success btn-md">Conócenos</button>
+			</div>
 		</div>
-		<div class="main_section_btn">
-			<button type="submit" class="btn btn-success btn-md">Conócenos</button>
-		</div>
+		
 		<div class="main_section_img">
 			<picture>
-				<source class="main_section_img" media="(max-width: 991px)" data-srcset="../img/img_principal_m.jpg" srcset="../img/img_principal_m.jpg">
+				<source media="(max-width: 991px)" data-srcset="../img/img_principal_m.jpg" srcset="../img/img_principal_m.jpg">
 				<img src="../img/img_principal.jpg" alt="Tu super en línea">
 			</picture>
 			
 		</div>
-	
+
 </section>
+
 	<!--orders-->
 <section class="orders container-fluid">
-	<div class="col-lg-6 col orders_text ">
+
+	<div class="col-lg-6 col orders_text">
 		<h3>Repite tu último pedido</h3>
 		<p>Agrega los productos de tu pedido anterior y modifícalo con un solo click.</p>
 	</div>
@@ -74,8 +78,8 @@
 	<div class="order_history">
 			<div class="order_box">
 				<div class="order_date">
-					<div class="order_date_day"><strong>00</strong></div>
-					<div class="order_date_month"><strong>MAR</strong></div>
+					<div class="order_date_day">00</div>
+					<div class="order_date_month">MAR</div>
 				</div>
 				<div class="order_info d-flex align-items-start flex-column">
 					<div class="order_info_number">Pedido 123456</div>
@@ -89,8 +93,8 @@
 	<div class="order_history2">
 			<div class="order_box">
 				<div class="order_date">
-					<div class="order_date_day"><strong>00</strong></div>
-					<div class="order_date_month"><strong>MAR</strong></div>
+					<div class="order_date_day">00</div>
+					<div class="order_date_month">	MAR</div>
 				</div>
 				<div class="order_info d-flex align-items-start flex-column">
 					<div class="order_info_number">Pedido 123456</div>
@@ -118,28 +122,35 @@
 	</div>
 	</div>
 	
+</section>
 	
-</section>
+
+
+
 	<!--steps-->
-<section class="steps_title">
-		¿Cómo funciona?
-</section>
-<section class="steps d-flex container-fluid justify-content-center">
-	 	<div class="steps_info d-flex align-items-center flex-column">
-		<img src="../img/icon/steps/step1_cart.png">
-		<h3>Agrega tu pedido</h3>
-		<p>Selecciona tus productos</p>
-		</div>
-		<div class="steps_info d-flex align-items-center flex-column">
-		<img src="../img/icon/steps/step2_list.png">
-		<h3>Programa la entrega</h3>
-		<p>Revisa tu pedido y programa la entrega</p>
-		</div>
-		<div class="steps_info d-flex align-items-center flex-column">
-		<img src="../img/icon/steps/step3_deliver.png">
-		<h3>Recibe tu pedido</h3>
-		<p>Recibe tus productos en la fecha y hora indicada</p>
-		</div>		
+<section class="container">
+	<section class="steps_title">
+		<h3>¿Cómo funciona?</h3>
+			<div class="row steps">
+				<div class="steps_info col-lg-4 col-4">
+					<img src="../img/icon/steps/step1_cart.png">
+					<h5>Agrega tu pedido</h5>
+					<p>Selecciona tus productos</p>
+				</div>
+				<div class="steps_info col-lg-4 col-4">
+					<img src="../img/icon/steps/step2_list.png">
+					<h5>Programa la entrega</h5>
+					<p>Revisa tu pedido y programa la entrega</p>
+				</div>
+
+				<div class="steps_info col-lg-4 col-4">
+					<img src="../img/icon/steps/step3_deliver.png">
+					<h5>Recibe tu pedido</h5>
+					<p>Recibe tus productos en la fecha y hora indicada</p>
+				</div>	
+			</div>
+
+	</section>
 </section>
 
 <section class="category_title">
@@ -197,6 +208,7 @@
 <!--termina main-->
 	</main>
 	
-<script src="../javascript/home_javascript.js"></script>
+<script src="../js/home_javascript.js"></script>
+<script src="../js/scroll_javascript.js"></script>
 </body>
 </html>

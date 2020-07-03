@@ -27,86 +27,136 @@ main {
 
 .header{
 	display: flex;
+	flex-direction: column;
 	background-color: #ffa501;
-	height: 70px;
+	height: 60px;
 	position: fixed;
 	z-index: 1;
 	width: 100%;
+	color: #ffffff;
 	margin:0;
+	transition: 100ms ease-in-out;
 }
+.header-scrolled {
+	display: flex;
+	background-color: white;
+	position: fixed;
+	height: 60px;
+	top: 0;
+	z-index: 1;
+	box-shadow: 0px 2px 3px #33333337;
+}
+.p-scrolled {
+	color: #333333;
+}
+.p-scrolled2 {
+	color: #333333;
+}
+.searchbox {
+	padding: 0px 16px;
+	background-color: #ffffff;
+	margin-top: 10px;
+	border-radius: 10px;
+	height: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.searchbox img {
+
+	width: 35px;
+}
+
+.placeholder::placeholder {
+	color: #a5a5a5;
+	font-family: "Avenir_UltraLight", sans-serif;
+}
+
+.placeholder-scrolled::placeholder {
+	color: white;
+	font-family: "Avenir_UltraLight", sans-serif;
+}
+
+.searchbox-scrolled {
+	box-shadow: 0px 2px 3px #33333337;
+	background-color: orange;
+}
+
+[type=search] {
+	width: 100%;
+	background: none;
+    outline-offset: -2px;
+	-webkit-appearance: none;
+	border: 0;
+}
+
+input[type=search]:focus {
+	outline: none;
+}
+
+
 
 .header_logo {
 	display: flex;
 	justify-content: center;
 }
 .header_logo img {
-	width: 100px;
+	width: 85px;
 	
 }
 .header_search {
-	height: 100%;
+	height: 60px;
 }
 .header_icons {
 	height:100%;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
 	
 }
 .header_profile {
 	width: 50%;
-	height:100%;
-	display: flex;
-	justify-content: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header_profile img {
 	width: 35px;
-	padding-top:20px;
+	margin-right: 10px;
+
 }
 .header_profile p{
 	font-family: "Avenir_Medium", sans-serif;
 	font-size: 1.1em;
-	color: #ffffff;
 	margin-top: 20%;
 }
 .header_cart {
 	width: 50%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cart_left img{
-    padding-top: 12px;
-    width: 48px;
+	width: 48px;
+	margin-right: 10px;
 }
 .header_cart p{
 	font-family: "Avenir_Medium", sans-serif;
 	font-size: 1.1em;
-	color: #ffffff;
 	margin-top: 20%;
 	padding:5px;
 }
 
-
-.searchbox {
-	padding: 8px 16px;
-	background-color: #ffffff;
-	margin-top: 10px;
-	border-radius: 10px;
-}
-
-.searchbox #search{
-	width:100%;
-	border: 1px solid #ffffff;
-	outline:none;
-} 
-
 .main_section {
 	background-color: aqua;
     padding: 0px!important;
-    position: relative;
+
+	display: flex;
+	flex-direction: column;
 }
 .main_section_img{
-	margin: 0 auto;
+	margin-top: 60px;
     display: block;
 	padding:0;
 	width: 100%;
@@ -119,36 +169,35 @@ main {
 	z-index: 0;
     position: absolute;
     text-align: center;
-    right: auto;
+
+	top: 17%;
 }
 
 .main_section_btn {
-	z-index: 0;
-    position: absolute;
-    text-align: center;
-    right: auto;
-    bottom: 30%;
+	margin: 30px 0px 30px 0px;
 }
 
 .orders {
 	background-color: #009b00;
-	display:flex;
-	justify-content: center;
+	display: flex;
+
+	position: relative;
+	padding: 15px 0px 15px 0px;
+	width: 100%;
+    height: 100px;
+  
+
 }
 .orders_text {
 	color: #ffffff;
-	text-align: left;
-	padding-top: 20px;
-    padding-bottom: 20px;
-	margin-top: 20px;
-}
-.orders_text h3 {
 	font-family: "Avenir_Medium", sans-serif;
-	line-height: 10px;
+	font-size: 1em;
+	
 }
+
 .orders_text p {
 	font-family: "Avenir_Medium", sans-serif;
-	font-size: 1.1em;
+
 }
 .order_history_box {
 	display:flex;
@@ -219,34 +268,44 @@ main {
 	font-family: "Avenir_Medium", sans-serif;
 	width: 100%;
     text-align: center;
-    margin: 20px 0;
+    margin: 60px 0;
     position: relative;
     font-size: 1.6em;
 	letter-spacing: 1px;
 }
+
 .steps {
-	margin-top: 20px;
-	position:relative;
-	height: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 20px 0px;
+	padding: 0px 20px;
 }
 
 .steps_info{
-	width: 360px;
-	font-family: "Avenir_Medium", sans-serif;
-	margin: 0 20px;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0px 65px 0px 65px !important
 }
+
 .steps_info img {
 	align-content: center;
 	padding: 10px;
-	height: 48%;
+	height: 150px;
 }
-.steps_info h3 {
-	font-size: 1.5em;
+
+.steps_info h5 {
+	margin-top: 20px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 0.9em;
 	color: #e86439;
 }
+
 .steps_info p {
-	font-size: 1.2em;
+	font-family: "Avenir_UltraLight", sans-serif;
+	font-size: 0.7em;
 	color: #363636;
 }
 
@@ -328,51 +387,79 @@ main {
 
 
 @media (max-width: 991px) {
-	.header_search {
-		background-color:#ffa500;
+	.header {
+		height: auto;
+	    flex-direction: row;
+		padding: 0px 0px 15px 0px;
 	}
-	
-	.main {
-		position: relative;
-    	top: 140px;
-	}
+
 	.main_section_copy {
 		text-align: center;
-    padding: 20px;
-    right: auto;
-    top: 185px;
+		padding: 20px;
+		right: auto;
+		top: 185px;
 		color:#ffffff;
 	}
+
 	.main_section_btn {
 		bottom: 50%;
 	}
-	.steps_info h3 {
-    font-size: 16px;
+
+	.steps {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 20px 0px;
 	}
-	.steps_info p {
-    font-size: 12px;
+
+	.steps_info{
+		padding: 0px 8px 0px 8px !important;
 	}
+	
+
+
+
 	.steps_info img {
-    margin-bottom: 10px;
-	height: 40%;
+		align-content: center;
+		padding: 10px;
+		height: 100px;
 	}
-	.steps_info {
-	    margin: 0 13px;
+
+
+	.steps_info h5 {
+		margin-top: 10px;
+		font-family: "Avenir_Medium", sans-serif;
+		font-size: 0.8em;
+		color: #e86439;
 	}
+
+	.steps_info p {
+		font-family: "Avenir_UltraLight", sans-serif;
+		font-size: 0.7em;
+		line-height: 20px;
+		color: #363636;
+	}
+
+
+
+
 	.steps_title, .category_title {
-    margin: 20px 0px;
-    padding: 0 10px;
-    line-height: 25px;
-    font-size: 1.2em;
+		margin: 50px 0px;
+		padding: 0 10px;
+		line-height: 25px;
+		font-size: 1.2em;
 	}	
+
 	.orders{
-		flex-wrap: wrap;
+		display: flex;
+		position: relative;
+		height: 160px;
+		flex-direction: column;
 	}
+
 	.orders_text {
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 0px;
-    margin-top: 10px;
+		text-align: center;
+
 	}
 	
 	.orders_text h3 {
@@ -389,4 +476,8 @@ main {
 		margin-right: 12px;
     	margin-bottom: 20px;
 	}
+
+
+
 	
+}
