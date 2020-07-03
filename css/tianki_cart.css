@@ -1,0 +1,268 @@
+
+/*Naranja #f96207
+Verde #029c01
+Amarillo #f9a107
+Rojo #e43f0d*/
+
+@font-face {
+    font-family: Avenir_Bold;
+    src: url('../fonts/AvenirNext_Bold.ttf');
+        }
+@font-face {
+    font-family: Avenir_Medium;
+    src: url('../fonts/AvenirNext_Medium.ttf');
+        }
+@font-face {
+    font-family: Avenir_Regular;
+    src: url('../fonts/AvenirNext_Regular.ttf');
+    }
+@font-face {
+    font-family: Avenir_UltraLight;
+    src: url('../fonts/AvenirNext_UltraLight.ttf');
+        }
+main {
+	position:relative;
+	width:100%;
+}
+
+.header{
+	display: flex;
+	background-color: #ffa501;
+	height: 70px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	margin:0;
+}
+
+.header_logo {
+	display: flex;
+	justify-content: center;
+}
+.header_logo img {
+	width: 100px;
+	
+}
+.header_search {
+	height: 100%;
+}
+.header_icons {
+	height:100%;
+	display: flex;
+	flex-direction: row;
+	
+}
+.header_profile {
+	width: 50%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+}
+.header_profile img {
+	width: 35px;
+	padding-top:20px;
+}
+.header_profile p{
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+	color: #ffffff;
+	margin-top: 20%;
+}
+.header_cart {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.cart_left img{
+    padding-top: 12px;
+    width: 48px;
+}
+.header_cart p{
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+	color: #ffffff;
+	margin-top: 20%;
+	padding:5px;
+}
+
+
+.searchbox {
+	padding: 8px 16px;
+	background-color: #ffffff;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.searchbox #search{
+	width:100%;
+	border: 1px solid #ffffff;
+	outline:none;
+} 
+
+/* inicia historial carrito */
+.review_cart {
+	font-family: "Avenir_Medium";
+	width: 360px;
+	background-color: aqua;
+	float:right;
+	margin-right: 20px;
+	margin-top: 80px;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.42);
+	-moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.42);
+	box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.42);
+
+}
+.review_cart_total {
+	display:flex;
+	background-color: darkorange;
+	justify-content:center;
+	padding-top: 5px;
+}
+.review_cart_left{
+	background-color:#35AE14;
+	width:50%;
+	display:flex;
+}
+.review_cart_left img {
+	margin-right: 6px;
+    width: 18px;
+}
+.review_cart_right{
+	justify-content: flex-end;
+    background-color: #BF32E4;
+    display: flex;
+    width: 50%;
+}
+
+.total_price {
+	font-family: Avenir_Bold;
+	color:#f96207;
+}
+.review_cart_list {
+	display:flex;
+	justify-content: space-between;
+	margin: 5px 0px;
+	align-items: center;
+}
+.review_cart_img {
+	background-color: deeppink;
+}
+.review_cart_img img {
+	width:145px;
+}
+.review_cart_description {
+	display: flex;
+	flex-direction: column;
+	background-color: royalblue;
+}
+.rvd_title {
+	font-family: Avenir_Bold;
+	font-size: 18px;
+	background-color: orangered;
+}
+.rvd_price {
+	font-family: Avenir_Bold;
+	color:#029c01;
+	font-size: 15px;
+	background-color: aqua;	
+}
+.review_cart_qty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: yellow;
+}
+.sum {
+	border: 1px solid grey;
+	padding:2px;
+	margin-bottom: 2px;
+}
+.res {
+	border: 1px solid grey;
+	padding: 4px 2px;
+	margin-top: 2px;
+}
+.qty {
+	border: 1px solid grey;
+	padding:2px;
+	width: 40px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size:16px;
+	text-align: center;
+}
+.review_cart_trash img {
+	width: 20px;
+}
+.button_checkout{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+.boton_checkout {
+	background-color: #0A7F1C;
+	color:#ffffff;
+	padding:5px 15px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 16px;
+	border-radius: 10px;
+	border:1px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+	border: 1px solid #888;
+  width: 390px; /* Full width */
+  height: 400px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+}
+
+/* Modal Content */
+.modal-content {
+    left: 1%;
+    display: flex;
+    width: 390px;
+    background-color: #fff;
+    border: 1px solid #888;
+}
+.modal-content p{
+	color:#000000;
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+	.header_search {
+		background-color:#ffa500;
+	}
+	
+	.main {
+		position: relative;
+    	top: 140px;
+	}
+	
+	
+	}
+	
