@@ -148,6 +148,7 @@ input[type=search]:focus {
 	padding:5px;
 }
 
+
 .main_section {
 	background-color: aqua;
     padding: 0px!important;
@@ -386,6 +387,134 @@ input[type=search]:focus {
 }
 
 
+/* inicia historial carrito */
+.review_cart {
+	position: fixed !important;
+	top:0;
+    right: 0;
+    z-index: 1;
+	font-family: "Avenir_Medium";
+	width: 360px;
+	background-color: #ffffff;
+	float:right;
+	margin-right: 20px;
+	margin-top: 80px;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.20);
+	-moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.20);
+	box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.20);
+
+}
+.review_cart_total {
+	display:flex;
+	justify-content:center;
+	padding-top: 5px;
+}
+.review_cart_left{
+	width:50%;
+	display:flex;
+	padding-top: 10px;
+}
+.review_cart_left img {
+	margin-right: 6px;
+    width: 18px;
+}
+.review_cart_left img:hover {
+	opacity: 0.5;
+}
+.review_cart_left p:hover {
+	color:#7E7C7C;
+}
+.review_cart_right{
+	justify-content: flex-end;
+    display: flex;
+    width: 50%;
+	padding-top: 10px;
+}
+.review_cart hr {
+	margin-top:0px;
+}
+
+.total_price {
+	font-family: Avenir_Bold;
+	color:#f96207;
+}
+.review_cart_list {
+	display:flex;
+	justify-content: space-between;
+	margin: 5px 0px;
+	align-items: center;
+}
+
+.review_cart_img img {
+	width:145px;
+}
+.review_cart_description {
+	display: flex;
+	flex-direction: column;
+}
+.rvd_title {
+	font-family: Avenir_Bold;
+	font-size: 18px;
+}
+.rvd_price {
+	font-family: Avenir_Bold;
+	color:#029c01;
+	font-size: 15px;
+}
+.review_cart_qty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sum {
+	border: 1px solid grey;
+	padding:2px;
+	margin-bottom: 2px;
+}
+.sum:hover {
+	background-color:#f96207;
+}
+.res {
+	border: 1px solid grey;
+	padding: 4px 2px;
+	margin-top: 2px;
+}
+.res:hover {
+	background-color:#f96207;
+}
+.qty {
+	border: 1px solid grey;
+	padding:2px;
+	width: 40px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size:16px;
+	text-align: center;
+}
+.review_cart_trash img {
+	width: 20px;
+}
+.review_cart_trash img:hover {
+	opacity: 0.5;
+}
+.button_checkout{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+.boton_checkout {
+	background-color: #029c01;
+	color:#ffffff;
+	padding:5px 15px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	border:1px;
+}
+.boton_checkout:hover {
+	background-color: #30913C;
+}
+/* termina historial carrito */
+
 @media (max-width: 991px) {
 	.header {
 		height: auto;
@@ -416,15 +545,11 @@ input[type=search]:focus {
 		padding: 0px 8px 0px 8px !important;
 	}
 	
-
-
-
 	.steps_info img {
 		align-content: center;
 		padding: 10px;
 		height: 100px;
 	}
-
 
 	.steps_info h5 {
 		margin-top: 10px;
@@ -439,10 +564,6 @@ input[type=search]:focus {
 		line-height: 20px;
 		color: #363636;
 	}
-
-
-
-
 	.steps_title, .category_title {
 		margin: 50px 0px;
 		padding: 0 10px;
@@ -477,7 +598,11 @@ input[type=search]:focus {
     	margin-bottom: 20px;
 	}
 
-
-
+.review_cart_img img {
+	width: 100px;
+	}
+.review_cart_list {
+    margin: 12px 0px;
+	}
 	
 }
