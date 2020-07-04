@@ -18,7 +18,7 @@
 <section class="container-fluid">
 	<div class="row header">
 		<div class="col-lg-2 order-lg-1 col-4 order-1 header_logo">
-			<div><img src="../img/logo/logotipo_tianki.png" a href="#"></div>
+			<div class="header_logo_img"><img src="../img/logo/logotipo_tianki.png" a href="#"></div>
 		</div>
 		<div class="col-lg-5 order-lg-2 col order-3 header_search">
 			<div class="searchbox">
@@ -35,7 +35,7 @@
 					<p class="p-scroll">Iniciar sesión</p>
 				</div>
 			</div>
-			<div class="header_cart">
+			<div class="header_cart" id="myBtn">
 				<div class="cart_left">
 					<img src="../img/icon/cart_green.png">
 				</div>
@@ -47,7 +47,8 @@
 	</div> 
 </section>
 	<!--shopping cart-->
-<div class="review_cart col-lg-4 col-8"> 
+<div id="myModal" class="modal">
+<div class="review_cart col-lg-4 col-10"> 
 	<div class="review_cart_total">
 		<div class="review_cart_left">
 				<div><img src="../img/icon/trash.png"></div>
@@ -66,7 +67,7 @@
 				</div>
 			</div>
 			<div class="review_cart_description">
-				<div class="rvd_title">Papaya</div>
+				<div class="rvd_title">Papaya Maradol</div>
 				<div class="rvd_price">$22.05</div>
 			</div>
 			<div class="review_cart_qty">
@@ -89,7 +90,7 @@
 				</div>
 			</div>
 			<div class="review_cart_description">
-				<div class="rvd_title">Papaya</div>
+				<div class="rvd_title">Papaya Maradol</div>
 				<div class="rvd_price">$22.05</div>
 			</div>
 			<div class="review_cart_qty">
@@ -105,9 +106,12 @@
 				<img src="../img/icon/trash.png"></div>
 			</div>
 		</div>
-	<div class="button_checkout"><button type="button" class="boton_checkout">Checkout</button></div>
+	<div class="button_cart_review">
+		<button type="button" class="boton_checkout">Checkout</button>
+		<button type="button" class="boton_cerrar">Cerrar</button></div>
 	
-</div>		
+</div>
+</div>	
 	<!--main banner-->
 <section class="main_section d-flex container-fluid align-items-center justify-content-center">
 	
@@ -269,5 +273,6 @@
 	
 <script src="../js/home_javascript.js"></script>
 <script src="../js/scroll_javascript.js"></script>
+<script src="../js/cart_javascript.js"></script>	
 </body>
 </html>

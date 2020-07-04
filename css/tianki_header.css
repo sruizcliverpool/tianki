@@ -272,7 +272,7 @@ input[type=search]:focus {
     margin: 60px 0;
     position: relative;
     font-size: 1.6em;
-	letter-spacing: 1px;
+	letter-spacing: .7px;
 }
 
 .steps {
@@ -305,7 +305,7 @@ input[type=search]:focus {
 }
 
 .steps_info p {
-	font-family: "Avenir_UltraLight", sans-serif;
+	font-family: "Avenir_Regular", sans-serif;
 	font-size: 0.7em;
 	color: #363636;
 }
@@ -388,6 +388,10 @@ input[type=search]:focus {
 
 
 /* inicia historial carrito */
+/* The Modal (background) */
+.modal {
+  display: none;
+}
 .review_cart {
 	position: fixed !important;
 	top:0;
@@ -398,7 +402,7 @@ input[type=search]:focus {
 	background-color: #ffffff;
 	float:right;
 	margin-right: 20px;
-	margin-top: 80px;
+	margin-top: 75px;
 	-webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.20);
 	-moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.20);
 	box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.20);
@@ -453,7 +457,7 @@ input[type=search]:focus {
 	flex-direction: column;
 }
 .rvd_title {
-	font-family: Avenir_Bold;
+	font-family: Avenir_Medium;
 	font-size: 18px;
 }
 .rvd_price {
@@ -491,15 +495,15 @@ input[type=search]:focus {
 	text-align: center;
 }
 .review_cart_trash img {
-	width: 20px;
+	width: 18px;
 }
 .review_cart_trash img:hover {
 	opacity: 0.5;
 }
-.button_checkout{
+.button_cart_review{
 	display: flex;
-	justify-content: center;
-	margin-bottom: 10px;
+	justify-content: space-between;
+	margin: 10px 0px;
 }
 .boton_checkout {
 	background-color: #029c01;
@@ -510,8 +514,21 @@ input[type=search]:focus {
 	border-radius: 5px;
 	border:1px;
 }
+.boton_cerrar {
+	background-color: #f96207;
+	color:#ffffff;
+	padding:5px 15px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	border:1px;
+}
 .boton_checkout:hover {
 	background-color: #30913C;
+}
+
+.boton_cerrar:hover {
+	background-color: #EE5F09;
 }
 /* termina historial carrito */
 
@@ -521,7 +538,6 @@ input[type=search]:focus {
 	    flex-direction: row;
 		padding: 0px 0px 15px 0px;
 	}
-
 	.main_section_copy {
 		text-align: center;
 		padding: 20px;
@@ -559,7 +575,7 @@ input[type=search]:focus {
 	}
 
 	.steps_info p {
-		font-family: "Avenir_UltraLight", sans-serif;
+		font-family: "Avenir_Regular", sans-serif;
 		font-size: 0.7em;
 		line-height: 20px;
 		color: #363636;
@@ -569,12 +585,12 @@ input[type=search]:focus {
 		padding: 0 10px;
 		line-height: 25px;
 		font-size: 1.2em;
-	}	
+	}
 
 	.orders{
 		display: flex;
 		position: relative;
-		height: 160px;
+		height: 180px;
 		flex-direction: column;
 	}
 
@@ -598,11 +614,26 @@ input[type=search]:focus {
     	margin-bottom: 20px;
 	}
 
-.review_cart_img img {
-	width: 100px;
-	}
-.review_cart_list {
-    margin: 12px 0px;
-	}
+	.review_cart_img img {
+		width: 100px;
+		}
+	.review_cart_list {
+		margin: 12px 0px;
+		}
+	.rvd_title {
+		font-size: 14px;
+		}
+	.review_cart_trash img {
+    width: 15px;
+}
 	
+}
+
+@media (max-width: 767px) { 
+
+.header_logo_img {
+		display: block;
+	}
+
+
 }
