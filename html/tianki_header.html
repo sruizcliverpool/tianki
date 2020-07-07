@@ -1,6 +1,6 @@
 <html lang="es">
 <head>
-<title>xxx</title>
+<title>Tianki</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../css/tianki_footer.css">
 	<link rel="stylesheet" href="../css/tianki_header.css">
@@ -17,33 +17,88 @@
 	<!--header-nav-->
 <section class="container-fluid">
 	<div class="row header">
+
+	<!--header SIN sesión - SE COMENTA SOLO EN SESIÓN DE ADMIN-->
 		<div class="col-lg-2 order-lg-1 col-4 order-1 header_logo">
 			<div><img src="../img/logo/logotipo_tianki.png" a href="#"></div>
 		</div>
+
+	<!--header SIN sesión - SE COMENTA SOLO EN SESIÓN DE ADMIN-->
 		<div class="col-lg-5 order-lg-2 col order-3 header_search">
 			<div class="searchbox">
 				<input type="search" name="q" class="placeholder" placeholder="¿Qué estás buscando?">
 				<img src="../img/icon/search_green.svg" alt="">
 			</div>
 		</div>
+
+	<!--header SIN sesión (cambia última columna)-->
 		<div class="col-lg-5 order-lg-3 col-8 order-2 header_icons">
-			<div class="header_profile">
-				<div class="profile_left">
-					<img src="../img/icon/profile_green.png">
-				</div>
-				<div class="profile_right">
-					<p class="p-scroll">Iniciar sesión</p>
-				</div>
+			<div class="header_icon">
+				<img src="../img/icon/profile_green.png">
+				<div><p class="p-scroll">Iniciar sesión</p></div>
 			</div>
-			<div class="header_cart">
-				<div class="cart_left">
+			<div class="header_icon">
 					<img src="../img/icon/cart_green.png">
-				</div>
-				<div class="cart_right">
+				<div>
 					<p class="p-scroll2">Mi carrito</p>
 				</div>
 			</div>
 		</div>
+
+	<!--header CON sesión (cambia última columna)
+		<div class="col-lg-5 order-lg-3 col-8 order-2 header_icons">
+			<div class="header_icon">
+				<img src="../img/icon/profile_green.png">
+				<div><p class="p-scroll">Mi perfil</p></div>
+			</div>
+			<div class="header_icon">
+				<img src="../img/icon/profile_logOut.png">
+				<div>
+					<p class="p-scroll2">Cerrar sesión</p>
+				</div>
+			</div>
+			<div class="header_icon">
+				<img src="../img/icon/cart_green.png">
+				<div>
+					<p class="p-scroll3">Carrito</p>
+				</div>
+			</div>
+		</div>-->
+		
+	<!--header ADMIN (cambian TODAS las columnas)
+		<div class="col-lg-2 order-lg-1 col-3 order-1 header_logo">
+			<div><img src="../img/logo/logotipo_tianki.png" a href="#"></div>
+		</div>
+		<div class="col-lg-4 order-lg-2 col order-3 header_search">
+			<div class="searchbox">
+				<input type="search" name="q" class="placeholder" placeholder="¿Qué estás buscando?">
+				<img src="../img/icon/search_green.svg" alt="">
+		</div>
+		</div>
+		<div class="col-lg-6 order-lg-3 col-9 order-2 header_icons">
+			<div class="header_icon">
+				<img src="../img/icon/profile_green.png">
+				<div><p class="p-scroll">Mi perfil</p></div>
+			</div>
+			<div class="header_icon">
+				<img src="../img/icon/profile_admin.png">
+				<div><p class="p-scroll2">Admin</p></div>
+			</div>
+			<div class="header_icon">
+				<img src="../img/icon/profile_logOut.png">
+				<div>
+					<p class="p-scroll3">Cerrar sesión</p>
+				</div>
+			</div>
+			<div class="header_icon">
+				<img src="../img/icon/cart_green.png">
+				<div>
+					<p class="p-scroll4">Carrito</p>
+				</div>
+			</div>
+		</div>-->
+		
+
 	</div> 
 </section>
 	
@@ -158,8 +213,7 @@
 </section>
 
 
-<!--ejercicio slider
--->	
+<!--ejercicio slider-->	
 <div id="sliderBX-contenedor">
     <div id="btnSliderNext">
 		<svg style="margin-top: 3px;" width="24" height="24" viewBox="0 0 24 24">
@@ -204,6 +258,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 
