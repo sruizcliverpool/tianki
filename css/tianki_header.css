@@ -25,13 +25,13 @@ main {
 	width:100%;
 }
 
-.header{
+.header {
 	display: flex;
 	flex-direction: column;
 	background-color: #ffa501;
 	height: 60px;
 	position: fixed;
-	z-index: 1;
+	z-index: 10;
 	width: 100%;
 	color: #ffffff;
 	margin:0;
@@ -43,7 +43,7 @@ main {
 	position: fixed;
 	height: 60px;
 	top: 0;
-	z-index: 1;
+	z-index: 10;
 	box-shadow: 0px 2px 3px #33333337;
 }
 .p-scrolled {
@@ -71,6 +71,7 @@ main {
 	height: 70%;
 	display: flex;
 	justify-content: space-between;
+	box-shadow: 0px 2px 3px #33333337;
 }
 
 .searchbox img {
@@ -89,7 +90,7 @@ main {
 
 .searchbox-scrolled {
 	box-shadow: 0px 2px 3px #33333337;
-	background-color: orange;
+	background-color: #f9a107;
 }
 
 [type=search] {
@@ -165,7 +166,7 @@ input[type=search]:focus {
     position: absolute;
     text-align: center;
 
-	top: 17%;
+	top: 9%;
 }
 
 .main_section_btn {
@@ -265,7 +266,7 @@ input[type=search]:focus {
 	font-family: "Avenir_Medium", sans-serif;
 	width: 100%;
     text-align: center;
-    margin: 60px 0;
+	margin: 60px 0px 20px 0px;
     position: relative;
     font-size: 1.6em;
 	letter-spacing: .7px;
@@ -319,7 +320,7 @@ input[type=search]:focus {
   overflow-y:hidden;
   position:relative;
   background:blue;
-	margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 #btnSliderNext i, #btnSliderPrev i{
   padding-top:6px;
@@ -358,17 +359,18 @@ input[type=search]:focus {
 .sliderBXcell p{
   padding-top:40px;
 }
-#sliderBX .sliderBXcell:nth-child(odd){
+#sliderBX .sliderBXcell:nth-child(odd) {
   height:100px;
   background:#f2f2f2;
   display:inline-block;
-  float:left;
+  float: left;
+
 }
 #sliderBX .sliderBXcell:nth-child(even){
   height:100px;
   background:#ddd;
   display:inline-block;
-  float:left;
+  float: left;
 }
 #sliderBX p{
  	color: #ffffff;
@@ -379,153 +381,6 @@ input[type=search]:focus {
     justify-content: center;
     display: flex;
 	margin-left: 80px;
-}
-
-
-
-/**ESTILOS PLP**/
-
-
-.plp_box {
-    height: auto;
-    box-shadow: 0px 3px 5px #3333331b;
-    border-radius: 8px;
-    border-top: 6px solid #f96207;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 7px 10px 0px 10px !important;
-    margin: 0px 7px;
-}
-
-#product_title {
-    font-family: "Avenir_Bold", sans-serif;
-    font-size: 1.1em;
-    text-align: center;
-}
-
-.plp_data {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 0px 0px 5px 0px;
-}
-
-#type_title p {
-    font-family: "Avenir_UltraLight", sans-serif;
-    font-size: 0.8em;
-    margin-bottom: 0.3em;
-    text-align: left;
-}
-
-#price_title {
-    font-family: "Avenir_Bold", sans-serif;
-    font-size: 1.2em;
-    color: #ff6119;
-}
-
-.product_img, .product_img img {
-    width: 100%;
-}
-
-.control_plp {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-.plp_counter {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    width: 60%;
-    margin: 10px 0px 5px 5px;
-}
-
-.plp_counter_input {
-    width: 55%;
-    height: 23px;
-    background-color: white;
-    box-shadow: 0px 0px 5px #cbcbcb;
-    z-index: 1;
-    text-align: center;
-    position: relative;
-    left: 22%;
-    margin-top: 7px;
-}
-
-.plp_counter p {
-    font-family: "Avenir_UltraLight", sans-serif;
-    font-size: .8em;
-    margin: 0;
-}
-
-.plp_counter_input h6 {
-    font-family: "Avenir_Medium", sans-serif;
-    font-size: 1em;
-    margin-bottom: 0em;
-    margin-top: 3px;
-    text-align: center;
-}
-
-.plp_counter_icons_minus {
-    position: absolute;
-    z-index: 2;
-    left: 0;
-}
-
-
-.plp_counter_icons_plus {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-}
-
-.plp_counter_icons_minus img, .plp_counter_icons_plus img {
-    width: 35px;
-}
-
-.plp_add_btn {
-    width: 50px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 3px 5px #33333342;
-    display: flex;
-    left: 15px;
-    top: 5px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.plp_add_btn:active {
-    box-shadow: 0px 2px 4px #333333a7;
-}
-
-.plp_add_btn img {
-    width: 40px;
-}
-
-.plp_notes {
-    margin: 8px 0px 5px 0px;
-}
-
-.plp_notes textarea {
-    border: 1px solid #b7b7b785;
-    border-radius: 7px;
-    font-family: "Avenir_UltraLight", sans-serif;
-    font-size: .8em;
-    width: 100%;
-    height: 60px;
-    outline: none;
-    text-align: start;
-    padding: 5px;
-    resize: none;
 }
 
 
@@ -677,114 +532,7 @@ input[type=search]:focus {
 /* termina historial carrito */
 
 
-<<<<<<< HEAD
-.mainfooter ul > li {
-    font-family: "Avenir_UltraLight", sans-serif;
-    font-size: 1em;
-    list-style: none;
-    line-height: 25px;
-    text-align: left;
-    
-}
 
-.mainfooter ul {
-    padding: 0;
-    margin: 0;
-}
-
-.mainfooter p {
-    font-family: "Avenir_UltraLight", sans-serif;
-    font-size: 1em;
-    line-height: 2em;
-    text-align: center;
-}
-
-.mainfooter {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #f3f4f2;
-    height: 150px;
-    position: relative;
-    width: 100%;
-}
-
-.leftfooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.middlefooter {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    align-content: center;
-    }
-
-.middlefooter {
-    font-family: "Avenir_UltraLight", sans-serif;
-    font-size: .7em;
-    text-align: center;
-    }
-
-.middlefooter img {
-    width: 90px;
-}
-
-.icons_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 5px 0px;
-}
-
-.icons_footer img {
-    width: 40px;
-    margin: 0px 20px 0px 20px;
-}
-
-.rightfooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-}
-
-.rightfooter h5, h6 {
-    text-align: left;
-    font-family: "Avenir_Medium", sans-serif;
-    margin: 0;
-
-}
-
-.v-line {
-    height: 50%;
-    border: 1px solid #ebebeb;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px #f5f5f5;
-    position: absolute;
-    left: 30%;
-    }
-
-.v-line2 {
-    height: 50%;
-    border: 1px solid #ebebeb;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px #f5f5f5;
-    position: absolute;
-    right: 30%;
-	}
-	
-
-
-
-
-=======
->>>>>>> b84ca88b30796809dd42fe663df815d6c4daa9b7
 @media (max-width: 991px) {
 	.header {
 		height: auto;
@@ -900,92 +648,8 @@ input[type=search]:focus {
 
 	.review_cart_trash img {
     width: 15px;
-<<<<<<< HEAD
 		}
 
 
-	/**ESTILOS PLP**/
-
-	.product_container {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		padding: 0px 10px 0px 10px;
-	}
-		
-	.plp_box {
-		width: 220px !important;
-		height: auto;
-		box-shadow: 0px 3px 5px #3333331b;
-		border-radius: 8px;
-		border-top: 6px solid #f96207;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		justify-content: flex-start;
-		padding: auto;
-		margin: 10px 10px 10px 10px;
-	}
-		
-
-	/**ESTILOS FOOTER**/	
-	
-    .mainfooter {
-        display: flex;
-        flex-direction: row;
-        background-color: #f3f4f2;
-        height: 100%;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .leftfooter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .middlefooter {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        height: 100%;
-        align-content: center;
-        }
-
-    .middlefooter img {
-        width: 90px;
-    }
-
-    .icons_footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 5px 0px;
-    }
-
-    .icons_footer img {
-        width: 40px;
-        margin: 0px 20px 0px 20px;
-    }
-
-    .rightfooter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .v-line, .v-line2 {
-        display: none;
-        }
-
 }
 
-=======
-}
-	
-}
->>>>>>> b84ca88b30796809dd42fe663df815d6c4daa9b7
