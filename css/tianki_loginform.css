@@ -96,3 +96,10 @@
 	border-radius: 10px;
 	border:1px;
 }
+
+@media (max-width: 991px) {
+
+.login_form_logo img {
+	width:130px;
+}
+}
