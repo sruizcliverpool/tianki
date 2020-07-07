@@ -677,6 +677,7 @@ input[type=search]:focus {
 /* termina historial carrito */
 
 
+<<<<<<< HEAD
 .mainfooter ul > li {
     font-family: "Avenir_UltraLight", sans-serif;
     font-size: 1em;
@@ -782,6 +783,8 @@ input[type=search]:focus {
 
 
 
+=======
+>>>>>>> b84ca88b30796809dd42fe663df815d6c4daa9b7
 @media (max-width: 991px) {
 	.header {
 		height: auto;
@@ -897,6 +900,7 @@ input[type=search]:focus {
 
 	.review_cart_trash img {
     width: 15px;
+<<<<<<< HEAD
 		}
 
 
@@ -980,3 +984,8 @@ input[type=search]:focus {
 
 }
 
+=======
+}
+	
+}
+>>>>>>> b84ca88b30796809dd42fe663df815d6c4daa9b7
