@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.login_form_container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    z-index: 0;
+    top: 100px;
+	background-color: #e6e6e6;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.42);
+	-moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.42);
+	box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.42);
+}
+.login_form{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_form_logo{
+	padding: 20px 0px;
+	display: flex;
+	justify-content: center;
+}
+.login_form_logo img {
+	width:170px;
+}
+.login_form_title {
+	font-family: Avenir_Bold;
+	font-size: 20px;
+	text-align: center;
+	color: #000000;
+	 margin-bottom: 20px;
+}
+.login_form_inputs {
+	width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+	margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px #cecece solid;
+    padding: 2px 0;
+}
+.form_group_input {
+	display: flex;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-group input{
+	border: none;
+}
+.form-group img {
+	width: 30px;
+	padding-right: 5px;
+}
+
+.login_form_btn
+{
+	display: flex;
+	justify-content: center;
+}
+.btn_login {
+	background-color: #0A7F1C;
+	color:#ffffff;
+	padding:5px 15px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 16px;
+	border-radius: 10px;
+	border:1px;
+}
+.login_form p{
+	font-family: Avenir_Medium;
+	font-size: 16px;
+	letter-spacing: .5px;
+	padding:5px;
+	margin-top: 5px;
+}
+.login_div {
+	width: 200px;
+	border-bottom: 3px #c9c9c9 solid;
+    margin: auto;
+}
+.btn_register {
+	background-color: #f9a107;
+	color:#ffffff;
+	margin-bottom: 20px;
+	padding:5px 15px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 16px;
+	border-radius: 10px;
+	border:1px;
+}
