@@ -1,3 +1,12 @@
+
+/*Naranja #f96207
+Verde #029c01
+Amarillo #f9a107
+Rojo #e43f0d*/
+
+
+
+
 @font-face {
     font-family: Avenir_Bold;
     src: url('../fonts/AvenirNext_Bold.ttf');
@@ -15,25 +24,32 @@
     src: url('../fonts/AvenirNext_UltraLight.ttf');
         }
 
-
+.product_list_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .plp_box {
+    width: 208px;
     height: auto;
     box-shadow: 0px 3px 5px #3333331b;
     border-radius: 8px;
-    border-top: 6px solid #f96207;
+    border-top: 5px solid #f96207;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 7px 10px 0px 10px !important;
-    margin: 0px 7px;
+    padding: 5px 10px 5px 10px !important;
+    margin: 25px 7px;
 }
 
 #product_title {
     font-family: "Avenir_Bold", sans-serif;
     font-size: 1.1em;
     text-align: center;
+    line-height: 1.2em;
+    
 }
 
 .plp_data {
@@ -41,7 +57,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0px 0px 5px 0px;
+    margin: 5px 0px 5px 0px;
 }
 
 #type_title p {
@@ -65,8 +81,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     width: 100%;
+    margin: 10px 0px 5px 0px;
 }
+
 
 .plp_counter_row input  {
     display: flex;
@@ -82,19 +101,14 @@
     z-index: 1;
     text-align: center;
     position: relative;
-    left: 20%;
+    left: 15%;
     margin-top: 7px;
 }
 
 .plp_counter_row input:focus  {
-
     box-shadow: 0px 0px 5px #cbcbcb;
-
     outline: none;
-
 }
-
-
 
 .plp_counter p {
     font-family: "Avenir_UltraLight", sans-serif;
@@ -113,14 +127,14 @@
 .plp_counter_icons_minus {
     position: absolute;
     z-index: 2;
-    left: 0;
+    left: 2%;
 }
 
 
 .plp_counter_icons_plus {
     position: absolute;
     z-index: 2;
-    right: 0;
+    left: 45%;
 }
 
 .plp_counter_icons_minus img, .plp_counter_icons_plus img {
@@ -134,9 +148,8 @@
     background-color: white;
     box-shadow: 0px 3px 5px #33333342;
     display: flex;
-    left: 15px;
-    top: 5px;
     align-items: center;
+    right: 2%;
     justify-content: center;
     position: relative;
 }
@@ -146,11 +159,11 @@
 }
 
 .plp_add_btn img {
-    width: 40px;
+    width: 35px;
 }
 
 .plp_notes {
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 3px 0px;
 }
 
 .plp_notes textarea {
@@ -169,15 +182,16 @@
 
 @media (max-width: 991px) {
 
-.product_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 0px 10px 0px 10px;
-}
+    .product_list_page {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0px 5px 0px 5px !important;
+    }
     
 .plp_box {
-    width: 220px !important;
+    width: 170px !important;
     height: auto;
     box-shadow: 0px 3px 5px #3333331b;
     border-radius: 8px;
@@ -185,9 +199,26 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    justify-content: flex-start;
     padding: auto;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 5px 10px 5px;
 }
+
+.plp_counter_icons_minus {
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+}
+
+.plp_counter_icons_plus {
+    position: absolute;
+    z-index: 2;
+    left: 45%;
+}
+
+
+
+
+
+
 
 }

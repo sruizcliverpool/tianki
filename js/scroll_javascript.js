@@ -13,8 +13,8 @@ function Scroll() {
 		  element.classList.add("header-scrolled");
 		  type.classList.add("p-scrolled");
 		  type2.classList.add("p-scrolled2");
-		  type3.classList.add("p-scrolled3");
-		  type4.classList.add("p-scrolled4");
+		  /**type3.classList.add("p-scrolled3");
+		  type4.classList.add("p-scrolled4");**/
 		  box.classList.add("searchbox-scrolled");
 		  placeholder.classList.add("placeholder-scrolled")
 	/*
@@ -30,8 +30,8 @@ function Scroll() {
 			element.classList.remove("header-scrolled");
 			type.classList.remove("p-scrolled");
 			type2.classList.remove("p-scrolled2");
-			type3.classList.remove("p-scrolled3");
-			type4.classList.remove("p-scrolled4");
+			/**type3.classList.remove("p-scrolled3");
+			type4.classList.remove("p-scrolled4");**/
 			box.classList.remove("searchbox-scrolled");
 			placeholder.classList.remove("placeholder-scrolled")
 
