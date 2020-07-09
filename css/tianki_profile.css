@@ -52,13 +52,14 @@
 .form-control {
     font-family: "Avenir_UltraLight", sans-serif;
 }
-
+/**
 .form-control:focus {
     color: #495057;
     background-color: #fff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem #009b0025 !important;
 }
+**/
 
 .nav-buttons .nav-link.active, .nav-buttons .show > .nav-link {
     color: #fff;
