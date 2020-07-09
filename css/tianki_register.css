@@ -27,11 +27,12 @@ Rojo #e43f0d*/
 .back_modal {
     width: 600px;
     display: flex;
-    height: 450px;
+    height: auto;
     flex-direction: row;
     background-color: #c1c1c169;
     border-radius: 10px;
     align-items: center;
+    padding: 20px 0px 10px 0px;
     box-shadow: 0px 3px 5px #3333331b;
 }
 
@@ -137,6 +138,7 @@ Rojo #e43f0d*/
         background-color: #c1c1c169;
         border-radius: 10px;
         align-items: center;
+        padding: 0;
         box-shadow: 0px 3px 5px #3333331b;
     }
     
@@ -156,5 +158,19 @@ Rojo #e43f0d*/
         padding: 0px 20px 0px 20px !important
     }
     
+    .btn_register {
+        background-color: #f9a107;
+        color: #ffffff;
+        width: 140px;
+        height: 40px;
+        font-family: "Avenir_Medium", sans-serif;
+        font-size: 16px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 }
