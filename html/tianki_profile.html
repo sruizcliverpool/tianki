@@ -1,6 +1,6 @@
 <html lang="es">
 <head>
-<title>Tianki - Mis datos</title>
+<title>Mis datos | Tianki</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../css/tianki_profile.css">
 <link rel="stylesheet" href="../css/reset.css">
@@ -10,7 +10,6 @@
 <link rel="shortcut icon" href="../img/icon/tianki_icon.ico" type="image/x-icon">
 <link rel="icon" href="../img/icon/tianki_icon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
 
 </head>
@@ -45,21 +44,32 @@
                           
                             <form>
                                 <div class="form-row">
-                                  <div class="form-group col-6 col-lg-6">
-                                    <label for="inputFirstName">Nombre(s)</label>
+                                  <div class="form-group col-lg-6">
+                                    <label for="inputFirstName">Nombre del negocio/Nombre del responsable</label>
                                     <input type="text" class="form-control"  placeholder="">
                                   </div>
-                                  <div class="form-group col-6 col-lg-6">
-                                    <label for="inputLastName">Apellido Paterno</label>
-                                    <input type="text" class="form-control" placeholder="">
-                                  </div>
+                                </div>  
+                                <div class="form-row"> 
                                   <div class="form-group col-lg-6">
                                     <label for="inputAddress">Correo Electrónico</label>
-                                    <input type="email" class="form-control"  placeholder="">
+                                    <input type="email" class="form-control"  placeholder="xxxxxx@gmail.com" readonly>
                                   </div>
                                 </div>
 
                                 <div class="title_input">Datos de facturación</div>
+
+                                  <!--CHECKBOX PERSONA MORAL/FISICA-->
+                              <div class="checkbox_facturacion">
+                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customPersonaFisica">
+                                  <label class="custom-control-label" for="customPersonaFisica">Persona Física</label>
+                                </div>
+                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customPersonaMoral">
+                                  <label class="custom-control-label" for="customPersonaMoral">Persona Moral</label>
+                                </div><br>
+                              </div>
+                              <!--TERMINA PERSONA MORAL/FISICA-->
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
@@ -116,69 +126,147 @@
                     <div class="tab-pane fade" id="v-pills-direcciones" role="tabpanel" aria-labelledby="v-pills-direcciones-tab">
                       <div id="content_datos">
                           
-                        <form>
-                          <div class="form-row">
-                            <div class="form-group col-7 col-lg-6">
-                              <label for="inputShortName">Nombre corto</label>
-                              <input type="text" class="form-control"  placeholder="ej. Sucursal, Tienda, Almacén">
+                        <!--DIRECCIÓN REGISTRADA-->
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-8">
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="adressData">
+                                <h5 id="subjectName">Juan Pérez<span>&emsp;</span><span id="subjectPhone">55 5516983929</span></h5>
+                              </div>
+                                <p id="subjectAdress">Av. Renato Leduc 373 Int. 6<br>
+                                  <span id="subjectBetweenStt">Carrasco y Sabino</span>,<br>
+                                  <span id="subjectCity">CDMX</span>, 
+                                  <span id="subjectCP">15235</span>, 
+                                  <span id="sujectDel">Tlalpan</span></p>
+                                <div class="card_btns">
+                                  <a href="#" class="btn btn-primary">Modificar</a>
+                                  <a href="#" class="btn btn-primary">Eliminar</a>
+                                
+                                </div>
+                              </div>
                             </div>
                           </div>
-                            <div class="form-row">   
-                              <div class="form-group col-6 col-lg-6">
-                                <label for="inputFirstName">Nombre(s)</label>
-                                <input type="text" class="form-control" placeholder="">
+
+                          <div class="col-sm-6 col-lg-8">
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="adressData">
+                                <h5 id="subjectName">Juan Pérez<span>&emsp;</span><span id="subjectPhone">55 5516983929</span></h5>
                               </div>
-                              <div class="form-group col-6 col-lg-6">
-                                <label for="inputLastName">Apellidos</label>
-                                <input type="email" class="form-control"  placeholder="">
+                                <p id="subjectAdress">Av. Renato Leduc 373 Int. 6<br>
+                                  <span id="subjectBetweenStt">Carrasco y Sabino</span>,<br>
+                                  <span id="subjectCity">CDMX</span>, 
+                                  <span id="subjectCP">15235</span>, 
+                                  <span id="sujectDel">Tlalpan</span></p>
+                                <div class="card_btns">
+                                  <a href="#" class="btn btn-primary">Modificar</a>
+                                  <a href="#" class="btn btn-primary">Eliminar</a>
+                                </div>
                               </div>
                             </div>
+                          </div>
 
-                            <div class="form-row">                              
-                                  <div class="form-group col-7 col-lg-6">
-                                    <label for="inputStreet">Calle</label>
-                                    <input type="text" class="form-control" placeholder="">
-                                  </div>
-                                  <div class="form-group col col-lg-3">
-                                    <label for="inputNumExt">Núm. Ext.</label>
-                                    <input type="text" class="form-control" placeholder="">
-                                  </div>
-                                  <div class="form-group col col-lg-3">
-                                    <label for="inputNumExt">Núm Int.</label>
-                                    <input type="email" class="form-control" placeholder="">
-                                  </div>
-                               
+                          <div class="col-sm-6 col-lg-8">
+                            <div class="card">
+                              <div class="card-body">
+                                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  <p>Agregar dirección</p>
+                                </a>
+                              </div>
 
-                                  <div class="form-group col col-lg-6">
-                                    <label for="inputStreetCol">Colonia</label>
-                                    <input type="text" class="form-control" placeholder="">
-                                  </div>
-                                  <div class="form-group col-6 col-lg-2">
-                                    <label for="inputCP">C.P.</label>
-                                    <input type="text" class="form-control" placeholder="">
-                                  </div>
-                                  <div class="form-group col-6 col-lg-4">
-                                    <label for="inputDelegacion">Delegación</label>
-                                    <input type="email" class="form-control" placeholder="">
-                                  </div>
-                                  <div class="form-group col-6 col-lg-6">
-                                    <label for="inputCity">Ciudad</label>
-                                    <input type="email" class="form-control" placeholder="">
-                                  </div>
-                                  <div class="form-group col-6 col-lg-6">
-                                    <label for="inputPhone">Teléfono Celular</label>
-                                    <input type="email" class="form-control" placeholder="">
-                                  </div>
+                              <div class="collapse show" id="collapseExample">
+                                <div class="card card-body">
+
+
+                                  <form>
+                                    <div class="form-row">
+                                      <div class="form-group col-12 col-lg">
+                                        <label for="inputShortName">Nombre corto</label>
+                                        <input type="text" class="form-control"  placeholder="ej. Sucursal, Tienda, Almacén">
+                                      </div>
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="form-group col-12 col-lg">
+                                        <label for="inputShortName">Nombre del negocio/Nombre del responsable</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                    </div>
+
+
+                                      <div class="form-row">                              
+                                            <div class="form-group col-7 col-lg-6">
+                                              <label for="inputStreet">Calle</label>
+                                              <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col col-lg-3">
+                                              <label for="inputNumExt">Núm. Ext.</label>
+                                              <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col col-lg-3">
+                                              <label for="inputNumExt">Núm Int.</label>
+                                              <input type="email" class="form-control" placeholder="">
+                                            </div>
+                                        
+
+                                            <div class="form-group col col-lg-6">
+                                              <label for="inputStreetCol">Colonia</label>
+                                              <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-6 col-lg-2">
+                                              <label for="inputCP">C.P.</label>
+                                              <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-6 col-lg-4">
+                                              <label for="inputDelegacion">Delegación</label>
+                                              <input type="email" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-6 col-lg-6">
+                                              <label for="inputCity">Ciudad</label>
+                                              <input type="email" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-6 col-lg-6">
+                                              <label for="inputPhone">Teléfono Celular</label>
+                                              <input type="email" class="form-control" placeholder="">
+                                            </div>
+                                      </div>
+
+                                      <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                        <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                        <label class="custom-control-label" for="customControlInline">Escoger como dirección predeterminada</label>
+                                      </div><br>
+                                      
+                                      <button type="submit" class="btn btn-success btn-md">Guardar cambios</button>
+
+                                  </form>
+
+                                  
+                                </div>
+                              </div>
+                              
                             </div>
+                          </div>
 
-                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                              <input type="checkbox" class="custom-control-input" id="customControlInline">
-                              <label class="custom-control-label" for="customControlInline">Escoger como dirección predeterminada</label>
-                            </div><br>
-                            
-                            <button type="submit" class="btn btn-success btn-md">Guardar cambios</button>
+                        </div>
 
-                        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                     
                      
                     </div>
                     </div>
