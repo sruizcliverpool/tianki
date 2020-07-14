@@ -1,3 +1,11 @@
+
+/*Naranja #f96207
+Verde #029c01
+Amarillo #f9a107
+Rojo #e43f0d*/
+
+
+
 @font-face {
     font-family: Avenir_Bold;
     src: url('../fonts/AvenirNext_Bold.ttf');
@@ -49,9 +57,25 @@
     font-family: "Avenir_Medium", sans-serif;
 }
 
+.form-controlRegisteredMail:focus {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: red;
+    font-family: "Avenir_Medium", sans-serif;
+}
+
+
 .form-control {
     font-family: "Avenir_UltraLight", sans-serif;
 }
+
+.checkbox_facturacion {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 20px 0px;
+    font-size: 1em;
+}
+
 /**
 .form-control:focus {
     color: #495057;
@@ -67,6 +91,96 @@
     font-family: "Avenir_Medium", sans-serif;
 
 }
+
+/*MIS DIRECCIONES*/
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: 0px 2px 5px #3333331b;
+    border-radius: 10px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 20px 0px 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body p {
+    font-family: "Avenir_Medium", sans-serif;
+    color: black;
+    margin-bottom: 0px;
+}
+    
+    
+
+.adressData h5{
+    text-decoration: underline #f96207;
+    text-underline-position: under;
+    margin-bottom: 15px;
+}
+
+
+#subjectName {
+    margin-bottom: .75rem;
+    font-family: "Avenir_Bold", sans-serif;
+ 
+}
+
+#subjectPhone {
+    margin-bottom: .75rem;
+    font-family: "Avenir_Medium", sans-serif;
+  
+
+}
+
+#subjectAdress {
+    font-family: "Avenir_Regular", sans-serif;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+#card-title {
+    margin-bottom: .75rem;
+}
+
+.card-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.card_btns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    font-family: "Avenir_Regular", sans-serif;
+}
+
+.btn-primary {
+    color: black !important;
+    background-color: #eaeaea !important;
+    border: none !important;
+    margin-right: 5px !important;
+}
+.btn-primary:hover {
+    color: white !important;
+    background-color: #009b00 !important;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+
 
 .nav-buttons .nav-link {
     border-radius: .25rem;
