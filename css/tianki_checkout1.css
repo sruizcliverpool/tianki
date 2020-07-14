@@ -49,6 +49,124 @@ Rojo #e43f0d*/
     top: 34%;
 }
 
+/* tabla */
+.divTable{
+	display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 150px;
+}
+.divTableBody {
+	width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.divTableRow_titles {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f96207;
+    margin-bottom: 10px;
+}
+.DivTableTitle{
+	padding: 4px 0px;
+    color: #ffffff;
+    font-family: Avenir_Medium;
+    font-size: 1em;
+	padding: 5px;
+}
+.divTableRow {
+	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+    display: flex;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableCell img {
+	width:15px;
+}
+.control_plp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 10px 0px 5px 0px;
+}
+
+
+.plp_counter_row input  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    margin: 10px 0px 5px 5px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #cbcbcb;
+    width: 55%;
+    border: none;
+    height: 23px;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    left: 15%;
+    margin-top: 7px;
+}
+
+.plp_counter_row input:focus  {
+    box-shadow: 0px 0px 5px #cbcbcb;
+    outline: none;
+}
+
+.plp_counter p {
+    font-family: "Avenir_UltraLight", sans-serif;
+    font-size: .8em;
+    margin: 0;
+}
+
+.plp_counter_row h6 {
+    font-family: "Avenir_Medium", sans-serif;
+    font-size: 1em;
+    margin-bottom: 0em;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.plp_counter_icons_minus {
+    position: absolute;
+    z-index: 2;
+    left: 2%;
+}
+
+
+.plp_counter_icons_plus {
+    position: absolute;
+    z-index: 2;
+    left: 65%;
+}
+
+.plp_counter_icons_minus img, .plp_counter_icons_plus img {
+    width: 35px;
+}
+
+
 @media (max-width: 991px) {
 	
 .checkout_status {
@@ -59,8 +177,27 @@ Rojo #e43f0d*/
     margin: 4px 18px;
 }
 .checkout_status_barra {
-	width: 65%;
+	width: 75%;
     height: 12px;
     top: 40%;
+}
+	.divTableBody {
+    width: 95%;
+	}
+	.DivTableTitle {
+    font-size: .8em;
+	}
+	.divTableCell, .divTableHead {
+    font-size: 0.7em;
+	}
+	.plp_counter_icons_minus img, .plp_counter_icons_plus img {
+    width: 30px;
+}
+	.plp_counter_row input {
+    margin: 8px 0px 5px 5px;
+    width: 55%;
+    height: 19px;
+    left: 15%;
+    margin-top: 6px;
 }
 }
