@@ -35,6 +35,12 @@ Rojo #e43f0d*/
 	position: relative;
     z-index: 1;
 } 
+.checkoutStatusSteps {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color:#878484;
+}
 .checkout_status_icons img {
 	width: 60px;
     margin: 4px 30px;
@@ -49,44 +55,7 @@ Rojo #e43f0d*/
     top: 34%;
 }
 
-/* tabla */
-.divTable{
-	display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 150px;
-	font-family: "Avenir_Regular", sans-serif;
-}
-.divTableBody {
-	width: 65%;
-    display: flex;
-    flex-direction: column;
-}
-.divTableRow_titles {
-	display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #f96207;
-    margin-bottom: 10px;
-}
-.DivTableTitle{
-    color: #ffffff;
-    font-family: "Avenir_Regular", sans-serif;
-    font-size: 1em;
-	padding: 5px 0px 5px 32px;
-}
-.divTableRow {
-	align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-}
-.divTableCell, .divTableHead, .divTableCellcoment, .divTableCellProducto {
+.divTableCellProducto {
 	
     display: flex;
 	justify-content: center;
@@ -101,11 +70,7 @@ flex-direction: column;
 .divTableCellcoment input{
 	width:90px;
 }
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
-}
+
 .divTableFoot {
 	background-color: #EEE;
 	display: table-footer-group;
@@ -164,25 +129,38 @@ table.minimalistBlack {
   table.minimalistBlack tbody td {
     font-size: 13px;
   }
-  table.minimalistBlack thead {
+  table.minimalistBlack thead, table.minimalistBlack tfoot {
     background: #f96207;
   }
   table.minimalistBlack thead th {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: "Avenir_Bold", sans-serif;
     color: white;
     text-align: center;
   }
-  table.minimalistBlack tfoot {
-    font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-    border-top: 3px solid #000000;
-  }
+ 
   table.minimalistBlack tfoot td {
-    font-size: 14px;
+    font-size: 1em;
+    font-weight: "Avenir_Bold", sans-serif;
+    color: white;
+    text-align: center;
   }
-
+.checkoutBtn {
+	display: flex;
+    justify-content: flex-end;
+    width: 87%;
+    position: absolute;
+    top: 100%;
+}
+.btnNext {
+	background-color: #0A7F1C;
+	color:#ffffff;
+	padding:5px 15px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 16px;
+	border-radius: 10px;
+	border:1px;
+}
 @media (max-width: 991px) {
 	
 .checkout_status {
@@ -195,7 +173,7 @@ table.minimalistBlack {
 .checkout_status_barra {
 	width: 75%;
     height: 12px;
-    top: 40%;
+    top: 22%;
 }
 	table.minimalistBlack {
 		font-family: "Avenir_Regular", sans-serif;
@@ -231,7 +209,6 @@ table.minimalistBlack {
 .review_cart_qty {
     margin-top: 8px;
 }
-
 
 
 }

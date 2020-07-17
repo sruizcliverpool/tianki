@@ -19,11 +19,12 @@
 
 	<section class=" col-lg-4 col-8 checkout_status">
 		<div class="checkout_status_icons">
-			<div><img src="../img/icon/checkout_img1.png"></div>
-			<div><img src="../img/icon/checkout_img2_grey.png"></div>
-			<div><img src="../img/icon/checkout_img3_grey.png"></div>
-			<div><img src="../img/icon/checkout_img4_grey.png"></div>
+			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img1.png">Revisar pedido</div>
+			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img2_grey.png">Ubicación</div>
+			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img3_grey.png">Pago</div>
+			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img4_grey.png">Confirmación</div>
 		</div>
+		
 		<div class="checkout_status_barra">
     </div>
 	</section>
@@ -41,42 +42,48 @@
 		<th><div><img src="../img/icon/trash_naranja.png"></div></th>
 	</tr>
   </thead>
-  <tfoot>
-	<tr>
-		<td>foot1</td>
-		<td>foot2</td>
-		<td>foot3</td>
-		<td>foot4</td>
-		<td>foot5</td>
-	</tr>
-  </tfoot>
+  
   <tbody>
-	<tr>
-	<td>
-		<div class="divTableCellProducto">
-				<div>Manzana verde</div>
-				<div class="divTableCellProductoCat">Fruta</div>
-		</div>
-	</td>
-	<td>
-		<div class="review_cart_qty">
-				<div class="sum">
-					<div><img src="../img/icon/plp_plus.png"></div>
-				</div>
-				<input class="qty" placeholder="40">
-				<div class="res">
-					<div><img src="../img/icon/plp_minus.png"></div></div>	
+		<tr>
+		<td>
+			<div class="divTableCellProducto">
+					<div>Manzana verde</div>
+					<div class="divTableCellProductoCat">Fruta</div>
 			</div>
-	</td>
-	<td>100</td>
-	<td>$15.00</td>
-	<td><div class="divTableCellcoment"><input type="comment"  placeholder="Nota"></div></td>
-	<td><div style="display: block">
-				<img src="../img/icon/trash.png"></div></td>
-	</tr>
-  </tbody>
-  </table>		
+		</td>
+		<td>
+			<div class="review_cart_qty">
+					<div class="sum">
+						<div><img src="../img/icon/plp_plus.png"></div>
+					</div>
+					<input class="qty" placeholder="40">
+					<div class="res">
+						<div><img src="../img/icon/plp_minus.png"></div></div>	
+				</div>
+		</td>
+		<td>100</td>
+		<td>$15.00</td>
+		<td><div class="divTableCellcoment"><input type="comment"  placeholder="Nota"></div></td>
+		<td><div style="display: block">
+					<img src="../img/icon/trash.png"></div></td>
+		</tr>
+ </tbody>
+ <tfoot>
+		<tr>
+			<td>Total a pagar</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>$1000</td>
+		</tr>
+  </tfoot>
+	
+</table>		
 
+		<div class="checkoutBtn">
+			<button type="button" class="btnNext">Continuar</button></div>
+		</div>
 <!--termina main-->
 
 	</main>
