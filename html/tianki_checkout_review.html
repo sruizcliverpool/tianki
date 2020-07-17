@@ -2,10 +2,7 @@
 <head>
 <title>checkout1</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../css/tianki_loginform.css">
-	<link rel="stylesheet" href="../css/tianki_header.css">
 	<link rel="stylesheet" href="../css/tianki_checkout1.css">
-	<link rel="stylesheet" href="../css/tianki_cart.css">
 	<link rel="stylesheet" href="../css/reset.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -16,91 +13,7 @@
 
 <body>
 	<main>
-	<!--header-nav-->
-<section class="container-fluid">
-	<div class="row header">
-
-	<!--header SIN sesión - SE COMENTA SOLO EN SESIÓN DE ADMIN-->
-		<div class="col-lg-2 order-lg-1 col-4 order-1 header_logo">
-			<div><img src="../img/logo/logotipo_tianki.png" a href="#"></div>
-		</div>
-
-	<!--header SIN sesión - SE COMENTA SOLO EN SESIÓN DE ADMIN-->
-		<div class="col-lg-5 order-lg-2 col order-3 header_search">
-			<div class="searchbox">
-				<input type="search" name="q" class="placeholder" placeholder="¿Qué estás buscando?">
-				<img src="../img/icon/search_green.svg" alt="">
-			</div>
-		</div>
-
-	<!--header SIN sesión (cambia última columna)-->
-		<div class="col-lg-5 order-lg-3 col-8 order-2 header_icons">
-			<div class="header_icon">
-				<img src="../img/icon/profile_green.png">
-				<div><p class="p-scroll">Iniciar sesión</p></div>
-			</div>
-			<div class="header_icon" id="myBtn">
-					<img src="../img/icon/cart_green.png">
-				<div>
-					<p class="p-scroll2">Mi carrito</p>
-				</div>
-			</div>
-		</div>
-
-	<!--header CON sesión (cambia última columna)
-		<div class="col-lg-5 order-lg-3 col-8 order-2 header_icons">
-			<div class="header_icon">
-				<img src="../img/icon/profile_green.png">
-				<div><p class="p-scroll">Mi perfil</p></div>
-			</div>
-			<div class="header_icon">
-				<img src="../img/icon/profile_logOut.png">
-				<div>
-					<p class="p-scroll2">Cerrar sesión</p>
-				</div>
-			</div>
-			<div class="header_icon">
-				<img src="../img/icon/cart_green.png">
-				<div>
-					<p class="p-scroll3">Carrito</p>
-				</div>
-			</div>
-		</div>-->
-		
-	<!--header ADMIN (cambian TODAS las columnas)
-		<div class="col-lg-2 order-lg-1 col-3 order-1 header_logo">
-			<div><img src="../img/logo/logotipo_tianki.png" a href="#"></div>
-		</div>
-		<div class="col-lg-4 order-lg-2 col order-3 header_search">
-			<div class="searchbox">
-				<input type="search" name="q" class="placeholder" placeholder="¿Qué estás buscando?">
-				<img src="../img/icon/search_green.svg" alt="">
-		</div>
-		</div>
-		<div class="col-lg-6 order-lg-3 col-9 order-2 header_icons">
-			<div class="header_icon">
-				<img src="../img/icon/profile_green.png">
-				<div><p class="p-scroll">Mi perfil</p></div>
-			</div>
-			<div class="header_icon">
-				<img src="../img/icon/profile_admin.png">
-				<div><p class="p-scroll2">Admin</p></div>
-			</div>
-			<div class="header_icon">
-				<img src="../img/icon/profile_logOut.png">
-				<div>
-					<p class="p-scroll3">Cerrar sesión</p>
-				</div>
-			</div>
-			<div class="header_icon">
-				<img src="../img/icon/cart_green.png">
-				<div>
-					<p class="p-scroll4">Carrito</p>
-				</div>
-			</div>
-		</div>-->
-		</div> 
-</section>
+	
 	
 <!--checkout 1-->		
 
@@ -115,109 +28,55 @@
     </div>
 	</section>
 
-<!--tabla-->	
-<div class="divTable">
-	<div class="divTableBody">
-		<div class="divTableRow_titles">
-			<div class="DivTableTitle">&nbsp;Categor&iacute;a</div>
-			<div class="DivTableTitle">Producto&nbsp;</div>
-			<div class="DivTableTitle">Cantidad&nbsp;</div>
-			<div class="DivTableTitle">&nbsp;Precio</div>
-			<div class="DivTableTitle">Subtotal&nbsp;</div>
-			<div class="DivTableTitle">&nbsp;</div>
+<!--tabla-->			
+                      
+<table class="minimalistBlack">
+  <thead>
+	<tr>
+		<th>Producto</th>
+		<th>Cantidad</th>
+		<th>Precio</th>
+		<th>Subtotal</th>
+		<th><div><img  style="width:20px;" src="../img/icon/edit.png"></div></th>
+		<th><div><img src="../img/icon/trash_naranja.png"></div></th>
+	</tr>
+  </thead>
+  <tfoot>
+	<tr>
+		<td>foot1</td>
+		<td>foot2</td>
+		<td>foot3</td>
+		<td>foot4</td>
+		<td>foot5</td>
+	</tr>
+  </tfoot>
+  <tbody>
+	<tr>
+	<td>
+		<div class="divTableCellProducto">
+				<div>Manzana verde</div>
+				<div class="divTableCellProductoCat">Fruta</div>
 		</div>
-		<div class="divTableRow">
-			<div class="divTableCell">&nbsp;Frutas</div>
-			<div class="divTableCell">&nbsp;Manzana verde</div>
-			<div class="divTableCell">&nbsp;
-				<div class="control_plp">
-			<div class="plp_counter">
-				<div class="row">
-					<div class="plp_counter_icons_minus">
-						<a><img src="../img/icon/plp_minus.png"></a>
-					</div>
-					<div class="plp_counter_row">
-						<input type="numer"  placeholder="">
-						
-					</div>
-					<div class="plp_counter_icons_plus">
-						<a><img src="../img/icon/plp_plus.png"></a>
-					</div>
+	</td>
+	<td>
+		<div class="review_cart_qty">
+				<div class="sum">
+					<div><img src="../img/icon/plp_plus.png"></div>
 				</div>
-			</div>			
-		</div>
+				<input class="qty" placeholder="40">
+				<div class="res">
+					<div><img src="../img/icon/plp_minus.png"></div></div>	
 			</div>
-			<div class="divTableCell">&nbsp;$12 MXN</div>
-			<div class="divTableCell">&nbsp;$24 MXN</div>
-			<div class="divTableCell">&nbsp;<div style="display: block">
-				<img src="../img/icon/trash.png"></div></div>
-		</div>
-		<div class="divTableRow">
-			<div class="divTableCell">&nbsp;Frutas</div>
-			<div class="divTableCell">&nbsp;Manzana verde</div>
-			<div class="divTableCell">&nbsp;
-				<div class="control_plp">
-			<div class="plp_counter">
-				<div class="row">
-					<div class="plp_counter_icons_minus">
-						<a><img src="../img/icon/plp_minus.png"></a>
-					</div>
-					<div class="plp_counter_row">
-						<input type="numer"  placeholder="">
-						
-					</div>
-					<div class="plp_counter_icons_plus">
-						<a><img src="../img/icon/plp_plus.png"></a>
-					</div>
-				</div>
-			</div>			
-		</div>
-			</div>
-			<div class="divTableCell">&nbsp;$12 MXN</div>
-			<div class="divTableCell">&nbsp;$24 MXN</div>
-			<div class="divTableCell">&nbsp;<div style="display: block">
-				<img src="../img/icon/trash.png"></div></div>
-		</div>
-		<div class="divTableRow">
-			<div class="divTableCell">&nbsp;Frutas</div>
-			<div class="divTableCell">&nbsp;Manzana verde</div>
-			<div class="divTableCell">&nbsp;
-				<div class="control_plp">
-			<div class="plp_counter">
-				<div class="row">
-					<div class="plp_counter_icons_minus">
-						<a><img src="../img/icon/plp_minus.png"></a>
-					</div>
-					<div class="plp_counter_row">
-						<input type="numer"  placeholder="">
-						
-					</div>
-					<div class="plp_counter_icons_plus">
-						<a><img src="../img/icon/plp_plus.png"></a>
-					</div>
-				</div>
-			</div>			
-		</div>
-			</div>
-			<div class="divTableCell">&nbsp;$12 MXN</div>
-			<div class="divTableCell">&nbsp;$24 MXN</div>
-			<div class="divTableCell">&nbsp;<div style="display: block">
-				<img src="../img/icon/trash.png"></div></div>
-		</div>
-		<div class="divTableRow_titles">
-			<div class="DivTableTitle">&nbsp;Total a pagar</div>
-			<div class="divTableCell">&nbsp;</div>
-			<div class="divTableCell">&nbsp;</div>
-			<div class="divTableCell">&nbsp;</div>
-			<div class="divTableCell">&nbsp;</div>
-			<div class="DivTableTitle">&nbsp;$1200 MXN</div>
-		</div>
-	</div>
-</div>
-<!-- tabla -->
-		
-		
-		
+	</td>
+	<td>100</td>
+	<td>$15.00</td>
+	<td><div class="divTableCellcoment"><input type="comment"  placeholder="Nota"></div></td>
+	<td><div style="display: block">
+				<img src="../img/icon/trash.png"></div></td>
+	</tr>
+  </tbody>
+  </table>		
+
 <!--termina main-->
 
 	</main>

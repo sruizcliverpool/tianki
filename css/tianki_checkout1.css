@@ -55,6 +55,7 @@ Rojo #e43f0d*/
     justify-content: center;
     position: relative;
     margin-top: 150px;
+	font-family: "Avenir_Regular", sans-serif;
 }
 .divTableBody {
 	width: 65%;
@@ -69,11 +70,10 @@ Rojo #e43f0d*/
     margin-bottom: 10px;
 }
 .DivTableTitle{
-	padding: 4px 0px;
     color: #ffffff;
-    font-family: Avenir_Medium;
+    font-family: "Avenir_Regular", sans-serif;
     font-size: 1em;
-	padding: 5px;
+	padding: 5px 0px 5px 32px;
 }
 .divTableRow {
 	align-items: center;
@@ -86,8 +86,20 @@ Rojo #e43f0d*/
 	background-color: #EEE;
 	display: table-header-group;
 }
-.divTableCell, .divTableHead {
+.divTableCell, .divTableHead, .divTableCellcoment, .divTableCellProducto {
+	
     display: flex;
+	justify-content: center;
+}
+.divTableCellProducto {
+flex-direction: column;
+}
+.divTableCellProductoCat {
+	font-size: .8em;
+	font-family: "Avenir_Bold", sans-serif;
+}
+.divTableCellcoment input{
+	width:90px;
 }
 .divTableHeading {
 	background-color: #EEE;
@@ -102,70 +114,74 @@ Rojo #e43f0d*/
 .divTableCell img {
 	width:15px;
 }
-.control_plp {
-    display: flex;
+
+/*inician estilos cantidad*/
+
+.review_cart_qty {
+	display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
-    width: 100%;
-    margin: 10px 0px 5px 0px;
+	justify-content: center;
+}
+.sum,  .res {
+	border: none;
+    padding: 9px 0;
+    margin-bottom: 0px;
+}
+.sum img, .res img{
+	vertical-align: middle;
+    border-style: none;
+    width: 30px;
 }
 
 
-.plp_counter_row input  {
-    display: flex;
-    flex-direction: column;
+.qty {
+	border: 1px solid grey;
+    padding: 2px;
+    width: 40px;
+    font-family: "Avenir_Medium", sans-serif;
+    font-size: 16px;
     text-align: center;
-    position: relative;
-    margin: 10px 0px 5px 5px;
-    background-color: white;
-    box-shadow: 0px 0px 5px #cbcbcb;
-    width: 55%;
-    border: none;
-    height: 23px;
-    z-index: 1;
-    text-align: center;
-    position: relative;
-    left: 15%;
-    margin-top: 7px;
-}
-
-.plp_counter_row input:focus  {
-    box-shadow: 0px 0px 5px #cbcbcb;
-    outline: none;
-}
-
-.plp_counter p {
-    font-family: "Avenir_UltraLight", sans-serif;
-    font-size: .8em;
     margin: 0;
 }
 
-.plp_counter_row h6 {
-    font-family: "Avenir_Medium", sans-serif;
-    font-size: 1em;
-    margin-bottom: 0em;
-    margin-top: 3px;
+/*tabla2*/
+
+table.minimalistBlack {
+	font-family: "Avenir_Regular", sans-serif;
+    width: 75%;
+    position: relative;
+    z-index: 1;
+    top: 145px;
     text-align: center;
-}
-
-.plp_counter_icons_minus {
-    position: absolute;
-    z-index: 2;
-    left: 2%;
-}
-
-
-.plp_counter_icons_plus {
-    position: absolute;
-    z-index: 2;
-    left: 65%;
-}
-
-.plp_counter_icons_minus img, .plp_counter_icons_plus img {
-    width: 35px;
-}
-
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  table.minimalistBlack td, table.minimalistBlack th {
+    border: none;
+    padding: 5px 4px;
+  }
+  table.minimalistBlack tbody td {
+    font-size: 13px;
+  }
+  table.minimalistBlack thead {
+    background: #f96207;
+  }
+  table.minimalistBlack thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  table.minimalistBlack tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    border-top: 3px solid #000000;
+  }
+  table.minimalistBlack tfoot td {
+    font-size: 14px;
+  }
 
 @media (max-width: 991px) {
 	
@@ -181,6 +197,11 @@ Rojo #e43f0d*/
     height: 12px;
     top: 40%;
 }
+	table.minimalistBlack {
+		font-family: "Avenir_Regular", sans-serif;
+    width: 95%;
+	}
+	
 	.divTableBody {
     width: 95%;
 	}
@@ -200,4 +221,17 @@ Rojo #e43f0d*/
     left: 15%;
     margin-top: 6px;
 }
+	.divTableCellcoment input{
+	width:50px;
+		font-size:.9em;
+}
+
+	/*cantidad*/
+
+.review_cart_qty {
+    margin-top: 8px;
+}
+
+
+
 }
