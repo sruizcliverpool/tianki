@@ -33,6 +33,16 @@ Rojo #e43f0d*/
     width: 100%;
 }
 
+.btn-primary {
+    background-color: #029c01 !important;
+    color: white !important;
+    font-family: "Avenir_Medium", sans-serif !important;
+    border: none !important;
+    outline: none !important;
+}
+
+
+
 /*INPUTS*/
 
 .title_input {
@@ -107,58 +117,48 @@ Rojo #e43f0d*/
     box-shadow: 0px 2px 5px #3333331b;
     border-radius: 10px;
 }
-
+.card_data a {
+    color: black !important;
+    text-decoration: none !important;
+    background-color: none !important;
+}
 .card-body {
     flex: 1 1 auto;
     padding: 20px 0px 20px 30px;
     display: flex;
     flex-direction: column;
 }
-
 .card-body p {
     font-family: "Avenir_Medium", sans-serif;
     color: black;
     margin-bottom: 0px;
 }
-    
-    
-
 .adressData h5{
     text-decoration: underline #f96207;
     text-underline-position: under;
     margin-bottom: 15px;
 }
-
-
 #subjectName {
     margin-bottom: .75rem;
     font-family: "Avenir_Bold", sans-serif;
- 
 }
-
 #subjectPhone {
     margin-bottom: .75rem;
     font-family: "Avenir_Medium", sans-serif;
-  
-
 }
-
 #subjectAdress {
     font-family: "Avenir_Regular", sans-serif;
     margin-top: 10px;
     margin-left: 5px;
     margin-bottom: 20px;
 }
-
 #card-title {
     margin-bottom: .75rem;
 }
-
 .card-text {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
 .card_btns {
     display: flex;
     flex-direction: row;
@@ -166,22 +166,20 @@ Rojo #e43f0d*/
 
     font-family: "Avenir_Regular", sans-serif;
 }
-
-.btn-primary {
+.btn-primary-edit {
     color: black !important;
     background-color: #eaeaea !important;
     border: none !important;
     margin-right: 5px !important;
+    margin-bottom: 10px !important;
 }
-.btn-primary:hover {
+.btn-primary-edit:hover {
     color: white !important;
     background-color: #009b00 !important;
 }
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary-edit.focus, .btn-primary-edit:focus {
     box-shadow: 0 0 0 0 !important;
 }
-
-
 .nav-buttons .nav-link {
     border-radius: .25rem;
     color: black;
@@ -194,13 +192,49 @@ Rojo #e43f0d*/
     border: 1px solid rgba(0,0,0,.125);
 }
 
-#content_about {
-    background-color: blueviolet;
-    width: 100%;
+
+/*MIS FORMAS DE PAGO*/
+
+.card-body-pay {
+    flex: 1 1 auto;
+    padding: 20px 0px 20px 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+.card-body-pay p {
+    font-family: "Avenir_Regular", sans-serif;
+    font-size: 1em;
+}
+.card-body-pay h5 {
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 1em;
+}
+#aliasPayCard {
+    font-size: 1.25rem;
+    font-family: "Avenir_Bold", sans-serif;
+    text-decoration: underline #f96207;
+    text-underline-position: under;
+    margin-bottom: 15px;
+}
+#numberPayCard {
+    margin-bottom: .75rem;
+    font-family: "Avenir_UltraLight", sans-serif;
+}
+.addpayform_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*AGREGAR TARJETA PAGO*/
+.backAddPayForm {
+
+    background-color: #fff;
+    padding: 20px 0px 10px 0px;
+    box-shadow: 0px 3px 5px #3333331b;
+    border-radius: 10px;
+}
+
 
 /*MIS PEDIDOS*/
 
@@ -209,7 +243,6 @@ Rojo #e43f0d*/
     flex-direction: row;
     height: 90px;
 }
-
 
 .card_date {
     display: flex;
@@ -235,7 +268,6 @@ Rojo #e43f0d*/
     margin: 0;
     line-height: 0.8em;
 }
-
 
 .card_data {
     display: flex;
@@ -308,6 +340,70 @@ Rojo #e43f0d*/
     margin: 10px 5px 10px 5px;
     font-family: "Avenir_Bold", sans-serif;
 }
+
+
+
+/*TABLE DESPLEGABLE MIS PEDIDOS*/
+.tableOrdered {
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0px 20px 0px;
+}
+.DivTableTitleMain{
+	padding: 4px 0px;
+    color: black;
+    font-family: Avenir_Medium;
+    font-size: 1.2em;
+	padding: 5px;
+}
+.titles_orders {
+    background-color: #f2f2f2;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+table.tableReviewOrders {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    
+  }
+table.tableReviewOrders td, table.tableReviewOrders th {
+    border: none;
+    padding: 5px 4px;
+  }
+table.tableReviewOrders tbody td {
+    font-family: "Avenir_Regular", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: black;
+  }
+table.tableReviewOrders thead {
+    background: #029c01;
+  }
+table.tableReviewOrders thead th {
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+  }
+table.tableReviewOrders tfoot {
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    background: #029c01;
+  }
+table.tableReviewOrders tfoot td {
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+.card_data img {
+    width: 40px;
+}
+
 
 
     @media (max-width: 991px) {
