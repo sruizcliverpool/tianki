@@ -26,7 +26,6 @@ Rojo #e43f0d*/
 .checkout_status {
     display: flex;
     justify-content: center;
-    top: 100px;
     margin: auto;
 }
 .checkout_status_icons{
@@ -47,7 +46,7 @@ Rojo #e43f0d*/
 }
 
 .checkout_status_barra {
-	width: 80%;
+	width: 75%;
     position: absolute;
     background-color: #ebebeb;
     height: 18px;
@@ -56,9 +55,9 @@ Rojo #e43f0d*/
 }
 
 .divTableCellProducto {
-	
     display: flex;
 	justify-content: center;
+	text-align: justify;
 }
 .divTableCellProducto {
 flex-direction: column;
@@ -117,7 +116,7 @@ table.minimalistBlack {
     width: 75%;
     position: relative;
     z-index: 1;
-    top: 145px;
+    top: 40px;
     text-align: center;
     border-collapse: collapse;
     margin: 0 auto;
@@ -147,10 +146,9 @@ table.minimalistBlack {
   }
 .checkoutBtn {
 	display: flex;
-    justify-content: flex-end;
-    width: 87%;
     position: absolute;
-    top: 49%;
+    margin-top: 64px;
+    right: 20%;
 }
 .btnNext {
 	background-color: #0A7F1C;
@@ -161,11 +159,22 @@ table.minimalistBlack {
 	border-radius: 10px;
 	border:1px;
 }
+.btn-primary-edit {
+    color: black !important;
+    background-color: #eaeaea !important;
+    border: none !important;
+    margin-right: 5px !important;
+    margin-bottom: 10px !important;
+}
+.btn-primary-edit:hover {
+    color: white !important;
+    background-color: #009b00 !important;
+}
+.btn-primary-edit.focus, .btn-primary-edit:focus {
+    box-shadow: 0 0 0 0 !important;
+}
 @media (max-width: 991px) {
-	
-.checkout_status {
-    top: 140px;
-}	
+
 .checkout_status_icons img {
     width: 47px;
     margin: 4px 18px;
@@ -210,5 +219,8 @@ table.minimalistBlack {
     margin-top: 8px;
 }
 
+	.checkoutBtn{
+		right: 5%;
+	}
 
 }

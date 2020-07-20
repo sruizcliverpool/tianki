@@ -16,11 +16,11 @@
 	
 	
 <!--checkout 2-->		
-
-	<section class=" col-lg-4 col-8 checkout_status">
+<div class="container">
+	<section class=" col-lg-6 col-8 checkout_status">
 		<div class="checkout_status_icons">
 			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img1.png">Revisar pedido</div>
-			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img2_green.png">Ubicación</div>
+			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img2_green.png">Dirección</div>
 			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img3_grey.png">Pago</div>
 			<div class="checkoutStatusSteps"><img src="../img/icon/checkout_img4_grey.png">Confirmación</div>
 		</div>
@@ -30,14 +30,11 @@
 	</section>
 
  <!--MIS DIRECCIONES-->
-  
-	<div id="content_datos">
-
 	  <!--DIRECCIÓNES REGISTRADA-->
 
-	  <div class="row">
+	  <div class="row content_datos">
 		<!--DIRECCIÓN #1-->
-		<div class="col-sm-6 col-lg-8">
+		<div class="col-lg-4 col-12">
 		  <div class="card">
 			<div class="card-body">
 			  <div class="adressData">
@@ -49,6 +46,10 @@
 				<span id="subjectCity">CDMX</span>, 
 				<span id="subjectCP">15235</span>, 
 				<span id="sujectDel">Tlalpan</span></p>
+				 <div class="custom-control custom-checkbox my-1 mr-sm-2">
+			<input type="checkbox" class="custom-control-input" id="customControlInline">
+			<label style="font-size: .8em;" class="custom-control-label" for="customControlInline">Predeterminada</label>
+		  </div><br>
 			  <div class="card_btns">
 				<a href="#" class="btn btn-primary-edit">Editar</a>
 				<a href="#" class="btn btn-primary-edit">Eliminar</a>
@@ -58,32 +59,36 @@
 		  </div>
 		</div>
 		<!--DIRECCIÓN #2-->
-		<div class="col-sm-6 col-lg-8">
+		<div class="col-lg-4 col-12">
 		  <div class="card">
 			<div class="card-body">
 			  <div class="adressData">
-			  <h5 id="subjectName">Taco inn 2</h5>
+			  <h5 id="subjectName">Taco inn 2
+				</h5>
 			</div>
 			  <p id="subjectAdress">Av. Renato Leduc 373 Int. 6<br>
 				<span id="subjectBetweenStt">Carrasco y Sabino</span>,<br>
 				<span id="subjectCity">CDMX</span>, 
 				<span id="subjectCP">15235</span>, 
 				<span id="sujectDel">Tlalpan</span></p>
+				 <div class="custom-control custom-checkbox my-1 mr-sm-2">
+			<input type="checkbox" class="custom-control-input" id="customControlInline">
+			<label style="font-size: .8em;" class="custom-control-label" for="customControlInline">Elegir esta dirección</label>
+		  </div><br>
 			  <div class="card_btns">
 				<a href="#" class="btn btn-primary-edit">Editar</a>
 				<a href="#" class="btn btn-primary-edit">Eliminar</a>
+
 			  </div>
 			</div>
 		  </div>
 		</div>
 		<!--AGREGAR DIRECCIÓN-->
 		<div class="col-sm-6 col-lg-8">
-		  <div class="card">
 			<div class="card-body">
-			  <a href="#"><p>Agregar dirección</p></a>
+			  <a href="#"><p>+ Agregar dirección</p></a>
 			</div>
-		  </div>
-		</div>
+		 </div>
 
 
 		<!--MODAL - AGREGAR DIRECCIÓN-->
@@ -104,7 +109,7 @@
 		  </div>
 
 		  <div class="form-row">                              
-			<div class="form-group col-7 col-lg-6">
+			<div class="form-group col-4 col-lg-6">
 			  <label for="inputStreet">Calle</label>
 			  <input type="text" class="form-control" placeholder="">
 			</div>
@@ -145,22 +150,18 @@
 			<label class="custom-control-label" for="customControlInline">Escoger como dirección predeterminada</label>
 		  </div><br>
 
-		  <button type="submit" class="btn btn-primary">Guardar cambios</button>
+		  <button type="submit" class="btn btn-primary-edit">Paso atrás</button>
+			<button type="submit" class="btn btn-primary-edit">Continuar</button>
 
 		</form>
-
-
-	  </div>
-
+		  
+		</div>	
   </div>
+
 
 
 <!--termina formulario-->
 		
-<div class="checkoutBtn">
-	<button type="button" class="btnNext">Continuar</button></div>
-</div>
-<!--termina main-->
 
 	</main>
 	
