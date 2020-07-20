@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Naranja #f96207
+Verde #029c01
+Amarillo #f9a107
+Rojo #e43f0d*/
+
+@font-face {
+    font-family: Avenir_Bold;
+    src: url('../fonts/AvenirNext_Bold.ttf');
+        }
+@font-face {
+    font-family: Avenir_Medium;
+    src: url('../fonts/AvenirNext_Medium.ttf');
+        }
+@font-face {
+    font-family: Avenir_Regular;
+    src: url('../fonts/AvenirNext_Regular.ttf');
+    }
+@font-face {
+    font-family: Avenir_UltraLight;
+    src: url('../fonts/AvenirNext_UltraLight.ttf');
+        }
+
+.checkout_status {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.checkout_status_icons{
+    display: flex;
+    justify-content: space-around;
+	position: relative;
+    z-index: 1;
+} 
+.checkoutStatusSteps {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color:#878484;
+}
+.checkout_status_icons img {
+	width: 60px;
+    margin: 4px 30px;
+}
+
+.checkout_status_barra {
+	width: 74%;
+    position: absolute;
+    background-color: #ebebeb;
+    height: 18px;
+    display: flex;
+    top: 34%;
+}
+/*MIS DIRECCIONES*/
+.content_datos {
+	margin-top: 40px;
+	justify-content: center;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: 0px 2px 5px #3333331b;
+    border-radius: 10px;
+}
+.card_data a {
+    color: black !important;
+    text-decoration: none !important;
+    background-color: none !important;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 20px 0px 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.card-body p {
+    font-family: "Avenir_Medium", sans-serif;
+    color: black;
+    margin-bottom: 0px;
+}
+.card-body p:hover {
+	color: #029c01;
+	text-decoration: none;
+}
+.adressData h5{
+    text-decoration: underline #f96207;
+    text-underline-position: under;
+    margin-bottom: 15px;
+}
+#subjectName {
+    margin-bottom: .75rem;
+    font-family: "Avenir_Bold", sans-serif;
+}
+#subjectPhone {
+    margin-bottom: .75rem;
+    font-family: "Avenir_Medium", sans-serif;
+}
+#subjectAdress {
+    font-family: "Avenir_Regular", sans-serif;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+#card-title {
+    margin-bottom: .75rem;
+}
+.card-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.card_btns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    font-family: "Avenir_Regular", sans-serif;
+}
+.btn-primary-edit {
+    color: black !important;
+    background-color: #eaeaea !important;
+    border: none !important;
+    margin-right: 5px !important;
+    margin-bottom: 10px !important;
+}
+.btn-primary-edit:hover {
+    color: white !important;
+    background-color: #009b00 !important;
+}
+.btn-primary-edit.focus, .btn-primary-edit:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+.nav-buttons .nav-link {
+    border-radius: .25rem;
+    color: black;
+    font-family: "Avenir_Medium", sans-serif;
+
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.form-row  {
+	margin:0;
+}
+
+/*botones*/
+.checkoutBtn {
+	display: flex;
+    justify-content: flex-end;
+}
+.btnNext {
+	background-color: #0A7F1C;
+	color:#ffffff;
+	padding:5px 15px;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 16px;
+	border-radius: 10px;
+	border:1px;
+}
+.formDate  {
+	display: flex; 
+	margin-bottom: 20px;
+	flex-direction: column;
+}
+.formDate p{
+	color:#029c01;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
+}
+@media (max-width: 991px) {
+
+.checkout_status_icons img {
+    width: 47px;
+    margin: 4px 18px;
+}
+.checkout_status_barra {
+	width: 100%;
+    height: 12px;
+    top: 22%;
+}
+	table.minimalistBlack {
+		font-family: "Avenir_Regular", sans-serif;
+    width: 95%;
+	}
+	
+	.divTableBody {
+    width: 95%;
+	}
+	.DivTableTitle {
+    font-size: .8em;
+	}
+	.divTableCell, .divTableHead {
+    font-size: 0.7em;
+	}
+	.plp_counter_icons_minus img, .plp_counter_icons_plus img {
+    width: 30px;
+}
+	.plp_counter_row input {
+    margin: 8px 0px 5px 5px;
+    width: 55%;
+    height: 19px;
+    left: 15%;
+    margin-top: 6px;
+}
+	.divTableCellcoment input{
+	width:50px;
+		font-size:.9em;
+}
+
+	/*cantidad*/
+
+.review_cart_qty {
+    margin-top: 8px;
+}
+	form {
+		margin:10px !important;
+	}
+	
+.card_btns {
+    justify-content: flex-end;
+	}
+	
+
+}
