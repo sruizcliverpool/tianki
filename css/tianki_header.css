@@ -146,7 +146,7 @@ input[type=search]:focus {
 }
 
 .main_section {
-	background-color: aqua;
+	background-color: white;
     padding: 0px!important;
 	display: flex;
 	flex-direction: column;
@@ -165,13 +165,34 @@ input[type=search]:focus {
 	z-index: 0;
     position: absolute;
     text-align: center;
-
-	top: 9%;
+	top: 6%;
 }
+.main_section_copy h3 {
+	font-family: "Avenir_UltraLight", sans-serif;
+	font-size: 2em;
+	color: white;
+}
+
 
 .main_section_btn {
-	margin: 30px 0px 30px 0px;
+	margin: 20px 0px 30px 0px;
 }
+
+.btn-primary {
+    background-color: #029c01 !important;
+    color: white !important;
+    font-family: "Avenir_Regular", sans-serif !important;
+    border: none !important;
+    outline: none !important;
+}
+.btn-primary:hover {
+	box-shadow: none !important;
+	background-color: #007d00 !important;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none !important;
+}
+
 
 /**ESTILOS ORDENES**/
 
