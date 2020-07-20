@@ -87,6 +87,10 @@ Rojo #e43f0d*/
     color: black;
     margin-bottom: 0px;
 }
+.card-body p:hover {
+	color: #029c01;
+	text-decoration: none;
+}
 .adressData h5{
     text-decoration: underline #f96207;
     text-underline-position: under;
@@ -153,9 +157,6 @@ Rojo #e43f0d*/
 .checkoutBtn {
 	display: flex;
     justify-content: flex-end;
-    width: 87%;
-    position: absolute;
-    top: 49%;
 }
 .btnNext {
 	background-color: #0A7F1C;
@@ -165,6 +166,16 @@ Rojo #e43f0d*/
 	font-size: 16px;
 	border-radius: 10px;
 	border:1px;
+}
+.formDate  {
+	display: flex; 
+	margin-bottom: 20px;
+	flex-direction: column;
+}
+.formDate p{
+	color:#029c01;
+	font-family: "Avenir_Medium", sans-serif;
+	font-size: 1.1em;
 }
 @media (max-width: 991px) {
 
@@ -214,5 +225,10 @@ Rojo #e43f0d*/
 	form {
 		margin:10px !important;
 	}
+	
+.card_btns {
+    justify-content: flex-end;
+	}
+	
 
 }
