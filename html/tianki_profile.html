@@ -50,7 +50,13 @@
                                   <label for="inputFirstName">Nombre del negocio/Nombre del responsable</label>
                                   <input type="text" class="form-control"  placeholder="">
                                 </div>
-                              </div>  
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                  <label for="inputPhoneContact">Teléfono</label>
+                                  <input type="text" class="form-control"  placeholder="Opcional">
+                                </div>
+                              </div>    
                               <div class="form-row"> 
                                 <div class="form-group col-lg-6">
                                   <label for="inputAddress">Correo Electrónico</label>
@@ -136,9 +142,10 @@
                           <div class="card">
                             <div class="card-body">
                               <div class="adressData">
-                              <h5 id="subjectName">Pedro Ramírez<span>&emsp;</span><span id="subjectPhone">55 5516983929</span></h5>
-                            </div>
-                              <p id="subjectAdress">Av. Renato Leduc 373 Int. 6<br>
+                              <h5 id="subjectName">Pedro Ramírez<span>&emsp;</span></h5>
+                            </div><p>
+                                <span id="subjectPhone">5516983929</span><br>
+                                <span id="subjectAdress">Av. Renato Leduc 373 Int. 6</span><br>
                                 <span id="subjectBetweenStt">Carrasco y Sabino</span>,<br>
                                 <span id="subjectCity">CDMX</span>, 
                                 <span id="subjectCP">15235</span>, 
@@ -156,9 +163,10 @@
                           <div class="card">
                             <div class="card-body">
                               <div class="adressData">
-                              <h5 id="subjectName">Juan Pérez<span>&emsp;</span><span id="subjectPhone">55 5516983929</span></h5>
-                            </div>
-                              <p id="subjectAdress">Av. Renato Leduc 373 Int. 6<br>
+                                <h5 id="subjectName">Juan Pérez<span>&emsp;</span></h5>
+                              </div><p>
+                                <span id="subjectPhone">5516983929</span><br>
+                                <span id="subjectAdress">Av. Renato Leduc 373 Int. 6</span><br>
                                 <span id="subjectBetweenStt">Carrasco y Sabino</span>,<br>
                                 <span id="subjectCity">CDMX</span>, 
                                 <span id="subjectCP">15235</span>, 
@@ -340,8 +348,8 @@
                   <div class="tab-pane fade" id="v-pills-pedidos" role="tabpanel" aria-labelledby="v-pills-pedidos-tab">
                     <div id="content_orderData">
                           <div class="card_date col-2 col-lg-2">
-                            <h5 id="DateOrder">10</h5>
-                            <p id="MonthOrder">FEB</p>
+                            <h5><span id="DateOrder">10</span></h5>
+                            <p><span id="MonthOrder">FEB</span></p>
                           </div>
                         
                           <div class="card_data col col-lg-5">
@@ -355,8 +363,8 @@
                     </div>
                     <div id="content_orderData">
                           <div class="card_date col-2 col-lg-2">
-                            <h5 id="DateOrder">20</h5>
-                            <p id="MonthOrder">MAR</p>
+                            <h5><span id="DateOrder">20</span></h5>
+                            <p><span id="MonthOrder">MAR</span></p>
                           </div>
                         
                           <div class="card_data col col-lg-5">
@@ -370,8 +378,8 @@
                     </div>
                     <div id="content_orderData">
                         <div class="card_date col-2 col-lg-2">
-                          <h5 id="DateOrder">01</h5>
-                          <p id="MonthOrder">AGO</p>
+                          <h5><span id="DateOrder">14</span></h5>
+                          <p><span id="MonthOrder">AGO</span></p>
                         </div>
                     
                         <div class="card_data col col-lg-5">
@@ -385,8 +393,8 @@
                     </div>
                     <div id="content_orderData">
                         <div class="card_date col-2 col-lg-2">
-                          <h5 id="DateOrder">23</h5>
-                          <p id="MonthOrder">NOV</p>
+                          <h5><span id="DateOrder">23</span></h5>
+                            <p><span id="MonthOrder">NOV</span></p>
                         </div>
 
                         <div class="card_data col col-lg-5">
@@ -410,7 +418,6 @@
                       <table class="tableReviewOrders">
                         <thead>
                           <tr>
-                          <th>Categoría</th>
                           <th>Producto</th>
                           <th>Cantidad</th>
                           <th>Precio</th>
@@ -421,7 +428,6 @@
                           <tr>
                           <td></td>
                           <td></td>
-                          <td></td>
                           <td>Total pagado</td>
                           <td>$<span id="totalOrdered">2325.00</span></td>
                           </tr>
@@ -430,7 +436,6 @@
                         <tbody>
                           <!--PRODUCTO-->
                           <tr>
-                          <td><span id="categoryOrdered">Frutas</span></td>
                           <td><span id="productOrdered">Manzana Verde</span></td>
                           <td><span id="cuantityOrdered">1000</span></td>
                           <td>$&nbsp;<span id="unitPriceOrdered">15.00</span></td>
@@ -438,7 +443,6 @@
                           </tr>
                           <!--PRODUCTO-->
                           <tr>
-                            <td><span id="categoryOrdered">Frutas</span></td>
                             <td><span id="productOrdered">Manzana Verde</span></td>
                             <td><span id="cuantityOrdered">1000</span></td>
                             <td>$<span id="unitPriceOrdered">15.00</span></td>
@@ -446,7 +450,6 @@
                           </tr>
                           <!--PRODUCTO-->
                           <tr>
-                            <td><span id="categoryOrdered">Frutas</span></td>
                             <td><span id="productOrdered">Manzana Verde</span></td>
                             <td><span id="cuantityOrdered">1000</span></td>
                             <td>$<span id="unitPriceOrdered">15.00</span></td>
@@ -454,7 +457,6 @@
                             </tr>
                           <!--PRODUCTO-->
                           <tr>
-                            <td><span id="categoryOrdered">Frutas</span></td>
                             <td><span id="productOrdered">Manzana Verde</span></td>
                             <td><span id="cuantityOrdered">1000</span></td>
                             <td>$<span id="unitPriceOrdered">15.00</span></td>
@@ -462,7 +464,6 @@
                             </tr>
                           <!--PRODUCTO-->
                           <tr>
-                            <td><span id="categoryOrdered">Frutas</span></td>
                             <td><span id="productOrdered">Manzana Verde</span></td>
                             <td><span id="cuantityOrdered">1000</span></td>
                             <td>$<span id="unitPriceOrdered">15.00</span></td>
@@ -470,7 +471,6 @@
                             </tr>
                           <!--PRODUCTO-->
                           <tr>
-                            <td><span id="categoryOrdered">Frutas</span></td>
                             <td><span id="productOrdered">Manzana Verde</span></td>
                             <td><span id="cuantityOrdered">1000</span></td>
                             <td>$<span id="unitPriceOrdered">15.00</span></td>

@@ -149,7 +149,7 @@ Rojo #e43f0d*/
 #subjectAdress {
     font-family: "Avenir_Regular", sans-serif;
     margin-top: 10px;
-    margin-left: 5px;
+
     margin-bottom: 20px;
 }
 #card-title {
@@ -163,7 +163,7 @@ Rojo #e43f0d*/
     display: flex;
     flex-direction: row;
     width: 100%;
-
+    margin-top: 15px;
     font-family: "Avenir_Regular", sans-serif;
 }
 .btn-primary-edit {
