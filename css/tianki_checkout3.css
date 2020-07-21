@@ -23,6 +23,8 @@ Rojo #e43f0d*/
     src: url('../fonts/AvenirNext_UltraLight.ttf');
         }
 
+
+
 .checkout_status {
     display: flex;
     justify-content: center;
@@ -53,8 +55,37 @@ Rojo #e43f0d*/
     display: flex;
     top: 34%;
 }
+
+.payForm {
+    margin: 40px 0px 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+}
+.payForm p {
+	font-family: "Avenir_Bold", sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+.card_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    font-family: "Avenir_Regular", sans-serif;
+}
+
+.card_btns_pay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-family: "Avenir_Regular", sans-serif;
+}
+
+
 /*MIS DIRECCIONES*/
-.content_datos {
+/**.content_datos {
 	margin-top: 40px;
 	justify-content: center;
 }
@@ -70,6 +101,7 @@ Rojo #e43f0d*/
     background-clip: border-box;
     box-shadow: 0px 2px 5px #3333331b;
     border-radius: 10px;
+    margin: 10px 0px 10px 0px;
 }
 .card_data a {
     color: black !important;
@@ -87,9 +119,16 @@ Rojo #e43f0d*/
     color: black;
     margin-bottom: 0px;
 }
-.card-body p:hover {
-	color: #029c01;
-	text-decoration: none;
+.card-body h6 {
+    font-family: "Avenir_Medium", sans-serif;
+    color: black;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 1.4em;
+}
+.card-body a:hover {
+    text-underline-position: none !important;
+	text-decoration: none !important;
 }
 .adressData h5{
     text-decoration: underline #f96207;
@@ -107,7 +146,6 @@ Rojo #e43f0d*/
 #subjectAdress {
     font-family: "Avenir_Regular", sans-serif;
     margin-top: 10px;
-    margin-left: 5px;
     margin-bottom: 20px;
 }
 #card-title {
@@ -117,13 +155,9 @@ Rojo #e43f0d*/
     margin-top: 0;
     margin-bottom: 1rem;
 }
-.card_btns {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+**/
 
-    font-family: "Avenir_Regular", sans-serif;
-}
+/**ESCOGER DIRECCIONES**/
 .btn-primary-edit {
     color: black !important;
     background-color: #eaeaea !important;
@@ -137,6 +171,8 @@ Rojo #e43f0d*/
 }
 .btn-primary-edit.focus, .btn-primary-edit:focus {
     box-shadow: 0 0 0 0 !important;
+    background-color: #009b00 !important;
+    color: white !important;
 }
 .nav-buttons .nav-link {
     border-radius: .25rem;
@@ -148,7 +184,77 @@ Rojo #e43f0d*/
     display: block;
     padding: .5rem 1rem;
     border: 1px solid rgba(0,0,0,.125);
+} 
+.card-body-pay {
+    flex: 1 1 auto;
+    padding: 20px 0px 20px 30px;
+    display: flex;
+    flex-direction: column;
 }
+.card-body-pay p {
+    font-family: "Avenir_Regular", sans-serif;
+    font-size: 1em;
+}
+.card-body-pay h5 {
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 1em;
+}
+#aliasPayCard {
+    font-size: 1.25rem;
+    font-family: "Avenir_Bold", sans-serif;
+    text-decoration: underline #f96207;
+    text-underline-position: under;
+    margin-bottom: 15px;
+}
+#numberPayCard {
+    margin-bottom: .75rem;
+    font-family: "Avenir_UltraLight", sans-serif;
+}
+.addpayform_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.custom-control-label  {
+    font-family: "Avenir_Medium", sans-serif;
+}
+
+.card-body  {
+    margin: auto;
+}
+.card-body p {
+    font-family: "Avenir_Medium", sans-serif;
+    color: black;
+    margin-bottom: 0px;
+}
+.card-body h6 {
+    font-family: "Avenir_Medium", sans-serif;
+    color: black;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 1.4em;
+}
+.card-body a:hover {
+    text-underline-position: none !important;
+	text-decoration: none !important;
+}
+
+/*AGREGAR TARJETA PAGO*/
+.backAddPayForm {
+
+    background-color: #fff;
+    padding: 20px 0px 10px 0px;
+    box-shadow: 0px 3px 5px #3333331b;
+    border-radius: 10px;
+}
+.addpayform_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .form-row  {
 	margin:0;
 }
