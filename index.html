@@ -1,1 +1,675 @@
-HTML DE TODO EL INDEX AQUI
+<html lang="es">
+<head>
+<title>Tianki</title>
+<meta charset="utf-8">
+	<link rel="stylesheet" href="../tianki/css/tianki_footer.css">
+	<link rel="stylesheet" href="../tianki/css/tianki_header.css">
+	<link rel="stylesheet" href="../tianki/css/tianki_plp.css">
+	<link rel="stylesheet" href="../tianki/css/reset.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="shortcut icon" href="../img/icon/tianki_icon.ico" type="image/x-icon">
+<link rel="icon" href="../img/icon/tianki_icon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<main>
+	<!--header-nav-->
+<section class="container-fluid">
+	<div class="row header">
+
+	<!--header SIN sesión - SE COMENTA SOLO EN SESIÓN DE ADMIN-->
+		<div class="col-lg-2 order-lg-1 col-4 order-1 header_logo">
+			<div><img src="../tianki/img/logo/logotipo_tianki.png" a href="#"></div>
+		</div>
+
+	<!--header SIN sesión - SE COMENTA SOLO EN SESIÓN DE ADMIN-->
+		<div class="col-lg-5 order-lg-2 col order-3 header_search">
+			<div class="searchbox">
+				<input type="search" name="q" class="placeholder" placeholder="¿Qué estás buscando?">
+				<img src="../tianki/img/icon/search_green.svg" alt="">
+			</div>
+		</div>
+
+	<!--header SIN sesión (cambia última columna)-->
+		<div class="col-lg-5 order-lg-3 col-8 order-2 header_icons">
+			<div class="header_icon">
+				<img src="../tianki/img/icon/profile_green.png">
+				<div><p class="p-scroll">Iniciar sesión</p></div>
+			</div>
+			<div class="header_icon">
+					<img src="../tianki/img/icon/cart_green.png">
+				<div>
+					<p class="p-scroll2">Mi carrito</p>
+				</div>
+			</div>
+		</div>
+
+	<!--header CON sesión (cambia última columna)
+		<div class="col-lg-5 order-lg-3 col-8 order-2 header_icons">
+			<div class="header_icon">
+				<img src="../tianki/img/icon/profile_green.png">
+				<div><p class="p-scroll">Mi perfil</p></div>
+			</div>
+			<div class="header_icon">
+				<img src="../tianki/img/icon/profile_logOut.png">
+				<div>
+					<p class="p-scroll2">Cerrar sesión</p>
+				</div>
+			</div>
+			<div class="header_icon">
+				<img src="../tianki/img/icon/cart_green.png">
+				<div>
+					<p class="p-scroll3">Carrito</p>
+				</div>
+			</div>
+		</div>-->
+		
+	<!--header ADMIN (cambian TODAS las columnas)
+		<div class="col-lg-2 order-lg-1 col-3 order-1 header_logo">
+			<div><img src="../tianki/img/logo/logotipo_tianki.png" a href="#"></div>
+		</div>
+		<div class="col-lg-4 order-lg-2 col order-3 header_search">
+			<div class="searchbox">
+				<input type="search" name="q" class="placeholder" placeholder="¿Qué estás buscando?">
+				<img src="../tianki/img/icon/search_green.svg" alt="">
+		</div>
+		</div>
+		<div class="col-lg-6 order-lg-3 col-9 order-2 header_icons">
+			<div class="header_icon">
+				<img src="../tianki/img/icon/profile_green.png">
+				<div><p class="p-scroll">Mi perfil</p></div>
+			</div>
+			<div class="header_icon">
+				<img src="../tianki/img/icon/profile_admin.png">
+				<div><p class="p-scroll2">Admin</p></div>
+			</div>
+			<div class="header_icon">
+				<img src="../tianki/img/icon/profile_logOut.png">
+				<div>
+					<p class="p-scroll3">Cerrar sesión</p>
+				</div>
+			</div>
+			<div class="header_icon">
+				<img src="../tianki/img/icon/cart_green.png">
+				<div>
+					<p class="p-scroll4">Carrito</p>
+				</div>
+			</div>
+		</div>-->
+		
+
+	</div> 
+</section>
+	
+	<!--main banner-->
+<section class="main_section d-flex container-fluid align-items-center justify-content-center">
+	
+		<div class="main_section_copy">
+			<h3>Frescura desde el campo hasta tu negocio.</h3>
+			<div class="main_section_btn">
+				<button type="submit" class="btn btn-primary">Conócenos</button>
+			</div>
+		</div>
+		
+		<div class="main_section_img">
+			<picture>
+				<source media="(max-width: 991px)" data-srcset="../tianki/img/img_principal_m.jpg" srcset="../tianki/img/.jpg">
+				<img src="../tianki/img/content/index_mainB.jpg" alt="Tu super en línea">
+			</picture>
+		</div>
+
+</section>
+
+	<!--orders-->
+<section class="orders container-fluid">
+
+	<div class="col-lg-6 col orders_text">
+		<h3>Repite tu último pedido</h3>
+		<p>Agrega los productos de tu pedido anterior y modifícalo con un solo click.</p>
+	</div>
+	<div class="col-lg-6 col order_history_box">
+	<div class="order_history">
+			<div class="order_box">
+				<div class="order_date">
+					<div class="order_date_day">00</div>
+					<div class="order_date_month">MAR</div>
+				</div>
+				<div class="order_info d-flex align-items-start flex-column">
+					<div class="order_info_number">Pedido 123456</div>
+					<div class="order_info_quantity">Cant. 5</div>
+				</div>
+				<div class="order_btn">
+					<img src="../tianki/img/icon/flecha.png">
+				</div>
+			</div>
+	</div>
+	<div class="order_history2">
+			<div class="order_box">
+				<div class="order_date">
+					<div class="order_date_day">00</div>
+					<div class="order_date_month">	MAR</div>
+				</div>
+				<div class="order_info d-flex align-items-start flex-column">
+					<div class="order_info_number">Pedido 123456</div>
+					<div class="order_info_quantity">Cant. 5</div>
+				</div>
+				<div class="order_btn">
+					<img src="../tianki/img/icon/flecha.png">
+				</div>
+			</div>
+	</div>
+	<div class="order_history3">
+			<div class="order_box">
+				<div class="order_date">
+					<div class="order_date_day"><strong>00</strong></div>
+					<div class="order_date_month"><strong>MAR</strong></div>
+				</div>
+				<div class="order_info d-flex align-items-start flex-column">
+					<div class="order_info_number">Pedido 123456</div>
+					<div class="order_info_quantity">Cant. 5</div>
+				</div>
+				<div class="order_btn">
+					<img src="../tianki/img/icon/flecha.png">
+				</div>
+			</div>
+	</div>
+	</div>
+	
+</section>
+	
+
+
+
+	<!--steps-->
+<section class="container">
+	<section class="steps_title">
+		<h3>¿Cómo funciona?</h3>
+			<div class="row steps">
+				<div class="steps_info col-lg-4 col-4">
+					<img src="../tianki/img/icon/steps/step1_cart.png">
+					<h5>Agrega tu pedido</h5>
+					<p>Selecciona tus productos</p>
+				</div>
+				<div class="steps_info col-lg-4 col-4">
+					<img src="../tianki/img/icon/steps/step2_list.png">
+					<h5>Programa la entrega</h5>
+					<p>Revisa tu pedido y programa la entrega</p>
+				</div>
+
+				<div class="steps_info col-lg-4 col-4">
+					<img src="../tianki/img/icon/steps/step3_deliver.png">
+					<h5>Recibe tu pedido</h5>
+					<p>Recibe tus productos en la fecha y hora indicada</p>
+				</div>	
+			</div>
+
+	</section>
+</section>
+
+<section class="category_title">
+		Trabajamos directamente con el campo para ofrecerte el mejor precio.
+</section>
+
+
+<!--ejercicio slider-->	
+<div id="sliderBX-contenedor">
+    <div id="btnSliderNext">
+		<svg style="margin-top: 3px;" width="24" height="24" viewBox="0 0 24 24">
+  		<path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+		</svg>
+	</div>
+
+    <div id="btnSliderPrev">
+	<svg style="margin-top: 3px;" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+	</svg>
+	</div>
+
+	<div id="sliderBX">
+        <div class="sliderBXcell">
+            <p>FRUTAS</p>
+			<picture>
+    		<img src="../tianki/img/cat/catFrutas.jpg"> 
+       		</picture>
+        </div>
+        <div class="sliderBXcell">
+            <p>VERDURAS</p>
+			<picture>
+    		<img src="../tianki/img/cat/catVerduras.jpg"> 
+       		</picture>
+        </div>
+        <div class="sliderBXcell">
+            <p>LÁCTEOS</p>
+			<picture>
+    		<img src="../tianki/img/cat/catLacSalch.jpg"> 
+       		</picture>
+        </div>
+        <div class="sliderBXcell">
+            <p>GRANEL</p>
+			<picture>
+    		<img src="../tianki/img/cat/catGranel.jpg"> 
+       		</picture>
+        </div>
+    </div>
+</div>
+
+
+
+<!--PLP-->	
+
+<div class="container product_list_page">
+	
+	<div class="plp_box">
+
+		<div id="product_title">Chile Pimiento</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/F-AguacateBooth.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Queso Chihuahua</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/F-Ciruelas.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Queso Doble Crema</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/F-Guanabana.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Diente de Ajo suelto</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/F-Higo.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Germen de Alfalfa</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/F-UvaRoja.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Diente de Ajo suelto</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/V-Berenjena.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Germen de Alfalfa</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/V-Hierbabuena.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Germen de Alfalfa</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/V-Romero.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Diente de Ajo suelto</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/V-TomateVerde.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+	<div class="plp_box">
+
+		<div id="product_title">Germen de Alfalfa</div>
+		<div class="plp_data">
+			<div id="type_title"><p>precio por pieza</p></div>
+			<div id="price_title">$21.00</div>
+		</div>
+
+		<div class="product_img">
+			<img src="../tianki/img/cat/plp/V-Portobello.jpg">
+		</div>
+		
+		<div class="control_plp">
+			<div class="plp_counter">
+				<div class="row">
+					<div class="plp_counter_icons_minus">
+						<a><img src="../tianki/img/icon/plp_minus.png"></a>
+					</div>
+					<div class="plp_counter_row">
+						<input type="number"  placeholder="">
+						
+					</div>
+					<div class="plp_counter_icons_plus">
+						<a><img src="../tianki/img/icon/plp_plus.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plp_add_btn">
+				<img src="../tianki/img/icon/plp_add_btn.png">
+			</div>			
+		</div>
+		<div class="plp_notes">
+			<textarea type="text" class="plp_notes"  placeholder="Añadir notas"></textarea>
+		</div>
+	</div>
+
+</div>
+
+
+<!--BOTON VER MÁS-->
+<div class="d-flex justify-content-center">
+	<button type="submit" class="btn btn-primary">Cargar más</button>
+</div>
+
+
+<!--FOOTER-->	
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="mainfooter">
+            <div class="col-lg-4 order-lg-1 col-6 order-1 leftfooter">
+				<ul>
+                    <li><a href="#">Acerca de Tianki</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Politicas y privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                </ul>
+                
+            </div>
+            <div class="v-line"></div>
+			<div class="col-lg-4 order-lg-2 col-12 order-3 middlefooter">
+                <div class="middle_icons"><img src="../tianki/img/logo/logotipo_tianki.png">
+                <p>Todos los derechos reservados Tianki® 2020</p></div>
+                <div class="icons_footer">
+                    <div><a href="https://www.facebook.com/Tianki-106686434344128"><img src="../tianki/img/icon/facebook_icon.png"></a></div>
+                    <div><img src="../tianki/img/icon/twitter_icon.png"></div>
+                    <div><a href="https://www.instagram.com/tianki.mx/"><img src="../tianki/img/icon/ig_icon.png"></a></div>
+                </div>
+            </div>
+            <div class="v-line2"></div>
+            <div class="col-lg-4 order-lg-3 col-6 order-2 rightfooter">
+                <ul>
+                    <li><h6>¿Necesitas ayuda?</li>
+                    <li>Escríbenos en Whatsapp al 55 3076 5944</li>
+                    <li><h6>Horarios de atención</h6></li>
+                    <li>9:00am a 8:00pm</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	
+<!--termina main-->
+	</main>
+	
+<script src="../tianki/js/home_javascript.js"></script>
+<script src="../tianki/js/scroll_javascript.js"></script>
+</body>
+</html>
