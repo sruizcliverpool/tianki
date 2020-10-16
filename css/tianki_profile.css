@@ -43,6 +43,7 @@ Rojo #e43f0d*/
 
 
 
+
 /*INPUTS*/
 
 .title_input {
@@ -225,6 +226,12 @@ Rojo #e43f0d*/
     display: flex;
     justify-content: center;
 }
+#defaultPayCard h6 {
+    font-family: "Avenir_Medium", sans-serif;
+    font-size: 0.8em;
+    color: #e43f0d;
+
+}
 
 /*AGREGAR TARJETA PAGO*/
 .backAddPayForm {
@@ -257,7 +264,7 @@ Rojo #e43f0d*/
 
 .card_date h5{
     font-family: "Avenir_Bold", sans-serif;
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin: 0;
     line-height: 1em;
 }
@@ -276,9 +283,35 @@ Rojo #e43f0d*/
     justify-content: center;
     background-color: #f3f4f2;
     border-radius: 15px;
+    text-align: center;
     border: 1px solid rgba(0,0,0,.125);
     margin: 10px 5px 10px 5px;
 
+}
+
+#card_dataDelivered {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f3f4f2;
+    border-radius: 15px;
+    text-align: left;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 10px 5px 10px 5px;
+}
+
+#card_dataDelivered p {
+    font-family: "Avenir_Medium", sans-serif;
+    font-size: 1em;
+    margin: 0px 0px 0px 0px;
+    line-height: 1.2em;
+}
+
+#card_dataDelivered a {
+    color: black !important;
+    text-decoration: none !important;
+    background-color: none !important;
 }
 
 .card_data p {
@@ -287,6 +320,8 @@ Rojo #e43f0d*/
     margin: 0px 0px 0px 20px;
     line-height: 1.2em;
 }
+
+
 
 #content_orderData h5:nth-last-child(1) {
     font-family: "Avenir_Bold", sans-serif;
@@ -339,6 +374,23 @@ Rojo #e43f0d*/
     padding: 0;
     margin: 10px 5px 10px 5px;
     font-family: "Avenir_Bold", sans-serif;
+}
+
+.loadLastOrder h6 {
+    color: black;
+    font-family: "Avenir_Bold", sans-serif;
+    font-size: 1em;
+    margin: 5px 0px 0px 0px;
+    color: #029c01;
+}
+
+.loadLastOrder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 5px 10px 5px;
 }
 
 
@@ -407,6 +459,15 @@ table.tableReviewOrders tfoot td {
 
 
     @media (max-width: 991px) {
+
+        #content_orderData h5:nth-last-child(1) {
+            font-family: "Avenir_Bold", sans-serif;
+            font-size: 0.6em;
+            margin: 0;
+            line-height: 1em;
+            color: white;
+            text-align: center;
+        }
 
         .mainfooter {
             display: flex;

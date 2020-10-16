@@ -29,86 +29,52 @@
 	</section>
 
  <!--MIS DIRECCIONES-->
-	  <!--DIRECCIÓNES REGISTRADA-->
 
-		  <!--FORMA DE PAGO - BOTONES-->
-		  
-		  <div class="payForm">
-			  <p>Selecciona tu forma de pago</p>
-			  <div class="card_btns_pay">
-				<a href="#" class="btn btn-primary-edit">Contra entrega</a>&emsp;
-				<a href="#" class="btn btn-primary-edit">Pago en línea</a>
-			  </div>
-		  </div>
-
-	  <div class="row content_datos">
-		  	<!--<div class="col-lg-4 col-12">
-		  <div class="card">
-			<div class="card-body">
-			  <div class="adressData">
-			  <h5 id="subjectName">Joaquín Sanchez
-				</h5>
-			</div>
-			  <p id="subjectAdress">Av. Renato Leduc 373 Int. 6<br>
-				<span id="subjectBetweenStt">Carrasco y Sabino</span>,<br>
-				<span id="subjectCity">CDMX</span>, 
-				<span id="subjectCP">15235</span>, 
-				<span id="sujectDel">Tlalpan</span></p>
-				 <div class="custom-control custom-checkbox my-1 mr-sm-2">
-			<input type="checkbox" class="custom-control-input" id="customControlInline">
-			<label style="font-size: .8em;" class="custom-control-label" for="customControlInline">Predeterminada</label>
-		  </div><br>
-			  <div class="card_btns_pay">
-				<a href="#" class="btn btn-primary-edit">Editar</a>
-				<a href="#" class="btn btn-primary-edit">Eliminar</a>
-
-			  </div>
-			</div>
-		  </div>
+	<!--FORMA DE PAGO - BOTONES-->  
+	<div class="payForm">
+		<p>Selecciona tu forma de pago</p>
+		<div class="card_btns_pay">
+		<a href="#" class="btn btn-primary-edit">Contra entrega</a>&emsp;
+		<a href="#" class="btn btn-primary-edit">Pago en línea</a>
 		</div>
-		<div class="col-lg-4 col-12">
-		  <div class="card">
-			<div class="card-body">
-			  <div class="adressData">
-			  <h5 id="subjectName">Andrea Perez
-				</h5>
-			</div>
-			  <p id="subjectAdress">Av. Renato Leduc 373 Int. 6<br>
-				<span id="subjectBetweenStt">Carrasco y Sabino</span>,<br>
-				<span id="subjectCity">CDMX</span>, 
-				<span id="subjectCP">15235</span>, 
-				<span id="sujectDel">Tlalpan</span></p>
-				 <div class="custom-control custom-checkbox my-1 mr-sm-2">
-			<input type="checkbox" class="custom-control-input" id="customControlInline">
-			<label style="font-size: .8em;" class="custom-control-label" for="customControlInline">Elegir esta dirección</label>
-		  </div><br>
-			  <div class="card_btns_pay">
-				<a href="#" class="btn btn-primary-edit">Editar</a>
-				<a href="#" class="btn btn-primary-edit">Eliminar</a>
+	</div>
 
-			  </div>
-			</div>
-		  </div>
-		</div>-->
+	<div class="row content_datos">
+		
 
-			<!--TARJETA DE PAGO #1-->
+			<!--TARJETA DE PAGO #1 PREDETERMINADA-->
 			<div class="col-lg-4 col-12">                     
 				<div class="card">
 				<div class="card-body-pay">
+					<!--ID PARA TARJETA PREDETERMINADA-->
+					<div id="defaultPayCard"><h6>Predeterminada</h6></div>
+					
 					<h5 id="aliasPayCard">Joaquín Sánchez<span></h5>  
 					<p>No. de tarjeta con terminación&emsp;<span id="numberPayCard">2398</span></p>
 					<h5>Nombre del titular<span></h5>
 					<p id="userPayCard">Joaquín Sánchez Valdivia</p>
 
-					<div class="card_btns">
-					<a href="#" class="btn btn-primary-edit">Editar</a>
-					<a href="#" class="btn btn-primary-edit">Eliminar</a>
+					<!--INPUTS P/ TARJETA PREDETERMINADA-->
+					<div id="defaultPayCard">
+						<h6>Ingresa los datos para pagar</h6>
 					</div>
-					<!--CHECKBOX PARA DIRECCIÓN PREDETERMINADA-->
-					<div class="custom-control custom-checkbox my-1 mr-sm-2">
-					<input type="checkbox" class="custom-control-input" id="defaultAdress">
-					<label class="custom-control-label" for="defaultAdress">Elegir esta tarjeta</label>
+					<div class="form-row">
+						<div class="form-group col col-lg-3">
+							<label for="inputStreet"></label>
+							<input type="text" class="form-control" placeholder="Año">
+						</div>
+						<div class="form-group col col-lg-3">
+							<label for="inputNumExt"></label>
+							<input type="text" class="form-control" placeholder="Mes">
+						</div>
+						<div class="form-group col col-lg-3">
+							<label for="inputNumExt"></label>
+							<input type="email" class="form-control" placeholder="CVV">
+						</div>
 					</div>
+					
+					
+			
 
 				</div>
 				</div>
@@ -122,15 +88,12 @@
 						<h5>Nombre del titular<span></h5>
 						<p id="userPayCard">Andrés Iniesta Gómez</p>
 
-						<div class="card_btns">
-						<a href="#" class="btn btn-primary-edit">Editar</a>
-						<a href="#" class="btn btn-primary-edit">Eliminar</a>
-						</div>
-						<!--CHECKBOX PARA DIRECCIÓN PREDETERMINADA-->
-						<div class="custom-control custom-checkbox my-1 mr-sm-2">
-						<input type="checkbox" class="custom-control-input" id="chooseAdress">
-						<label class="custom-control-label" for="chooseAdress">Elegir esta tarjeta</label>
-						</div>
+						<!--CHECKBOX PARA ESCOGER TARJETA-->
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customCheck1">
+							<label class="custom-control-label" for="customCheck1">Escoger esta tarjeta para pago</label>
+						  </div>
+					
 					</div>
 				</div>
 			</div>	
@@ -151,39 +114,32 @@
 			<!--MODAL - AGREGAR TARJETA-->
 			<br><br><br>
 			
-			<div class="backAddPayForm col-sm-6 col-lg-6">
+			 <!--MODAL - AGREGAR TARJETA-->
+                         
+			 <div class="backAddPayForm col-sm-6 col-lg-6">
 				<div class="form-group col-12 col-lg-12">
 				  <label for="registerEmail">Nombre corto</label>
 				  <input type="text" class="form-control" placeholder="Ej. Carlos, Sandra">
 				</div>
 				<div class="form-group col-12 col-lg-12">
+				  <label for="registerEmail">Nombre completo del titular</label>
+				  <input type="text" class="form-control" placeholder="">
+				</div>
+				<div class="form-group col-12 col-lg-12">
 				  <label for="registerEmail">Número de tarjeta</label>
 				  <input type="text" class="form-control" placeholder="">
 				</div>
-				<div class="row">
-					<div class="form-group col-12 col-lg-6">
-					<label for="registerEmail">Nombre(s) del titular</label>
-					<input type="text" class="form-control" placeholder="">
-					</div>
-					<div class="form-group col-12 col-lg-6">
-						<label for="registerEmail">Nombre(s) del titular</label>
-						<input type="text" class="form-control" placeholder="">
-						</div>
-				</div>
-
-
-
 				<div class="addpayform_btn">
 				  <a href="#" class="btn btn-primary-edit">Agregar Tarjeta</a>
-
 				</div>
 			  </div>
 
 
 
+
 			
-			</div>	
-  		</div>
+	</div>	
+</div>
 
 
 

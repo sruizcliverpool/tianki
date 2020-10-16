@@ -19,7 +19,22 @@ Rojo #e43f0d*/
 @font-face {
     font-family: Avenir_UltraLight;
     src: url('../fonts/AvenirNext_UltraLight.ttf');
-        }
+		}
+		
+		.btn-primary {
+			background-color: #029c01 !important;
+			color: white !important;
+			font-family: "Avenir_Medium", sans-serif !important;
+			border: none !important;
+			outline: none !important;
+		}
+		
+
+
+
+
+
+
 main {
 	position:relative;
 	width:100%;
